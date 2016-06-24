@@ -1,6 +1,6 @@
 <h1>Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)</h1>
 <p>This is a human-readable summary of (and not a substitute for) the <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/legalcode" target="_blank">license</a>.</p>
-<a style="font-style:bold; font-decoration:none;" href="https://creativecommons.org/licenses/by-nc-nd/4.0/#" target="_blank">Disclaimer</a>
+<a style="font-weight: bold; font-decoration:none; color: black;" href="https://creativecommons.org/licenses/by-nc-nd/4.0/#" target="_blank">Disclaimer</a>
 <h2>You are free to:</h2>
 <p><b>Share — copy and redistribute the material in any medium or format</p>
 <p>The licensor cannot revoke these freedoms as long as you follow the license terms.</p>
