@@ -125,6 +125,8 @@ DocProject/Help/html
 
 # Click-Once directory
 publish/
+CoreAudio/
+Video/
 
 # Publish Web Output
 *.[Pp]ublish.xml
