@@ -14,7 +14,7 @@ Creative Commons is not a law firm and does not provide legal services. Distribu
 <b>NonCommercial</b> — You may not:
 <ul><li>Use the material for commercial purposes. A commercial use is one primarily intended for commercial advantage or monetary compensation. <a href="http://wiki.creativecommons.org/Frequently_Asked_Questions#Does_my_use_violate_the_NonCommercial_clause_of_the_licenses.3F">More info</a>.</li></ul>
 <b>NoDerivatives</b> — You may not:
-<ul><li>Distribute the modified material if you remix, transform, or build upon the material. Merely changing the format never creates a derivative. <a = href"http://wiki.creativecommons.org/Frequently_Asked_Questions#When_is_my_use_considered_an_adaptation.3F">More info.</li></ul>
+<ul><li>Distribute the modified material if you remix, transform, or build upon the material. Merely changing the format never creates a derivative. <a = href"http://wiki.creativecommons.org/Frequently_Asked_Questions#When_is_my_use_considered_an_adaptation.3F">More info</a>.</li></ul>
 <b>No additional restrictions</b> — You may not:
 <ul><li>Apply legal terms or technological measures that legally restrict others from doing anything the license permits. The license prohibits application of effective technological measures, defined with reference to Article 11 of the WIPO Copyright Treaty. <a href="http://wiki.creativecommons.org/License_Versions#Application_of_effective_technological_measures_by_users_of_CC-licensed_works_prohibited">More info</a>.</li></ul>
 <h2>Notices:</h2>
