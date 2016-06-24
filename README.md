@@ -12,7 +12,7 @@ Robot Arm Geometry has following problems
 <ul><li>pathing and homing doesn't include axial rotation</li>
 <li>tool positioning is not included in calculations</li>
 <li>collision detection not included in software</li>
-<li>hardware dependencies are limiting</li>
+<li>hardware dependencies are limiting</li></ul>
 
 <h2>Development Plan</h2>
 <p>Make robot arms hand out beer?</p>
