@@ -127,6 +127,8 @@ DocProject/Help/html
 publish/
 CoreAudio/
 Video/
+CoreAudioTest/
+CoreAudioLib/
 
 # Publish Web Output
 *.[Pp]ublish.xml
