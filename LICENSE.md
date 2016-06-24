@@ -1,11 +1,10 @@
-<h1>Attribution-NonCommercial-NoDerivatives 4.0 International<h1> (CC BY-NC-ND 4.0)
-This is a human-readable summary of (and not a substitute for) the <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/legalcode" target="_blank">license</a>.
+<h1>Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)</h1>
+<p>This is a human-readable summary of (and not a substitute for) the <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/legalcode" target="_blank">license</a>.</p>
 <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/#" target="_blank">Disclaimer</a>
-You are free to:
-
-Share — copy and redistribute the material in any medium or format
-The licensor cannot revoke these freedoms as long as you follow the license terms.
-Under the following terms:
+<h2>You are free to:</h2>
+<p><b>Share — copy and redistribute the material in any medium or format</p>
+<p>The licensor cannot revoke these freedoms as long as you follow the license terms.</p>
+<h2>Under the following terms:</h2>
 
 Attribution — You must give <a href="" target="_blank">appropriate credit</a>, provide a link to the license, and <a href="" target="_blank">indicate if changes were made</a>. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.
 NonCommercial — You may not use the material for <a href="" target="_blank">commercial purposes</a>.
