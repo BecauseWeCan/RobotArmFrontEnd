@@ -1,0 +1,1841 @@
+Model {
+  Name			  "robot2"
+  Version		  7.1
+  MdlSubVersion		  0
+  GraphicalInterface {
+    NumRootInports	    0
+    NumRootOutports	    0
+    ParameterArgumentNames  ""
+    ComputedModelVersion    "1.42"
+    NumModelReferences	    0
+    NumTestPointedSignals   0
+  }
+  SavedCharacterEncoding  "windows-1252"
+  SaveDefaultBlockParams  on
+  SampleTimeColors	  off
+  LibraryLinkDisplay	  "none"
+  WideLines		  on
+  ShowLineDimensions	  off
+  ShowPortDataTypes	  off
+  ShowLoopsOnError	  on
+  IgnoreBidirectionalLines off
+  ShowStorageClass	  off
+  ShowTestPointIcons	  on
+  ShowSignalResolutionIcons on
+  ShowViewerIcons	  on
+  SortedOrder		  off
+  ExecutionContextIcon	  off
+  ShowLinearizationAnnotations on
+  ScopeRefreshTime	  0.035000
+  OverrideScopeRefreshTime on
+  DisableAllScopes	  off
+  DataTypeOverride	  "UseLocalSettings"
+  MinMaxOverflowLogging	  "UseLocalSettings"
+  MinMaxOverflowArchiveMode "Overwrite"
+  BlockNameDataTip	  off
+  BlockParametersDataTip  off
+  BlockDescriptionStringDataTip	off
+  ToolBar		  on
+  StatusBar		  on
+  BrowserShowLibraryLinks off
+  BrowserLookUnderMasks	  off
+  Created		  "Sat Aug 12 16:03:11 2006"
+  Creator		  "Bob"
+  UpdateHistory		  "UpdateHistoryNever"
+  ModifiedByFormat	  "%<Auto>"
+  LastModifiedBy	  "Bob"
+  ModifiedDateFormat	  "%<Auto>"
+  LastModifiedDate	  "Sat Oct 17 20:01:34 2009"
+  RTWModifiedTimeStamp	  0
+  ModelVersionFormat	  "1.%<AutoIncrement:42>"
+  ConfigurationManager	  "None"
+  SimulationMode	  "normal"
+  LinearizationMsg	  "none"
+  Profile		  off
+  ParamWorkspaceSource	  "MATLABWorkspace"
+  AccelSystemTargetFile	  "accel.tlc"
+  AccelTemplateMakefile	  "accel_default_tmf"
+  AccelMakeCommand	  "make_rtw"
+  TryForcingSFcnDF	  off
+  RecordCoverage	  off
+  CovPath		  "/"
+  CovSaveName		  "covdata"
+  CovMetricSettings	  "dw"
+  CovNameIncrementing	  off
+  CovHtmlReporting	  on
+  covSaveCumulativeToWorkspaceVar on
+  CovSaveSingleToWorkspaceVar on
+  CovCumulativeVarName	  "covCumulativeData"
+  CovCumulativeReport	  off
+  CovReportOnPause	  on
+  CovModelRefEnable	  "Off"
+  ExtModeBatchMode	  off
+  ExtModeEnableFloating	  on
+  ExtModeTrigType	  "manual"
+  ExtModeTrigMode	  "normal"
+  ExtModeTrigPort	  "1"
+  ExtModeTrigElement	  "any"
+  ExtModeTrigDuration	  1000
+  ExtModeTrigDurationFloating "auto"
+  ExtModeTrigHoldOff	  0
+  ExtModeTrigDelay	  0
+  ExtModeTrigDirection	  "rising"
+  ExtModeTrigLevel	  0
+  ExtModeArchiveMode	  "off"
+  ExtModeAutoIncOneShot	  off
+  ExtModeIncDirWhenArm	  off
+  ExtModeAddSuffixToVar	  off
+  ExtModeWriteAllDataToWs off
+  ExtModeArmWhenConnect	  on
+  ExtModeSkipDownloadWhenConnect off
+  ExtModeLogAll		  on
+  ExtModeAutoUpdateStatusClock on
+  BufferReuse		  on
+  ShowModelReferenceBlockVersion off
+  ShowModelReferenceBlockIO off
+  Array {
+    Type		    "Handle"
+    Dimension		    1
+    Simulink.ConfigSet {
+      $ObjectID		      1
+      Version		      "1.4.0"
+      Array {
+	Type			"Handle"
+	Dimension		7
+	Simulink.SolverCC {
+	  $ObjectID		  2
+	  Version		  "1.4.0"
+	  StartTime		  "0.0"
+	  StopTime		  "10.0"
+	  AbsTol		  "auto"
+	  FixedStep		  "auto"
+	  InitialStep		  "auto"
+	  MaxNumMinSteps	  "-1"
+	  MaxOrder		  5
+	  ZcThreshold		  "auto"
+	  ConsecutiveZCsStepRelTol "10*128*eps"
+	  MaxConsecutiveZCs	  "1000"
+	  ExtrapolationOrder	  4
+	  NumberNewtonIterations  1
+	  MaxStep		  "auto"
+	  MinStep		  "auto"
+	  MaxConsecutiveMinStep	  "1"
+	  RelTol		  "1e-3"
+	  SolverMode		  "Auto"
+	  Solver		  "ode45"
+	  SolverName		  "ode45"
+	  ShapePreserveControl	  "DisableAll"
+	  ZeroCrossControl	  "UseLocalSettings"
+	  ZeroCrossAlgorithm	  "Non-adaptive"
+	  AlgebraicLoopSolver	  "TrustRegion"
+	  SolverResetMethod	  "Fast"
+	  PositivePriorityOrder	  off
+	  AutoInsertRateTranBlk	  off
+	  SampleTimeConstraint	  "Unconstrained"
+	  InsertRTBMode		  "Whenever possible"
+	}
+	Simulink.DataIOCC {
+	  $ObjectID		  3
+	  Version		  "1.4.0"
+	  Decimation		  "1"
+	  ExternalInput		  "[t, u]"
+	  FinalStateName	  "xFinal"
+	  InitialState		  "xInitial"
+	  LimitDataPoints	  on
+	  MaxDataPoints		  "1000"
+	  LoadExternalInput	  off
+	  LoadInitialState	  off
+	  SaveFinalState	  off
+	  SaveFormat		  "Array"
+	  SaveOutput		  on
+	  SaveState		  off
+	  SignalLogging		  on
+	  InspectSignalLogs	  off
+	  SaveTime		  on
+	  StateSaveName		  "xout"
+	  TimeSaveName		  "tout"
+	  OutputSaveName	  "yout"
+	  SignalLoggingName	  "logsout"
+	  OutputOption		  "RefineOutputTimes"
+	  OutputTimes		  "[]"
+	  Refine		  "1"
+	}
+	Simulink.OptimizationCC {
+	  $ObjectID		  4
+	  Version		  "1.4.0"
+	  BlockReduction	  on
+	  BooleanDataType	  off
+	  ConditionallyExecuteInputs on
+	  InlineParams		  off
+	  InlineInvariantSignals  off
+	  OptimizeBlockIOStorage  on
+	  BufferReuse		  on
+	  EnhancedBackFolding	  off
+	  EnforceIntegerDowncast  on
+	  ExpressionFolding	  on
+	  ExpressionDepthLimit	  2147483647
+	  FoldNonRolledExpr	  on
+	  LocalBlockOutputs	  on
+	  RollThreshold		  5
+	  SystemCodeInlineAuto	  off
+	  StateBitsets		  off
+	  DataBitsets		  off
+	  UseTempVars		  off
+	  ZeroExternalMemoryAtStartup on
+	  ZeroInternalMemoryAtStartup on
+	  InitFltsAndDblsToZero	  on
+	  NoFixptDivByZeroProtection off
+	  EfficientFloat2IntCast  off
+	  OptimizeModelRefInitCode off
+	  LifeSpan		  "inf"
+	  BufferReusableBoundary  on
+	  SimCompilerOptimization "Off"
+	  AccelVerboseBuild	  off
+	}
+	Simulink.DebuggingCC {
+	  $ObjectID		  5
+	  Version		  "1.4.0"
+	  RTPrefix		  "error"
+	  ConsistencyChecking	  "none"
+	  ArrayBoundsChecking	  "none"
+	  SignalInfNanChecking	  "none"
+	  SignalRangeChecking	  "none"
+	  ReadBeforeWriteMsg	  "UseLocalSettings"
+	  WriteAfterWriteMsg	  "UseLocalSettings"
+	  WriteAfterReadMsg	  "UseLocalSettings"
+	  AlgebraicLoopMsg	  "warning"
+	  ArtificialAlgebraicLoopMsg "warning"
+	  SaveWithDisabledLinksMsg "warning"
+	  SaveWithParameterizedLinksMsg	"none"
+	  CheckSSInitialOutputMsg on
+	  CheckExecutionContextPreStartOutputMsg off
+	  CheckExecutionContextRuntimeOutputMsg	off
+	  SignalResolutionControl "TryResolveAllWithWarning"
+	  BlockPriorityViolationMsg "warning"
+	  MinStepSizeMsg	  "warning"
+	  TimeAdjustmentMsg	  "none"
+	  MaxConsecutiveZCsMsg	  "error"
+	  SolverPrmCheckMsg	  "none"
+	  InheritedTsInSrcMsg	  "warning"
+	  DiscreteInheritContinuousMsg "warning"
+	  MultiTaskDSMMsg	  "warning"
+	  MultiTaskCondExecSysMsg "none"
+	  MultiTaskRateTransMsg	  "error"
+	  SingleTaskRateTransMsg  "none"
+	  TasksWithSamePriorityMsg "warning"
+	  SigSpecEnsureSampleTimeMsg "warning"
+	  CheckMatrixSingularityMsg "none"
+	  IntegerOverflowMsg	  "warning"
+	  Int32ToFloatConvMsg	  "warning"
+	  ParameterDowncastMsg	  "error"
+	  ParameterOverflowMsg	  "error"
+	  ParameterUnderflowMsg	  "none"
+	  ParameterPrecisionLossMsg "warning"
+	  ParameterTunabilityLossMsg "warning"
+	  UnderSpecifiedDataTypeMsg "none"
+	  UnnecessaryDatatypeConvMsg "none"
+	  VectorMatrixConversionMsg "none"
+	  InvalidFcnCallConnMsg	  "error"
+	  FcnCallInpInsideContextMsg "Use local settings"
+	  SignalLabelMismatchMsg  "none"
+	  UnconnectedInputMsg	  "warning"
+	  UnconnectedOutputMsg	  "warning"
+	  UnconnectedLineMsg	  "warning"
+	  SFcnCompatibilityMsg	  "none"
+	  UniqueDataStoreMsg	  "none"
+	  BusObjectLabelMismatch  "warning"
+	  RootOutportRequireBusObject "warning"
+	  AssertControl		  "UseLocalSettings"
+	  EnableOverflowDetection off
+	  ModelReferenceIOMsg	  "none"
+	  ModelReferenceVersionMismatchMessage "none"
+	  ModelReferenceIOMismatchMessage "none"
+	  ModelReferenceCSMismatchMessage "none"
+	  ModelReferenceSimTargetVerbose off
+	  UnknownTsInhSupMsg	  "warning"
+	  ModelReferenceDataLoggingMessage "warning"
+	  ModelReferenceSymbolNameMessage "warning"
+	  ModelReferenceExtraNoncontSigs "error"
+	  StateNameClashWarn	  "warning"
+	  StrictBusMsg		  "None"
+	  LoggingUnavailableSignals "error"
+	  BlockIODiagnostic	  "none"
+	}
+	Simulink.HardwareCC {
+	  $ObjectID		  6
+	  Version		  "1.4.0"
+	  ProdBitPerChar	  8
+	  ProdBitPerShort	  16
+	  ProdBitPerInt		  32
+	  ProdBitPerLong	  32
+	  ProdIntDivRoundTo	  "Undefined"
+	  ProdEndianess		  "Unspecified"
+	  ProdWordSize		  32
+	  ProdShiftRightIntArith  on
+	  ProdHWDeviceType	  "32-bit Generic"
+	  TargetBitPerChar	  8
+	  TargetBitPerShort	  16
+	  TargetBitPerInt	  32
+	  TargetBitPerLong	  32
+	  TargetShiftRightIntArith on
+	  TargetIntDivRoundTo	  "Undefined"
+	  TargetEndianess	  "Unspecified"
+	  TargetWordSize	  32
+	  TargetTypeEmulationWarnSuppressLevel 0
+	  TargetPreprocMaxBitsSint 32
+	  TargetPreprocMaxBitsUint 32
+	  TargetHWDeviceType	  "Specified"
+	  TargetUnknown		  on
+	  ProdEqTarget		  on
+	}
+	Simulink.ModelReferenceCC {
+	  $ObjectID		  7
+	  Version		  "1.4.0"
+	  UpdateModelReferenceTargets "IfOutOfDateOrStructuralChange"
+	  CheckModelReferenceTargetMessage "error"
+	  ModelReferenceNumInstancesAllowed "Multi"
+	  ModelReferenceSigSizeVariationType "Always allowed"
+	  ModelReferencePassRootInputsByReference on
+	  ModelReferenceMinAlgLoopOccurrences off
+	}
+	Simulink.RTWCC {
+	  $BackupClass		  "Simulink.RTWCC"
+	  $ObjectID		  8
+	  Version		  "1.4.0"
+	  SystemTargetFile	  "grt.tlc"
+	  GenCodeOnly		  off
+	  MakeCommand		  "make_rtw"
+	  GenerateMakefile	  on
+	  TemplateMakefile	  "grt_default_tmf"
+	  GenerateReport	  off
+	  SaveLog		  off
+	  RTWVerbose		  on
+	  RetainRTWFile		  off
+	  ProfileTLC		  off
+	  TLCDebug		  off
+	  TLCCoverage		  off
+	  TLCAssert		  off
+	  ProcessScriptMode	  "Default"
+	  ConfigurationMode	  "Optimized"
+	  ConfigAtBuild		  off
+	  IncludeHyperlinkInReport off
+	  LaunchReport		  off
+	  TargetLang		  "C"
+	  IncludeBusHierarchyInRTWFileBlockHierarchyMap	off
+	  IncludeERTFirstTime	  on
+	  GenerateTraceInfo	  off
+	  GenerateTraceReport	  off
+	  GenerateTraceReportSl	  off
+	  GenerateTraceReportSf	  off
+	  GenerateTraceReportEml  off
+	  GenerateCodeInfo	  off
+	  RTWCompilerOptimization "Off"
+	  Array {
+	    Type		    "Handle"
+	    Dimension		    2
+	    Simulink.CodeAppCC {
+	      $ObjectID		      9
+	      Version		      "1.4.0"
+	      ForceParamTrailComments off
+	      GenerateComments	      on
+	      IgnoreCustomStorageClasses on
+	      IncHierarchyInIds	      off
+	      MaxIdLength	      31
+	      PreserveName	      off
+	      PreserveNameWithParent  off
+	      ShowEliminatedStatement off
+	      IncAutoGenComments      off
+	      SimulinkDataObjDesc     off
+	      SFDataObjDesc	      off
+	      IncDataTypeInIds	      off
+	      MangleLength	      1
+	      CustomSymbolStrGlobalVar "$R$N$M"
+	      CustomSymbolStrType     "$N$R$M"
+	      CustomSymbolStrField    "$N$M"
+	      CustomSymbolStrFcn      "$R$N$M$F"
+	      CustomSymbolStrBlkIO    "rtb_$N$M"
+	      CustomSymbolStrTmpVar   "$N$M"
+	      CustomSymbolStrMacro    "$R$N$M"
+	      DefineNamingRule	      "None"
+	      ParamNamingRule	      "None"
+	      SignalNamingRule	      "None"
+	      InsertBlockDesc	      off
+	      SimulinkBlockComments   on
+	      EnableCustomComments    off
+	      InlinedPrmAccess	      "Literals"
+	      ReqsInCode	      off
+	    }
+	    Simulink.GRTTargetCC {
+	      $BackupClass	      "Simulink.TargetCC"
+	      $ObjectID		      10
+	      Version		      "1.4.0"
+	      TargetFcnLib	      "ansi_tfl_tmw.mat"
+	      TargetLibSuffix	      ""
+	      TargetPreCompLibLocation ""
+	      TargetFunctionLibrary   "ANSI_C"
+	      UtilityFuncGeneration   "Auto"
+	      GenerateFullHeader      on
+	      GenerateSampleERTMain   off
+	      GenerateTestInterfaces  off
+	      IsPILTarget	      off
+	      ModelReferenceCompliant off
+	      CompOptLevelCompliant   on
+	      IncludeMdlTerminateFcn  on
+	      CombineOutputUpdateFcns off
+	      SuppressErrorStatus     off
+	      ERTFirstTimeCompliant   off
+	      IncludeFileDelimiter    "Auto"
+	      ERTCustomFileBanners    off
+	      SupportAbsoluteTime     on
+	      LogVarNameModifier      "rt_"
+	      MatFileLogging	      off
+	      MultiInstanceERTCode    off
+	      SupportNonFinite	      on
+	      SupportComplex	      on
+	      PurelyIntegerCode	      off
+	      SupportContinuousTime   on
+	      SupportNonInlinedSFcns  on
+	      EnableShiftOperators    on
+	      ParenthesesLevel	      "Nominal"
+	      PortableWordSizes	      off
+	      ModelStepFunctionPrototypeControlCompliant off
+	      AutosarCompliant	      off
+	      ExtMode		      off
+	      ExtModeStaticAlloc      off
+	      ExtModeTesting	      off
+	      ExtModeStaticAllocSize  1000000
+	      ExtModeTransport	      0
+	      ExtModeMexFile	      "ext_comm"
+	      ExtModeIntrfLevel	      "Level1"
+	      RTWCAPISignals	      off
+	      RTWCAPIParams	      off
+	      RTWCAPIStates	      off
+	      GenerateASAP2	      off
+	    }
+	    PropName		    "Components"
+	  }
+	}
+	PropName		"Components"
+      }
+      Name		      "Configuration"
+      CurrentDlgPage	      "Solver"
+    }
+    PropName		    "ConfigurationSets"
+  }
+  Simulink.ConfigSet {
+    $PropName		    "ActiveConfigurationSet"
+    $ObjectID		    1
+  }
+  BlockDefaults {
+    Orientation		    "right"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    NamePlacement	    "normal"
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    ShowName		    on
+  }
+  BlockParameterDefaults {
+    Block {
+      BlockType		      FromWorkspace
+      VariableName	      "simulink_input"
+      SampleTime	      "-1"
+      Interpolate	      on
+      ZeroCross		      off
+      OutputAfterFinalValue   "Extrapolation"
+    }
+    Block {
+      BlockType		      Gain
+      Gain		      "1"
+      Multiplication	      "Element-wise(K.*u)"
+      ParamMin		      "[]"
+      ParamMax		      "[]"
+      ParameterDataTypeMode   "Same as input"
+      ParameterDataType	      "fixdt(1,16,0)"
+      ParameterScalingMode    "Best Precision: Matrix-wise"
+      ParameterScaling	      "[]"
+      ParamDataTypeStr	      "Inherit: Same as input"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeMode	      "Same as input"
+      OutDataType	      "fixdt(1,16,0)"
+      OutScaling	      "[]"
+      OutDataTypeStr	      "Inherit: Same as input"
+      LockScale		      off
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	on
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Inport
+      Port		      "1"
+      UseBusObject	      off
+      BusObject		      "BusObject"
+      BusOutputAsStruct	      off
+      PortDimensions	      "-1"
+      SampleTime	      "-1"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      DataType		      "auto"
+      OutDataType	      "fixdt(1,16,0)"
+      OutScaling	      "[]"
+      OutDataTypeStr	      "Inherit: auto"
+      SignalType	      "auto"
+      SamplingMode	      "auto"
+      LatchByDelayingOutsideSignal off
+      LatchByCopyingInsideSignal off
+      Interpolate	      on
+    }
+    Block {
+      BlockType		      Outport
+      Port		      "1"
+      UseBusObject	      off
+      BusObject		      "BusObject"
+      BusOutputAsStruct	      off
+      PortDimensions	      "-1"
+      SampleTime	      "-1"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      DataType		      "auto"
+      OutDataType	      "fixdt(1,16,0)"
+      OutScaling	      "[]"
+      OutDataTypeStr	      "Inherit: auto"
+      SignalType	      "auto"
+      SamplingMode	      "auto"
+      OutputWhenDisabled      "held"
+      InitialOutput	      "[]"
+    }
+    Block {
+      BlockType		      Reference
+    }
+    Block {
+      BlockType		      SubSystem
+      ShowPortLabels	      "FromPortIcon"
+      Permissions	      "ReadWrite"
+      PermitHierarchicalResolution "All"
+      TreatAsAtomicUnit	      off
+      CheckFcnCallInpInsideContextMsg off
+      SystemSampleTime	      "-1"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      RTWMemSecFuncInitTerm   "Inherit from model"
+      RTWMemSecFuncExecute    "Inherit from model"
+      RTWMemSecDataConstants  "Inherit from model"
+      RTWMemSecDataInternal   "Inherit from model"
+      RTWMemSecDataParameters "Inherit from model"
+      SimViewingDevice	      off
+      DataTypeOverride	      "UseLocalSettings"
+      MinMaxOverflowLogging   "UseLocalSettings"
+    }
+    Block {
+      BlockType		      Sum
+      IconShape		      "rectangular"
+      Inputs		      "++"
+      CollapseMode	      "All dimensions"
+      CollapseDim	      "1"
+      InputSameDT	      on
+      AccumDataTypeStr	      "Inherit: Inherit via internal rule"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeMode	      "Same as first input"
+      OutDataType	      "fixdt(1,16,0)"
+      OutScaling	      "[]"
+      OutDataTypeStr	      "Inherit: Same as first input"
+      LockScale		      off
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	on
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Switch
+      Criteria		      "u2 >= Threshold"
+      Threshold		      "0"
+      InputSameDT	      on
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeMode	      "Inherit via internal rule"
+      OutDataType	      "fixdt(1,16,0)"
+      OutScaling	      "[]"
+      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+      LockScale		      off
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	on
+      ZeroCross		      on
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      ToWorkspace
+      VariableName	      "simulink_output"
+      MaxDataPoints	      "1000"
+      Decimation	      "1"
+      SampleTime	      "0"
+      FixptAsFi		      off
+    }
+    Block {
+      BlockType		      UnitDelay
+      X0		      "0"
+      SampleTime	      "1"
+      StateMustResolveToSignalObject off
+      RTWStateStorageClass    "Auto"
+    }
+    Block {
+      BlockType		      Constant
+      Value		      "1"
+      VectorParams1D	      on
+      SamplingMode	      "Sample based"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeMode	      "Inherit from 'Constant value'"
+      OutDataType	      "fixdt(1,16,0)"
+      ConRadixGroup	      "Use specified scaling"
+      OutScaling	      "[]"
+      OutDataTypeStr	      "Inherit: Inherit from 'Constant value'"
+      SampleTime	      "inf"
+      FramePeriod	      "inf"
+    }
+    Block {
+      BlockType		      Saturate
+      UpperLimit	      "0.5"
+      LowerLimit	      "-0.5"
+      LinearizeAsGain	      on
+      ZeroCross		      on
+      SampleTime	      "-1"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeMode	      "Same as input"
+      OutDataType	      "fixdt(1,16,0)"
+      OutScaling	      "[]"
+      OutDataTypeStr	      "Inherit: Same as input"
+      LockScale		      off
+      RndMeth		      "Floor"
+    }
+  }
+  AnnotationDefaults {
+    HorizontalAlignment	    "center"
+    VerticalAlignment	    "middle"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    UseDisplayTextAsClickCallback off
+  }
+  LineDefaults {
+    FontName		    "Helvetica"
+    FontSize		    9
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  System {
+    Name		    "robot2"
+    Location		    [93, 160, 782, 948]
+    Open		    on
+    ModelBrowserVisibility  off
+    ModelBrowserWidth	    200
+    ScreenColor		    "white"
+    PaperOrientation	    "landscape"
+    PaperPositionMode	    "auto"
+    PaperType		    "usletter"
+    PaperUnits		    "inches"
+    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
+    TiledPageScale	    1
+    ShowPageBoundaries	    off
+    ZoomFactor		    "100"
+    ReportName		    "simulink-default.rpt"
+    Block {
+      BlockType		      Reference
+      Name		      "Acceleration 0"
+      Tag		      "TCACCEL"
+      Ports		      [0, 1]
+      Position		      [185, 33, 240, 57]
+      BackgroundColor	      "lightBlue"
+      SourceBlock	      "mwblocks/Command Acceleration"
+      SourceType	      ""
+      ShowPortLabels	      "FromPortIcon"
+      SystemSampleTime	      "-1"
+      FunctionWithSeparateData off
+      RTWMemSecFuncInitTerm   "Inherit from model"
+      RTWMemSecFuncExecute    "Inherit from model"
+      RTWMemSecDataConstants  "Inherit from model"
+      RTWMemSecDataInternal   "Inherit from model"
+      RTWMemSecDataParameters "Inherit from model"
+      meiAxis		      "0"
+      SubSample		      "0"
+      User0		      "0"
+      User1		      "0"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Acceleration 1"
+      Tag		      "TCACCEL"
+      Ports		      [0, 1]
+      Position		      [185, 138, 240, 162]
+      BackgroundColor	      "lightBlue"
+      SourceBlock	      "mwblocks/Command Acceleration"
+      SourceType	      ""
+      ShowPortLabels	      "FromPortIcon"
+      SystemSampleTime	      "-1"
+      FunctionWithSeparateData off
+      RTWMemSecFuncInitTerm   "Inherit from model"
+      RTWMemSecFuncExecute    "Inherit from model"
+      RTWMemSecDataConstants  "Inherit from model"
+      RTWMemSecDataInternal   "Inherit from model"
+      RTWMemSecDataParameters "Inherit from model"
+      meiAxis		      "1"
+      SubSample		      "0"
+      User0		      "0"
+      User1		      "0"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Acceleration 2"
+      Tag		      "TCACCEL"
+      Ports		      [0, 1]
+      Position		      [185, 243, 240, 267]
+      BackgroundColor	      "lightBlue"
+      SourceBlock	      "mwblocks/Command Acceleration"
+      SourceType	      ""
+      ShowPortLabels	      "FromPortIcon"
+      SystemSampleTime	      "-1"
+      FunctionWithSeparateData off
+      RTWMemSecFuncInitTerm   "Inherit from model"
+      RTWMemSecFuncExecute    "Inherit from model"
+      RTWMemSecDataConstants  "Inherit from model"
+      RTWMemSecDataInternal   "Inherit from model"
+      RTWMemSecDataParameters "Inherit from model"
+      meiAxis		      "2"
+      SubSample		      "0"
+      User0		      "0"
+      User1		      "0"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Acceleration 3"
+      Tag		      "TCACCEL"
+      Ports		      [0, 1]
+      Position		      [185, 348, 240, 372]
+      BackgroundColor	      "lightBlue"
+      SourceBlock	      "mwblocks/Command Acceleration"
+      SourceType	      ""
+      ShowPortLabels	      "FromPortIcon"
+      SystemSampleTime	      "-1"
+      FunctionWithSeparateData off
+      RTWMemSecFuncInitTerm   "Inherit from model"
+      RTWMemSecFuncExecute    "Inherit from model"
+      RTWMemSecDataConstants  "Inherit from model"
+      RTWMemSecDataInternal   "Inherit from model"
+      RTWMemSecDataParameters "Inherit from model"
+      meiAxis		      "3"
+      SubSample		      "0"
+      User0		      "0"
+      User1		      "0"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Acceleration 4"
+      Tag		      "TCACCEL"
+      Ports		      [0, 1]
+      Position		      [185, 453, 240, 477]
+      BackgroundColor	      "lightBlue"
+      SourceBlock	      "mwblocks/Command Acceleration"
+      SourceType	      ""
+      ShowPortLabels	      "FromPortIcon"
+      SystemSampleTime	      "-1"
+      FunctionWithSeparateData off
+      RTWMemSecFuncInitTerm   "Inherit from model"
+      RTWMemSecFuncExecute    "Inherit from model"
+      RTWMemSecDataConstants  "Inherit from model"
+      RTWMemSecDataInternal   "Inherit from model"
+      RTWMemSecDataParameters "Inherit from model"
+      meiAxis		      "4"
+      SubSample		      "0"
+      User0		      "0"
+      User1		      "0"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Acceleration 5"
+      Tag		      "TCACCEL"
+      Ports		      [0, 1]
+      Position		      [185, 558, 240, 582]
+      BackgroundColor	      "lightBlue"
+      SourceBlock	      "mwblocks/Command Acceleration"
+      SourceType	      ""
+      ShowPortLabels	      "FromPortIcon"
+      SystemSampleTime	      "-1"
+      FunctionWithSeparateData off
+      RTWMemSecFuncInitTerm   "Inherit from model"
+      RTWMemSecFuncExecute    "Inherit from model"
+      RTWMemSecDataConstants  "Inherit from model"
+      RTWMemSecDataInternal   "Inherit from model"
+      RTWMemSecDataParameters "Inherit from model"
+      meiAxis		      "5"
+      SubSample		      "0"
+      User0		      "0"
+      User1		      "0"
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "Constant 0"
+      Tag		      "CONSTANT"
+      Position		      [100, 95, 130, 125]
+      BackgroundColor	      "lightBlue"
+      Value		      "0"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "Constant 1"
+      Tag		      "CONSTANT"
+      Position		      [100, 200, 130, 230]
+      BackgroundColor	      "lightBlue"
+      Value		      "0"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "Constant 2"
+      Tag		      "CONSTANT"
+      Position		      [100, 305, 130, 335]
+      BackgroundColor	      "lightBlue"
+      Value		      "0"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "Constant 3"
+      Tag		      "CONSTANT"
+      Position		      [100, 410, 130, 440]
+      BackgroundColor	      "lightBlue"
+      Value		      "0"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "Constant 4"
+      Tag		      "CONSTANT"
+      Position		      [100, 515, 130, 545]
+      BackgroundColor	      "lightBlue"
+      Value		      "0"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "Constant 5"
+      Tag		      "CONSTANT"
+      Position		      [100, 620, 130, 650]
+      BackgroundColor	      "lightBlue"
+      Value		      "0"
+      OutDataType	      "sfix(16)"
+      OutScaling	      "2^0"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Error 0"
+      Tag		      "ERROR"
+      Ports		      [0, 1]
+      Position		      [35, 68, 90, 92]
+      BackgroundColor	      "lightBlue"
+      SourceBlock	      "mwblocks/Error"
+      SourceType	      ""
+      ShowPortLabels	      "FromPortIcon"
+      SystemSampleTime	      "-1"
+      FunctionWithSeparateData off
+      RTWMemSecFuncInitTerm   "Inherit from model"
+      RTWMemSecFuncExecute    "Inherit from model"
+      RTWMemSecDataConstants  "Inherit from model"
+      RTWMemSecDataInternal   "Inherit from model"
+      RTWMemSecDataParameters "Inherit from model"
+      meiAxis		      "0"
+      SubSample		      "0"
+      User0		      "0"
+      User1		      "0"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Error 1"
+      Tag		      "ERROR"
+      Ports		      [0, 1]
+      Position		      [35, 173, 90, 197]
+      BackgroundColor	      "lightBlue"
+      SourceBlock	      "mwblocks/Error"
+      SourceType	      ""
+      ShowPortLabels	      "FromPortIcon"
+      SystemSampleTime	      "-1"
+      FunctionWithSeparateData off
+      RTWMemSecFuncInitTerm   "Inherit from model"
+      RTWMemSecFuncExecute    "Inherit from model"
+      RTWMemSecDataConstants  "Inherit from model"
+      RTWMemSecDataInternal   "Inherit from model"
+      RTWMemSecDataParameters "Inherit from model"
+      meiAxis		      "1"
+      SubSample		      "0"
+      User0		      "0"
+      User1		      "0"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Error 2"
+      Tag		      "ERROR"
+      Ports		      [0, 1]
+      Position		      [35, 278, 90, 302]
+      BackgroundColor	      "lightBlue"
+      SourceBlock	      "mwblocks/Error"
+      SourceType	      ""
+      ShowPortLabels	      "FromPortIcon"
+      SystemSampleTime	      "-1"
+      FunctionWithSeparateData off
+      RTWMemSecFuncInitTerm   "Inherit from model"
+      RTWMemSecFuncExecute    "Inherit from model"
+      RTWMemSecDataConstants  "Inherit from model"
+      RTWMemSecDataInternal   "Inherit from model"
+      RTWMemSecDataParameters "Inherit from model"
+      meiAxis		      "2"
+      SubSample		      "0"
+      User0		      "0"
+      User1		      "0"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Error 3"
+      Tag		      "ERROR"
+      Ports		      [0, 1]
+      Position		      [35, 383, 90, 407]
+      BackgroundColor	      "lightBlue"
+      SourceBlock	      "mwblocks/Error"
+      SourceType	      ""
+      ShowPortLabels	      "FromPortIcon"
+      SystemSampleTime	      "-1"
+      FunctionWithSeparateData off
+      RTWMemSecFuncInitTerm   "Inherit from model"
+      RTWMemSecFuncExecute    "Inherit from model"
+      RTWMemSecDataConstants  "Inherit from model"
+      RTWMemSecDataInternal   "Inherit from model"
+      RTWMemSecDataParameters "Inherit from model"
+      meiAxis		      "3"
+      SubSample		      "0"
+      User0		      "0"
+      User1		      "0"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Error 4"
+      Tag		      "ERROR"
+      Ports		      [0, 1]
+      Position		      [35, 488, 90, 512]
+      BackgroundColor	      "lightBlue"
+      SourceBlock	      "mwblocks/Error"
+      SourceType	      ""
+      ShowPortLabels	      "FromPortIcon"
+      SystemSampleTime	      "-1"
+      FunctionWithSeparateData off
+      RTWMemSecFuncInitTerm   "Inherit from model"
+      RTWMemSecFuncExecute    "Inherit from model"
+      RTWMemSecDataConstants  "Inherit from model"
+      RTWMemSecDataInternal   "Inherit from model"
+      RTWMemSecDataParameters "Inherit from model"
+      meiAxis		      "4"
+      SubSample		      "0"
+      User0		      "0"
+      User1		      "0"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Error 5"
+      Tag		      "ERROR"
+      Ports		      [0, 1]
+      Position		      [35, 593, 90, 617]
+      BackgroundColor	      "lightBlue"
+      SourceBlock	      "mwblocks/Error"
+      SourceType	      ""
+      ShowPortLabels	      "FromPortIcon"
+      SystemSampleTime	      "-1"
+      FunctionWithSeparateData off
+      RTWMemSecFuncInitTerm   "Inherit from model"
+      RTWMemSecFuncExecute    "Inherit from model"
+      RTWMemSecDataConstants  "Inherit from model"
+      RTWMemSecDataInternal   "Inherit from model"
+      RTWMemSecDataParameters "Inherit from model"
+      meiAxis		      "5"
+      SubSample		      "0"
+      User0		      "0"
+      User1		      "0"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Model List"
+      Tag		      "MODEL_LIST"
+      Description	      "List of model numbers to load this model"
+      Ports		      []
+      Position		      [44, 20, 114, 37]
+      BackgroundColor	      "[0.501961, 0.501961, 1.000000]"
+      SourceBlock	      "mwblocks/Model List"
+      SourceType	      ""
+      ShowPortLabels	      "FromPortIcon"
+      SystemSampleTime	      "-1"
+      FunctionWithSeparateData off
+      RTWMemSecFuncInitTerm   "Inherit from model"
+      RTWMemSecFuncExecute    "Inherit from model"
+      RTWMemSecDataConstants  "Inherit from model"
+      RTWMemSecDataInternal   "Inherit from model"
+      RTWMemSecDataParameters "Inherit from model"
+      meiModelList	      "0"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Output 0"
+      Tag		      "OUTPUT"
+      Ports		      [1]
+      Position		      [420, 46, 470, 84]
+      BackgroundColor	      "lightBlue"
+      SourceBlock	      "mwblocks/Output "
+      SourceType	      ""
+      ShowPortLabels	      "FromPortIcon"
+      SystemSampleTime	      "-1"
+      FunctionWithSeparateData off
+      RTWMemSecFuncInitTerm   "Inherit from model"
+      RTWMemSecFuncExecute    "Inherit from model"
+      RTWMemSecDataConstants  "Inherit from model"
+      RTWMemSecDataInternal   "Inherit from model"
+      RTWMemSecDataParameters "Inherit from model"
+      meiMotor		      "0"
+      SubSample		      "0"
+      User0		      "0"
+      User1		      "0"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Output 1"
+      Tag		      "OUTPUT"
+      Ports		      [1]
+      Position		      [420, 151, 470, 189]
+      BackgroundColor	      "lightBlue"
+      SourceBlock	      "mwblocks/Output "
+      SourceType	      ""
+      ShowPortLabels	      "FromPortIcon"
+      SystemSampleTime	      "-1"
+      FunctionWithSeparateData off
+      RTWMemSecFuncInitTerm   "Inherit from model"
+      RTWMemSecFuncExecute    "Inherit from model"
+      RTWMemSecDataConstants  "Inherit from model"
+      RTWMemSecDataInternal   "Inherit from model"
+      RTWMemSecDataParameters "Inherit from model"
+      meiMotor		      "1"
+      SubSample		      "0"
+      User0		      "0"
+      User1		      "0"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Output 2"
+      Tag		      "OUTPUT"
+      Ports		      [1]
+      Position		      [420, 256, 470, 294]
+      BackgroundColor	      "lightBlue"
+      SourceBlock	      "mwblocks/Output "
+      SourceType	      ""
+      ShowPortLabels	      "FromPortIcon"
+      SystemSampleTime	      "-1"
+      FunctionWithSeparateData off
+      RTWMemSecFuncInitTerm   "Inherit from model"
+      RTWMemSecFuncExecute    "Inherit from model"
+      RTWMemSecDataConstants  "Inherit from model"
+      RTWMemSecDataInternal   "Inherit from model"
+      RTWMemSecDataParameters "Inherit from model"
+      meiMotor		      "2"
+      SubSample		      "0"
+      User0		      "0"
+      User1		      "0"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Output 3"
+      Tag		      "OUTPUT"
+      Ports		      [1]
+      Position		      [420, 361, 470, 399]
+      BackgroundColor	      "lightBlue"
+      SourceBlock	      "mwblocks/Output "
+      SourceType	      ""
+      ShowPortLabels	      "FromPortIcon"
+      SystemSampleTime	      "-1"
+      FunctionWithSeparateData off
+      RTWMemSecFuncInitTerm   "Inherit from model"
+      RTWMemSecFuncExecute    "Inherit from model"
+      RTWMemSecDataConstants  "Inherit from model"
+      RTWMemSecDataInternal   "Inherit from model"
+      RTWMemSecDataParameters "Inherit from model"
+      meiMotor		      "3"
+      SubSample		      "0"
+      User0		      "0"
+      User1		      "0"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Output 4"
+      Tag		      "OUTPUT"
+      Ports		      [1]
+      Position		      [420, 466, 470, 504]
+      BackgroundColor	      "lightBlue"
+      SourceBlock	      "mwblocks/Output "
+      SourceType	      ""
+      ShowPortLabels	      "FromPortIcon"
+      SystemSampleTime	      "-1"
+      FunctionWithSeparateData off
+      RTWMemSecFuncInitTerm   "Inherit from model"
+      RTWMemSecFuncExecute    "Inherit from model"
+      RTWMemSecDataConstants  "Inherit from model"
+      RTWMemSecDataInternal   "Inherit from model"
+      RTWMemSecDataParameters "Inherit from model"
+      meiMotor		      "4"
+      SubSample		      "0"
+      User0		      "0"
+      User1		      "0"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Output 5"
+      Tag		      "OUTPUT"
+      Ports		      [1]
+      Position		      [420, 571, 470, 609]
+      BackgroundColor	      "lightBlue"
+      SourceBlock	      "mwblocks/Output "
+      SourceType	      ""
+      ShowPortLabels	      "FromPortIcon"
+      SystemSampleTime	      "-1"
+      FunctionWithSeparateData off
+      RTWMemSecFuncInitTerm   "Inherit from model"
+      RTWMemSecFuncExecute    "Inherit from model"
+      RTWMemSecDataConstants  "Inherit from model"
+      RTWMemSecDataInternal   "Inherit from model"
+      RTWMemSecDataParameters "Inherit from model"
+      meiMotor		      "5"
+      SubSample		      "0"
+      User0		      "0"
+      User1		      "0"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "PID 0"
+      Tag		      "PID_R"
+      Description	      "PID with integration limit and derivative smoothing."
+      Ports		      [3, 1]
+      Position		      [160, 70, 235, 120]
+      BackgroundColor	      "green"
+      SourceBlock	      "mwblocks/PID with Reset"
+      SourceType	      ""
+      ShowPortLabels	      "FromPortIcon"
+      SystemSampleTime	      "-1"
+      FunctionWithSeparateData off
+      RTWMemSecFuncInitTerm   "Inherit from model"
+      RTWMemSecFuncExecute    "Inherit from model"
+      RTWMemSecDataConstants  "Inherit from model"
+      RTWMemSecDataInternal   "Inherit from model"
+      RTWMemSecDataParameters "Inherit from model"
+      Kp		      "0.1"
+      Ki		      "0"
+      Kd		      "1.0"
+      Ksm		      "0"
+      Imax		      "0"
+      Ts		      "Ts"
+      SubSample		      "0"
+      User0		      "0"
+      User1		      "0"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "PID 1"
+      Tag		      "PID_R"
+      Description	      "PID with integration limit and derivative smoothing."
+      Ports		      [3, 1]
+      Position		      [160, 175, 235, 225]
+      BackgroundColor	      "green"
+      SourceBlock	      "mwblocks/PID with Reset"
+      SourceType	      ""
+      ShowPortLabels	      "FromPortIcon"
+      SystemSampleTime	      "-1"
+      FunctionWithSeparateData off
+      RTWMemSecFuncInitTerm   "Inherit from model"
+      RTWMemSecFuncExecute    "Inherit from model"
+      RTWMemSecDataConstants  "Inherit from model"
+      RTWMemSecDataInternal   "Inherit from model"
+      RTWMemSecDataParameters "Inherit from model"
+      Kp		      "0.1"
+      Ki		      "0"
+      Kd		      "1.0"
+      Ksm		      "0"
+      Imax		      "0"
+      Ts		      "Ts"
+      SubSample		      "0"
+      User0		      "0"
+      User1		      "0"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "PID 2"
+      Tag		      "PID_R"
+      Description	      "PID with integration limit and derivative smoothing."
+      Ports		      [3, 1]
+      Position		      [160, 280, 235, 330]
+      BackgroundColor	      "green"
+      SourceBlock	      "mwblocks/PID with Reset"
+      SourceType	      ""
+      ShowPortLabels	      "FromPortIcon"
+      SystemSampleTime	      "-1"
+      FunctionWithSeparateData off
+      RTWMemSecFuncInitTerm   "Inherit from model"
+      RTWMemSecFuncExecute    "Inherit from model"
+      RTWMemSecDataConstants  "Inherit from model"
+      RTWMemSecDataInternal   "Inherit from model"
+      RTWMemSecDataParameters "Inherit from model"
+      Kp		      "0.1"
+      Ki		      "0"
+      Kd		      "1.0"
+      Ksm		      "0"
+      Imax		      "0"
+      Ts		      "Ts"
+      SubSample		      "0"
+      User0		      "0"
+      User1		      "0"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "PID 3"
+      Tag		      "PID_R"
+      Description	      "PID with integration limit and derivative smoothing."
+      Ports		      [3, 1]
+      Position		      [160, 385, 235, 435]
+      BackgroundColor	      "green"
+      SourceBlock	      "mwblocks/PID with Reset"
+      SourceType	      ""
+      ShowPortLabels	      "FromPortIcon"
+      SystemSampleTime	      "-1"
+      FunctionWithSeparateData off
+      RTWMemSecFuncInitTerm   "Inherit from model"
+      RTWMemSecFuncExecute    "Inherit from model"
+      RTWMemSecDataConstants  "Inherit from model"
+      RTWMemSecDataInternal   "Inherit from model"
+      RTWMemSecDataParameters "Inherit from model"
+      Kp		      "0.1"
+      Ki		      "0"
+      Kd		      "1.0"
+      Ksm		      "0"
+      Imax		      "0"
+      Ts		      "Ts"
+      SubSample		      "0"
+      User0		      "0"
+      User1		      "0"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "PID 4"
+      Tag		      "PID_R"
+      Description	      "PID with integration limit and derivative smoothing."
+      Ports		      [3, 1]
+      Position		      [160, 490, 235, 540]
+      BackgroundColor	      "green"
+      SourceBlock	      "mwblocks/PID with Reset"
+      SourceType	      ""
+      ShowPortLabels	      "FromPortIcon"
+      SystemSampleTime	      "-1"
+      FunctionWithSeparateData off
+      RTWMemSecFuncInitTerm   "Inherit from model"
+      RTWMemSecFuncExecute    "Inherit from model"
+      RTWMemSecDataConstants  "Inherit from model"
+      RTWMemSecDataInternal   "Inherit from model"
+      RTWMemSecDataParameters "Inherit from model"
+      Kp		      "0.1"
+      Ki		      "0"
+      Kd		      "1.0"
+      Ksm		      "0"
+      Imax		      "0"
+      Ts		      "Ts"
+      SubSample		      "0"
+      User0		      "0"
+      User1		      "0"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "PID 5"
+      Tag		      "PID_R"
+      Description	      "PID with integration limit and derivative smoothing."
+      Ports		      [3, 1]
+      Position		      [160, 595, 235, 645]
+      BackgroundColor	      "green"
+      SourceBlock	      "mwblocks/PID with Reset"
+      SourceType	      ""
+      ShowPortLabels	      "FromPortIcon"
+      SystemSampleTime	      "-1"
+      FunctionWithSeparateData off
+      RTWMemSecFuncInitTerm   "Inherit from model"
+      RTWMemSecFuncExecute    "Inherit from model"
+      RTWMemSecDataConstants  "Inherit from model"
+      RTWMemSecDataInternal   "Inherit from model"
+      RTWMemSecDataParameters "Inherit from model"
+      Kp		      "0.1"
+      Ki		      "0"
+      Kd		      "1.0"
+      Ksm		      "0"
+      Imax		      "0"
+      Ts		      "Ts"
+      SubSample		      "0"
+      User0		      "0"
+      User1		      "0"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Sum 0"
+      Tag		      "SUM"
+      Description	      "3 Input sum with gains on each input"
+      Ports		      [3, 1]
+      Position		      [330, 32, 400, 98]
+      BackgroundColor	      "green"
+      SourceBlock	      "mwblocks/Sum (3 Input)"
+      SourceType	      ""
+      ShowPortLabels	      "FromPortIcon"
+      SystemSampleTime	      "-1"
+      FunctionWithSeparateData off
+      RTWMemSecFuncInitTerm   "Inherit from model"
+      RTWMemSecFuncExecute    "Inherit from model"
+      RTWMemSecDataConstants  "Inherit from model"
+      RTWMemSecDataInternal   "Inherit from model"
+      RTWMemSecDataParameters "Inherit from model"
+      K1		      "125"
+      K2		      ".15"
+      K3		      "1"
+      SubSample		      "0"
+      User0		      "0"
+      User1		      "0"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Sum 1"
+      Tag		      "SUM"
+      Description	      "3 Input sum with gains on each input"
+      Ports		      [3, 1]
+      Position		      [330, 137, 400, 203]
+      BackgroundColor	      "green"
+      SourceBlock	      "mwblocks/Sum (3 Input)"
+      SourceType	      ""
+      ShowPortLabels	      "FromPortIcon"
+      SystemSampleTime	      "-1"
+      FunctionWithSeparateData off
+      RTWMemSecFuncInitTerm   "Inherit from model"
+      RTWMemSecFuncExecute    "Inherit from model"
+      RTWMemSecDataConstants  "Inherit from model"
+      RTWMemSecDataInternal   "Inherit from model"
+      RTWMemSecDataParameters "Inherit from model"
+      K1		      "125"
+      K2		      ".15"
+      K3		      "1"
+      SubSample		      "0"
+      User0		      "0"
+      User1		      "0"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Sum 2"
+      Tag		      "SUM"
+      Description	      "3 Input sum with gains on each input"
+      Ports		      [3, 1]
+      Position		      [330, 242, 400, 308]
+      BackgroundColor	      "green"
+      SourceBlock	      "mwblocks/Sum (3 Input)"
+      SourceType	      ""
+      ShowPortLabels	      "FromPortIcon"
+      SystemSampleTime	      "-1"
+      FunctionWithSeparateData off
+      RTWMemSecFuncInitTerm   "Inherit from model"
+      RTWMemSecFuncExecute    "Inherit from model"
+      RTWMemSecDataConstants  "Inherit from model"
+      RTWMemSecDataInternal   "Inherit from model"
+      RTWMemSecDataParameters "Inherit from model"
+      K1		      "50"
+      K2		      ".05"
+      K3		      "1"
+      SubSample		      "0"
+      User0		      "0"
+      User1		      "0"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Sum 3"
+      Tag		      "SUM"
+      Description	      "3 Input sum with gains on each input"
+      Ports		      [3, 1]
+      Position		      [330, 347, 400, 413]
+      BackgroundColor	      "green"
+      SourceBlock	      "mwblocks/Sum (3 Input)"
+      SourceType	      ""
+      ShowPortLabels	      "FromPortIcon"
+      SystemSampleTime	      "-1"
+      FunctionWithSeparateData off
+      RTWMemSecFuncInitTerm   "Inherit from model"
+      RTWMemSecFuncExecute    "Inherit from model"
+      RTWMemSecDataConstants  "Inherit from model"
+      RTWMemSecDataInternal   "Inherit from model"
+      RTWMemSecDataParameters "Inherit from model"
+      K1		      "0"
+      K2		      ".05"
+      K3		      "1"
+      SubSample		      "0"
+      User0		      "0"
+      User1		      "0"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Sum 4"
+      Tag		      "SUM"
+      Description	      "3 Input sum with gains on each input"
+      Ports		      [3, 1]
+      Position		      [330, 452, 400, 518]
+      BackgroundColor	      "green"
+      SourceBlock	      "mwblocks/Sum (3 Input)"
+      SourceType	      ""
+      ShowPortLabels	      "FromPortIcon"
+      SystemSampleTime	      "-1"
+      FunctionWithSeparateData off
+      RTWMemSecFuncInitTerm   "Inherit from model"
+      RTWMemSecFuncExecute    "Inherit from model"
+      RTWMemSecDataConstants  "Inherit from model"
+      RTWMemSecDataInternal   "Inherit from model"
+      RTWMemSecDataParameters "Inherit from model"
+      K1		      "30"
+      K2		      "0.2"
+      K3		      "1"
+      SubSample		      "0"
+      User0		      "0"
+      User1		      "0"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Sum 5"
+      Tag		      "SUM"
+      Description	      "3 Input sum with gains on each input"
+      Ports		      [3, 1]
+      Position		      [330, 557, 400, 623]
+      BackgroundColor	      "green"
+      SourceBlock	      "mwblocks/Sum (3 Input)"
+      SourceType	      ""
+      ShowPortLabels	      "FromPortIcon"
+      SystemSampleTime	      "-1"
+      FunctionWithSeparateData off
+      RTWMemSecFuncInitTerm   "Inherit from model"
+      RTWMemSecFuncExecute    "Inherit from model"
+      RTWMemSecDataConstants  "Inherit from model"
+      RTWMemSecDataInternal   "Inherit from model"
+      RTWMemSecDataParameters "Inherit from model"
+      K1		      "0"
+      K2		      ".05"
+      K3		      "1"
+      SubSample		      "0"
+      User0		      "0"
+      User1		      "0"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Velocity 0"
+      Tag		      "TCVEL"
+      Ports		      [0, 1]
+      Position		      [250, 54, 305, 76]
+      BackgroundColor	      "lightBlue"
+      SourceBlock	      "mwblocks/Command Velocity"
+      SourceType	      ""
+      ShowPortLabels	      "FromPortIcon"
+      SystemSampleTime	      "-1"
+      FunctionWithSeparateData off
+      RTWMemSecFuncInitTerm   "Inherit from model"
+      RTWMemSecFuncExecute    "Inherit from model"
+      RTWMemSecDataConstants  "Inherit from model"
+      RTWMemSecDataInternal   "Inherit from model"
+      RTWMemSecDataParameters "Inherit from model"
+      meiAxis		      "0"
+      SubSample		      "0"
+      User0		      "0"
+      User1		      "0"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Velocity 1"
+      Tag		      "TCVEL"
+      Ports		      [0, 1]
+      Position		      [250, 159, 305, 181]
+      BackgroundColor	      "lightBlue"
+      SourceBlock	      "mwblocks/Command Velocity"
+      SourceType	      ""
+      ShowPortLabels	      "FromPortIcon"
+      SystemSampleTime	      "-1"
+      FunctionWithSeparateData off
+      RTWMemSecFuncInitTerm   "Inherit from model"
+      RTWMemSecFuncExecute    "Inherit from model"
+      RTWMemSecDataConstants  "Inherit from model"
+      RTWMemSecDataInternal   "Inherit from model"
+      RTWMemSecDataParameters "Inherit from model"
+      meiAxis		      "1"
+      SubSample		      "0"
+      User0		      "0"
+      User1		      "0"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Velocity 2"
+      Tag		      "TCVEL"
+      Ports		      [0, 1]
+      Position		      [250, 264, 305, 286]
+      BackgroundColor	      "lightBlue"
+      SourceBlock	      "mwblocks/Command Velocity"
+      SourceType	      ""
+      ShowPortLabels	      "FromPortIcon"
+      SystemSampleTime	      "-1"
+      FunctionWithSeparateData off
+      RTWMemSecFuncInitTerm   "Inherit from model"
+      RTWMemSecFuncExecute    "Inherit from model"
+      RTWMemSecDataConstants  "Inherit from model"
+      RTWMemSecDataInternal   "Inherit from model"
+      RTWMemSecDataParameters "Inherit from model"
+      meiAxis		      "2"
+      SubSample		      "0"
+      User0		      "0"
+      User1		      "0"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Velocity 3"
+      Tag		      "TCVEL"
+      Ports		      [0, 1]
+      Position		      [250, 369, 305, 391]
+      BackgroundColor	      "lightBlue"
+      SourceBlock	      "mwblocks/Command Velocity"
+      SourceType	      ""
+      ShowPortLabels	      "FromPortIcon"
+      SystemSampleTime	      "-1"
+      FunctionWithSeparateData off
+      RTWMemSecFuncInitTerm   "Inherit from model"
+      RTWMemSecFuncExecute    "Inherit from model"
+      RTWMemSecDataConstants  "Inherit from model"
+      RTWMemSecDataInternal   "Inherit from model"
+      RTWMemSecDataParameters "Inherit from model"
+      meiAxis		      "3"
+      SubSample		      "0"
+      User0		      "0"
+      User1		      "0"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Velocity 4"
+      Tag		      "TCVEL"
+      Ports		      [0, 1]
+      Position		      [250, 474, 305, 496]
+      BackgroundColor	      "lightBlue"
+      SourceBlock	      "mwblocks/Command Velocity"
+      SourceType	      ""
+      ShowPortLabels	      "FromPortIcon"
+      SystemSampleTime	      "-1"
+      FunctionWithSeparateData off
+      RTWMemSecFuncInitTerm   "Inherit from model"
+      RTWMemSecFuncExecute    "Inherit from model"
+      RTWMemSecDataConstants  "Inherit from model"
+      RTWMemSecDataInternal   "Inherit from model"
+      RTWMemSecDataParameters "Inherit from model"
+      meiAxis		      "4"
+      SubSample		      "0"
+      User0		      "0"
+      User1		      "0"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Velocity 5"
+      Tag		      "TCVEL"
+      Ports		      [0, 1]
+      Position		      [250, 579, 305, 601]
+      BackgroundColor	      "lightBlue"
+      SourceBlock	      "mwblocks/Command Velocity"
+      SourceType	      ""
+      ShowPortLabels	      "FromPortIcon"
+      SystemSampleTime	      "-1"
+      FunctionWithSeparateData off
+      RTWMemSecFuncInitTerm   "Inherit from model"
+      RTWMemSecFuncExecute    "Inherit from model"
+      RTWMemSecDataConstants  "Inherit from model"
+      RTWMemSecDataInternal   "Inherit from model"
+      RTWMemSecDataParameters "Inherit from model"
+      meiAxis		      "5"
+      SubSample		      "0"
+      User0		      "0"
+      User1		      "0"
+    }
+    Line {
+      SrcBlock		      "Error 0"
+      SrcPort		      1
+      DstBlock		      "PID 0"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Sum 0"
+      SrcPort		      1
+      DstBlock		      "Output 0"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "PID 0"
+      SrcPort		      1
+      Points		      [75, 0]
+      DstBlock		      "Sum 0"
+      DstPort		      3
+    }
+    Line {
+      SrcBlock		      "Acceleration 0"
+      SrcPort		      1
+      DstBlock		      "Sum 0"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Velocity 0"
+      SrcPort		      1
+      DstBlock		      "Sum 0"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "Constant 0"
+      SrcPort		      1
+      Points		      [10, 0]
+      Branch {
+	DstBlock		"PID 0"
+	DstPort			3
+      }
+      Branch {
+	DstBlock		"PID 0"
+	DstPort			2
+      }
+    }
+    Line {
+      SrcBlock		      "Error 1"
+      SrcPort		      1
+      DstBlock		      "PID 1"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Sum 1"
+      SrcPort		      1
+      DstBlock		      "Output 1"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "PID 1"
+      SrcPort		      1
+      Points		      [75, 0]
+      DstBlock		      "Sum 1"
+      DstPort		      3
+    }
+    Line {
+      SrcBlock		      "Acceleration 1"
+      SrcPort		      1
+      DstBlock		      "Sum 1"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Velocity 1"
+      SrcPort		      1
+      DstBlock		      "Sum 1"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "Constant 1"
+      SrcPort		      1
+      Points		      [10, 0]
+      Branch {
+	DstBlock		"PID 1"
+	DstPort			3
+      }
+      Branch {
+	DstBlock		"PID 1"
+	DstPort			2
+      }
+    }
+    Line {
+      SrcBlock		      "Error 2"
+      SrcPort		      1
+      DstBlock		      "PID 2"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Sum 2"
+      SrcPort		      1
+      DstBlock		      "Output 2"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "PID 2"
+      SrcPort		      1
+      Points		      [75, 0]
+      DstBlock		      "Sum 2"
+      DstPort		      3
+    }
+    Line {
+      SrcBlock		      "Acceleration 2"
+      SrcPort		      1
+      DstBlock		      "Sum 2"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Velocity 2"
+      SrcPort		      1
+      DstBlock		      "Sum 2"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "Constant 2"
+      SrcPort		      1
+      Points		      [10, 0]
+      Branch {
+	DstBlock		"PID 2"
+	DstPort			3
+      }
+      Branch {
+	DstBlock		"PID 2"
+	DstPort			2
+      }
+    }
+    Line {
+      SrcBlock		      "Error 3"
+      SrcPort		      1
+      DstBlock		      "PID 3"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Sum 3"
+      SrcPort		      1
+      DstBlock		      "Output 3"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "PID 3"
+      SrcPort		      1
+      Points		      [75, 0]
+      DstBlock		      "Sum 3"
+      DstPort		      3
+    }
+    Line {
+      SrcBlock		      "Acceleration 3"
+      SrcPort		      1
+      DstBlock		      "Sum 3"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Velocity 3"
+      SrcPort		      1
+      DstBlock		      "Sum 3"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "Constant 3"
+      SrcPort		      1
+      Points		      [10, 0]
+      Branch {
+	DstBlock		"PID 3"
+	DstPort			3
+      }
+      Branch {
+	DstBlock		"PID 3"
+	DstPort			2
+      }
+    }
+    Line {
+      SrcBlock		      "Error 4"
+      SrcPort		      1
+      DstBlock		      "PID 4"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Sum 4"
+      SrcPort		      1
+      DstBlock		      "Output 4"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "PID 4"
+      SrcPort		      1
+      Points		      [75, 0]
+      DstBlock		      "Sum 4"
+      DstPort		      3
+    }
+    Line {
+      SrcBlock		      "Acceleration 4"
+      SrcPort		      1
+      DstBlock		      "Sum 4"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Velocity 4"
+      SrcPort		      1
+      DstBlock		      "Sum 4"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "Constant 4"
+      SrcPort		      1
+      Points		      [10, 0]
+      Branch {
+	DstBlock		"PID 4"
+	DstPort			3
+      }
+      Branch {
+	DstBlock		"PID 4"
+	DstPort			2
+      }
+    }
+    Line {
+      SrcBlock		      "Error 5"
+      SrcPort		      1
+      DstBlock		      "PID 5"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Sum 5"
+      SrcPort		      1
+      DstBlock		      "Output 5"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "PID 5"
+      SrcPort		      1
+      Points		      [75, 0]
+      DstBlock		      "Sum 5"
+      DstPort		      3
+    }
+    Line {
+      SrcBlock		      "Acceleration 5"
+      SrcPort		      1
+      DstBlock		      "Sum 5"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Velocity 5"
+      SrcPort		      1
+      DstBlock		      "Sum 5"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "Constant 5"
+      SrcPort		      1
+      Points		      [10, 0]
+      Branch {
+	DstBlock		"PID 5"
+	DstPort			3
+      }
+      Branch {
+	DstBlock		"PID 5"
+	DstPort			2
+      }
+    }
+  }
+}

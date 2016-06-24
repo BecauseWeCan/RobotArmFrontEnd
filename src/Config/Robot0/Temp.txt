@@ -1,0 +1,1841 @@
+0:1:-1:1	 {
+0:1:-1:1	  Name			  "robot2"
+0:1:-1:1	  Version		  7.1
+0:1:-1:1	  MdlSubVersion		  0
+0:2:-1:2	  GraphicalInterface {
+0:2:-1:2	    NumRootInports	    0
+0:2:-1:2	    NumRootOutports	    0
+0:2:-1:2	    ParameterArgumentNames  ""
+0:2:-1:2	    ComputedModelVersion    "1.42"
+0:2:-1:2	    NumModelReferences	    0
+0:2:-1:2	    NumTestPointedSignals   0
+0:1:-1:1	  }
+0:1:-1:1	  SavedCharacterEncoding  "windows-1252"
+0:1:-1:1	  SaveDefaultBlockParams  on
+0:1:-1:1	  SampleTimeColors	  off
+0:1:-1:1	  LibraryLinkDisplay	  "none"
+0:1:-1:1	  WideLines		  on
+0:1:-1:1	  ShowLineDimensions	  off
+0:1:-1:1	  ShowPortDataTypes	  off
+0:1:-1:1	  ShowLoopsOnError	  on
+0:1:-1:1	  IgnoreBidirectionalLines off
+0:1:-1:1	  ShowStorageClass	  off
+0:1:-1:1	  ShowTestPointIcons	  on
+0:1:-1:1	  ShowSignalResolutionIcons on
+0:1:-1:1	  ShowViewerIcons	  on
+0:1:-1:1	  SortedOrder		  off
+0:1:-1:1	  ExecutionContextIcon	  off
+0:1:-1:1	  ShowLinearizationAnnotations on
+0:1:-1:1	  ScopeRefreshTime	  0.035000
+0:1:-1:1	  OverrideScopeRefreshTime on
+0:1:-1:1	  DisableAllScopes	  off
+0:1:-1:1	  DataTypeOverride	  "UseLocalSettings"
+0:1:-1:1	  MinMaxOverflowLogging	  "UseLocalSettings"
+0:1:-1:1	  MinMaxOverflowArchiveMode "Overwrite"
+0:1:-1:1	  BlockNameDataTip	  off
+0:1:-1:1	  BlockParametersDataTip  off
+0:1:-1:1	  BlockDescriptionStringDataTip	off
+0:1:-1:1	  ToolBar		  on
+0:1:-1:1	  StatusBar		  on
+0:1:-1:1	  BrowserShowLibraryLinks off
+0:1:-1:1	  BrowserLookUnderMasks	  off
+0:1:-1:1	  Created		  "Sat Aug 12 16:03:11 2006"
+0:1:-1:1	  Creator		  "Bob"
+0:1:-1:1	  UpdateHistory		  "UpdateHistoryNever"
+0:1:-1:1	  ModifiedByFormat	  "%<Auto>"
+0:1:-1:1	  LastModifiedBy	  "Bob"
+0:1:-1:1	  ModifiedDateFormat	  "%<Auto>"
+0:1:-1:1	  LastModifiedDate	  "Sat Oct 17 20:01:34 2009"
+0:1:-1:1	  RTWModifiedTimeStamp	  0
+0:1:-1:1	  ModelVersionFormat	  "1.%<AutoIncrement:42>"
+0:1:-1:1	  ConfigurationManager	  "None"
+0:1:-1:1	  SimulationMode	  "normal"
+0:1:-1:1	  LinearizationMsg	  "none"
+0:1:-1:1	  Profile		  off
+0:1:-1:1	  ParamWorkspaceSource	  "MATLABWorkspace"
+0:1:-1:1	  AccelSystemTargetFile	  "accel.tlc"
+0:1:-1:1	  AccelTemplateMakefile	  "accel_default_tmf"
+0:1:-1:1	  AccelMakeCommand	  "make_rtw"
+0:1:-1:1	  TryForcingSFcnDF	  off
+0:1:-1:1	  RecordCoverage	  off
+0:1:-1:1	  CovPath		  "/"
+0:1:-1:1	  CovSaveName		  "covdata"
+0:1:-1:1	  CovMetricSettings	  "dw"
+0:1:-1:1	  CovNameIncrementing	  off
+0:1:-1:1	  CovHtmlReporting	  on
+0:1:-1:1	  covSaveCumulativeToWorkspaceVar on
+0:1:-1:1	  CovSaveSingleToWorkspaceVar on
+0:1:-1:1	  CovCumulativeVarName	  "covCumulativeData"
+0:1:-1:1	  CovCumulativeReport	  off
+0:1:-1:1	  CovReportOnPause	  on
+0:1:-1:1	  CovModelRefEnable	  "Off"
+0:1:-1:1	  ExtModeBatchMode	  off
+0:1:-1:1	  ExtModeEnableFloating	  on
+0:1:-1:1	  ExtModeTrigType	  "manual"
+0:1:-1:1	  ExtModeTrigMode	  "normal"
+0:1:-1:1	  ExtModeTrigPort	  "1"
+0:1:-1:1	  ExtModeTrigElement	  "any"
+0:1:-1:1	  ExtModeTrigDuration	  1000
+0:1:-1:1	  ExtModeTrigDurationFloating "auto"
+0:1:-1:1	  ExtModeTrigHoldOff	  0
+0:1:-1:1	  ExtModeTrigDelay	  0
+0:1:-1:1	  ExtModeTrigDirection	  "rising"
+0:1:-1:1	  ExtModeTrigLevel	  0
+0:1:-1:1	  ExtModeArchiveMode	  "off"
+0:1:-1:1	  ExtModeAutoIncOneShot	  off
+0:1:-1:1	  ExtModeIncDirWhenArm	  off
+0:1:-1:1	  ExtModeAddSuffixToVar	  off
+0:1:-1:1	  ExtModeWriteAllDataToWs off
+0:1:-1:1	  ExtModeArmWhenConnect	  on
+0:1:-1:1	  ExtModeSkipDownloadWhenConnect off
+0:1:-1:1	  ExtModeLogAll		  on
+0:1:-1:1	  ExtModeAutoUpdateStatusClock on
+0:1:-1:1	  BufferReuse		  on
+0:1:-1:1	  ShowModelReferenceBlockVersion off
+0:1:-1:1	  ShowModelReferenceBlockIO off
+0:2:-1:2	  Array {
+0:2:-1:2	    Type		    "Handle"
+0:2:-1:2	    Dimension		    1
+0:3:-1:3	    Simulink.ConfigSet {
+0:3:-1:3	      $ObjectID		      1
+0:3:-1:3	      Version		      "1.4.0"
+0:4:-1:4	      Array {
+0:4:-1:4		Type			"Handle"
+0:4:-1:4		Dimension		7
+0:5:-1:5		Simulink.SolverCC {
+0:5:-1:5		  $ObjectID		  2
+0:5:-1:5		  Version		  "1.4.0"
+0:5:-1:5		  StartTime		  "0.0"
+0:5:-1:5		  StopTime		  "10.0"
+0:5:-1:5		  AbsTol		  "auto"
+0:5:-1:5		  FixedStep		  "auto"
+0:5:-1:5		  InitialStep		  "auto"
+0:5:-1:5		  MaxNumMinSteps	  "-1"
+0:5:-1:5		  MaxOrder		  5
+0:5:-1:5		  ZcThreshold		  "auto"
+0:5:-1:5		  ConsecutiveZCsStepRelTol "10*128*eps"
+0:5:-1:5		  MaxConsecutiveZCs	  "1000"
+0:5:-1:5		  ExtrapolationOrder	  4
+0:5:-1:5		  NumberNewtonIterations  1
+0:5:-1:5		  MaxStep		  "auto"
+0:5:-1:5		  MinStep		  "auto"
+0:5:-1:5		  MaxConsecutiveMinStep	  "1"
+0:5:-1:5		  RelTol		  "1e-3"
+0:5:-1:5		  SolverMode		  "Auto"
+0:5:-1:5		  Solver		  "ode45"
+0:5:-1:5		  SolverName		  "ode45"
+0:5:-1:5		  ShapePreserveControl	  "DisableAll"
+0:5:-1:5		  ZeroCrossControl	  "UseLocalSettings"
+0:5:-1:5		  ZeroCrossAlgorithm	  "Non-adaptive"
+0:5:-1:5		  AlgebraicLoopSolver	  "TrustRegion"
+0:5:-1:5		  SolverResetMethod	  "Fast"
+0:5:-1:5		  PositivePriorityOrder	  off
+0:5:-1:5		  AutoInsertRateTranBlk	  off
+0:5:-1:5		  SampleTimeConstraint	  "Unconstrained"
+0:5:-1:5		  InsertRTBMode		  "Whenever possible"
+0:4:-1:4		}
+0:5:-1:5		Simulink.DataIOCC {
+0:5:-1:5		  $ObjectID		  3
+0:5:-1:5		  Version		  "1.4.0"
+0:5:-1:5		  Decimation		  "1"
+0:5:-1:5		  ExternalInput		  "[t, u]"
+0:5:-1:5		  FinalStateName	  "xFinal"
+0:5:-1:5		  InitialState		  "xInitial"
+0:5:-1:5		  LimitDataPoints	  on
+0:5:-1:5		  MaxDataPoints		  "1000"
+0:5:-1:5		  LoadExternalInput	  off
+0:5:-1:5		  LoadInitialState	  off
+0:5:-1:5		  SaveFinalState	  off
+0:5:-1:5		  SaveFormat		  "Array"
+0:5:-1:5		  SaveOutput		  on
+0:5:-1:5		  SaveState		  off
+0:5:-1:5		  SignalLogging		  on
+0:5:-1:5		  InspectSignalLogs	  off
+0:5:-1:5		  SaveTime		  on
+0:5:-1:5		  StateSaveName		  "xout"
+0:5:-1:5		  TimeSaveName		  "tout"
+0:5:-1:5		  OutputSaveName	  "yout"
+0:5:-1:5		  SignalLoggingName	  "logsout"
+0:5:-1:5		  OutputOption		  "RefineOutputTimes"
+0:5:-1:5		  OutputTimes		  "[]"
+0:5:-1:5		  Refine		  "1"
+0:4:-1:4		}
+0:5:-1:5		Simulink.OptimizationCC {
+0:5:-1:5		  $ObjectID		  4
+0:5:-1:5		  Version		  "1.4.0"
+0:5:-1:5		  BlockReduction	  on
+0:5:-1:5		  BooleanDataType	  off
+0:5:-1:5		  ConditionallyExecuteInputs on
+0:5:-1:5		  InlineParams		  off
+0:5:-1:5		  InlineInvariantSignals  off
+0:5:-1:5		  OptimizeBlockIOStorage  on
+0:5:-1:5		  BufferReuse		  on
+0:5:-1:5		  EnhancedBackFolding	  off
+0:5:-1:5		  EnforceIntegerDowncast  on
+0:5:-1:5		  ExpressionFolding	  on
+0:5:-1:5		  ExpressionDepthLimit	  2147483647
+0:5:-1:5		  FoldNonRolledExpr	  on
+0:5:-1:5		  LocalBlockOutputs	  on
+0:5:-1:5		  RollThreshold		  5
+0:5:-1:5		  SystemCodeInlineAuto	  off
+0:5:-1:5		  StateBitsets		  off
+0:5:-1:5		  DataBitsets		  off
+0:5:-1:5		  UseTempVars		  off
+0:5:-1:5		  ZeroExternalMemoryAtStartup on
+0:5:-1:5		  ZeroInternalMemoryAtStartup on
+0:5:-1:5		  InitFltsAndDblsToZero	  on
+0:5:-1:5		  NoFixptDivByZeroProtection off
+0:5:-1:5		  EfficientFloat2IntCast  off
+0:5:-1:5		  OptimizeModelRefInitCode off
+0:5:-1:5		  LifeSpan		  "inf"
+0:5:-1:5		  BufferReusableBoundary  on
+0:5:-1:5		  SimCompilerOptimization "Off"
+0:5:-1:5		  AccelVerboseBuild	  off
+0:4:-1:4		}
+0:5:-1:5		Simulink.DebuggingCC {
+0:5:-1:5		  $ObjectID		  5
+0:5:-1:5		  Version		  "1.4.0"
+0:5:-1:5		  RTPrefix		  "error"
+0:5:-1:5		  ConsistencyChecking	  "none"
+0:5:-1:5		  ArrayBoundsChecking	  "none"
+0:5:-1:5		  SignalInfNanChecking	  "none"
+0:5:-1:5		  SignalRangeChecking	  "none"
+0:5:-1:5		  ReadBeforeWriteMsg	  "UseLocalSettings"
+0:5:-1:5		  WriteAfterWriteMsg	  "UseLocalSettings"
+0:5:-1:5		  WriteAfterReadMsg	  "UseLocalSettings"
+0:5:-1:5		  AlgebraicLoopMsg	  "warning"
+0:5:-1:5		  ArtificialAlgebraicLoopMsg "warning"
+0:5:-1:5		  SaveWithDisabledLinksMsg "warning"
+0:5:-1:5		  SaveWithParameterizedLinksMsg	"none"
+0:5:-1:5		  CheckSSInitialOutputMsg on
+0:5:-1:5		  CheckExecutionContextPreStartOutputMsg off
+0:5:-1:5		  CheckExecutionContextRuntimeOutputMsg	off
+0:5:-1:5		  SignalResolutionControl "TryResolveAllWithWarning"
+0:5:-1:5		  BlockPriorityViolationMsg "warning"
+0:5:-1:5		  MinStepSizeMsg	  "warning"
+0:5:-1:5		  TimeAdjustmentMsg	  "none"
+0:5:-1:5		  MaxConsecutiveZCsMsg	  "error"
+0:5:-1:5		  SolverPrmCheckMsg	  "none"
+0:5:-1:5		  InheritedTsInSrcMsg	  "warning"
+0:5:-1:5		  DiscreteInheritContinuousMsg "warning"
+0:5:-1:5		  MultiTaskDSMMsg	  "warning"
+0:5:-1:5		  MultiTaskCondExecSysMsg "none"
+0:5:-1:5		  MultiTaskRateTransMsg	  "error"
+0:5:-1:5		  SingleTaskRateTransMsg  "none"
+0:5:-1:5		  TasksWithSamePriorityMsg "warning"
+0:5:-1:5		  SigSpecEnsureSampleTimeMsg "warning"
+0:5:-1:5		  CheckMatrixSingularityMsg "none"
+0:5:-1:5		  IntegerOverflowMsg	  "warning"
+0:5:-1:5		  Int32ToFloatConvMsg	  "warning"
+0:5:-1:5		  ParameterDowncastMsg	  "error"
+0:5:-1:5		  ParameterOverflowMsg	  "error"
+0:5:-1:5		  ParameterUnderflowMsg	  "none"
+0:5:-1:5		  ParameterPrecisionLossMsg "warning"
+0:5:-1:5		  ParameterTunabilityLossMsg "warning"
+0:5:-1:5		  UnderSpecifiedDataTypeMsg "none"
+0:5:-1:5		  UnnecessaryDatatypeConvMsg "none"
+0:5:-1:5		  VectorMatrixConversionMsg "none"
+0:5:-1:5		  InvalidFcnCallConnMsg	  "error"
+0:5:-1:5		  FcnCallInpInsideContextMsg "Use local settings"
+0:5:-1:5		  SignalLabelMismatchMsg  "none"
+0:5:-1:5		  UnconnectedInputMsg	  "warning"
+0:5:-1:5		  UnconnectedOutputMsg	  "warning"
+0:5:-1:5		  UnconnectedLineMsg	  "warning"
+0:5:-1:5		  SFcnCompatibilityMsg	  "none"
+0:5:-1:5		  UniqueDataStoreMsg	  "none"
+0:5:-1:5		  BusObjectLabelMismatch  "warning"
+0:5:-1:5		  RootOutportRequireBusObject "warning"
+0:5:-1:5		  AssertControl		  "UseLocalSettings"
+0:5:-1:5		  EnableOverflowDetection off
+0:5:-1:5		  ModelReferenceIOMsg	  "none"
+0:5:-1:5		  ModelReferenceVersionMismatchMessage "none"
+0:5:-1:5		  ModelReferenceIOMismatchMessage "none"
+0:5:-1:5		  ModelReferenceCSMismatchMessage "none"
+0:5:-1:5		  ModelReferenceSimTargetVerbose off
+0:5:-1:5		  UnknownTsInhSupMsg	  "warning"
+0:5:-1:5		  ModelReferenceDataLoggingMessage "warning"
+0:5:-1:5		  ModelReferenceSymbolNameMessage "warning"
+0:5:-1:5		  ModelReferenceExtraNoncontSigs "error"
+0:5:-1:5		  StateNameClashWarn	  "warning"
+0:5:-1:5		  StrictBusMsg		  "None"
+0:5:-1:5		  LoggingUnavailableSignals "error"
+0:5:-1:5		  BlockIODiagnostic	  "none"
+0:4:-1:4		}
+0:5:-1:5		Simulink.HardwareCC {
+0:5:-1:5		  $ObjectID		  6
+0:5:-1:5		  Version		  "1.4.0"
+0:5:-1:5		  ProdBitPerChar	  8
+0:5:-1:5		  ProdBitPerShort	  16
+0:5:-1:5		  ProdBitPerInt		  32
+0:5:-1:5		  ProdBitPerLong	  32
+0:5:-1:5		  ProdIntDivRoundTo	  "Undefined"
+0:5:-1:5		  ProdEndianess		  "Unspecified"
+0:5:-1:5		  ProdWordSize		  32
+0:5:-1:5		  ProdShiftRightIntArith  on
+0:5:-1:5		  ProdHWDeviceType	  "32-bit Generic"
+0:5:-1:5		  TargetBitPerChar	  8
+0:5:-1:5		  TargetBitPerShort	  16
+0:5:-1:5		  TargetBitPerInt	  32
+0:5:-1:5		  TargetBitPerLong	  32
+0:5:-1:5		  TargetShiftRightIntArith on
+0:5:-1:5		  TargetIntDivRoundTo	  "Undefined"
+0:5:-1:5		  TargetEndianess	  "Unspecified"
+0:5:-1:5		  TargetWordSize	  32
+0:5:-1:5		  TargetTypeEmulationWarnSuppressLevel 0
+0:5:-1:5		  TargetPreprocMaxBitsSint 32
+0:5:-1:5		  TargetPreprocMaxBitsUint 32
+0:5:-1:5		  TargetHWDeviceType	  "Specified"
+0:5:-1:5		  TargetUnknown		  on
+0:5:-1:5		  ProdEqTarget		  on
+0:4:-1:4		}
+0:5:-1:5		Simulink.ModelReferenceCC {
+0:5:-1:5		  $ObjectID		  7
+0:5:-1:5		  Version		  "1.4.0"
+0:5:-1:5		  UpdateModelReferenceTargets "IfOutOfDateOrStructuralChange"
+0:5:-1:5		  CheckModelReferenceTargetMessage "error"
+0:5:-1:5		  ModelReferenceNumInstancesAllowed "Multi"
+0:5:-1:5		  ModelReferenceSigSizeVariationType "Always allowed"
+0:5:-1:5		  ModelReferencePassRootInputsByReference on
+0:5:-1:5		  ModelReferenceMinAlgLoopOccurrences off
+0:4:-1:4		}
+0:5:-1:5		Simulink.RTWCC {
+0:5:-1:5		  $BackupClass		  "Simulink.RTWCC"
+0:5:-1:5		  $ObjectID		  8
+0:5:-1:5		  Version		  "1.4.0"
+0:5:-1:5		  SystemTargetFile	  "grt.tlc"
+0:5:-1:5		  GenCodeOnly		  off
+0:5:-1:5		  MakeCommand		  "make_rtw"
+0:5:-1:5		  GenerateMakefile	  on
+0:5:-1:5		  TemplateMakefile	  "grt_default_tmf"
+0:5:-1:5		  GenerateReport	  off
+0:5:-1:5		  SaveLog		  off
+0:5:-1:5		  RTWVerbose		  on
+0:5:-1:5		  RetainRTWFile		  off
+0:5:-1:5		  ProfileTLC		  off
+0:5:-1:5		  TLCDebug		  off
+0:5:-1:5		  TLCCoverage		  off
+0:5:-1:5		  TLCAssert		  off
+0:5:-1:5		  ProcessScriptMode	  "Default"
+0:5:-1:5		  ConfigurationMode	  "Optimized"
+0:5:-1:5		  ConfigAtBuild		  off
+0:5:-1:5		  IncludeHyperlinkInReport off
+0:5:-1:5		  LaunchReport		  off
+0:5:-1:5		  TargetLang		  "C"
+0:5:-1:5		  IncludeBusHierarchyInRTWFileBlockHierarchyMap	off
+0:5:-1:5		  IncludeERTFirstTime	  on
+0:5:-1:5		  GenerateTraceInfo	  off
+0:5:-1:5		  GenerateTraceReport	  off
+0:5:-1:5		  GenerateTraceReportSl	  off
+0:5:-1:5		  GenerateTraceReportSf	  off
+0:5:-1:5		  GenerateTraceReportEml  off
+0:5:-1:5		  GenerateCodeInfo	  off
+0:5:-1:5		  RTWCompilerOptimization "Off"
+0:6:-1:6		  Array {
+0:6:-1:6		    Type		    "Handle"
+0:6:-1:6		    Dimension		    2
+0:7:-1:7		    Simulink.CodeAppCC {
+0:7:-1:7		      $ObjectID		      9
+0:7:-1:7		      Version		      "1.4.0"
+0:7:-1:7		      ForceParamTrailComments off
+0:7:-1:7		      GenerateComments	      on
+0:7:-1:7		      IgnoreCustomStorageClasses on
+0:7:-1:7		      IncHierarchyInIds	      off
+0:7:-1:7		      MaxIdLength	      31
+0:7:-1:7		      PreserveName	      off
+0:7:-1:7		      PreserveNameWithParent  off
+0:7:-1:7		      ShowEliminatedStatement off
+0:7:-1:7		      IncAutoGenComments      off
+0:7:-1:7		      SimulinkDataObjDesc     off
+0:7:-1:7		      SFDataObjDesc	      off
+0:7:-1:7		      IncDataTypeInIds	      off
+0:7:-1:7		      MangleLength	      1
+0:7:-1:7		      CustomSymbolStrGlobalVar "$R$N$M"
+0:7:-1:7		      CustomSymbolStrType     "$N$R$M"
+0:7:-1:7		      CustomSymbolStrField    "$N$M"
+0:7:-1:7		      CustomSymbolStrFcn      "$R$N$M$F"
+0:7:-1:7		      CustomSymbolStrBlkIO    "rtb_$N$M"
+0:7:-1:7		      CustomSymbolStrTmpVar   "$N$M"
+0:7:-1:7		      CustomSymbolStrMacro    "$R$N$M"
+0:7:-1:7		      DefineNamingRule	      "None"
+0:7:-1:7		      ParamNamingRule	      "None"
+0:7:-1:7		      SignalNamingRule	      "None"
+0:7:-1:7		      InsertBlockDesc	      off
+0:7:-1:7		      SimulinkBlockComments   on
+0:7:-1:7		      EnableCustomComments    off
+0:7:-1:7		      InlinedPrmAccess	      "Literals"
+0:7:-1:7		      ReqsInCode	      off
+0:6:-1:6		    }
+0:7:-1:7		    Simulink.GRTTargetCC {
+0:7:-1:7		      $BackupClass	      "Simulink.TargetCC"
+0:7:-1:7		      $ObjectID		      10
+0:7:-1:7		      Version		      "1.4.0"
+0:7:-1:7		      TargetFcnLib	      "ansi_tfl_tmw.mat"
+0:7:-1:7		      TargetLibSuffix	      ""
+0:7:-1:7		      TargetPreCompLibLocation ""
+0:7:-1:7		      TargetFunctionLibrary   "ANSI_C"
+0:7:-1:7		      UtilityFuncGeneration   "Auto"
+0:7:-1:7		      GenerateFullHeader      on
+0:7:-1:7		      GenerateSampleERTMain   off
+0:7:-1:7		      GenerateTestInterfaces  off
+0:7:-1:7		      IsPILTarget	      off
+0:7:-1:7		      ModelReferenceCompliant off
+0:7:-1:7		      CompOptLevelCompliant   on
+0:7:-1:7		      IncludeMdlTerminateFcn  on
+0:7:-1:7		      CombineOutputUpdateFcns off
+0:7:-1:7		      SuppressErrorStatus     off
+0:7:-1:7		      ERTFirstTimeCompliant   off
+0:7:-1:7		      IncludeFileDelimiter    "Auto"
+0:7:-1:7		      ERTCustomFileBanners    off
+0:7:-1:7		      SupportAbsoluteTime     on
+0:7:-1:7		      LogVarNameModifier      "rt_"
+0:7:-1:7		      MatFileLogging	      off
+0:7:-1:7		      MultiInstanceERTCode    off
+0:7:-1:7		      SupportNonFinite	      on
+0:7:-1:7		      SupportComplex	      on
+0:7:-1:7		      PurelyIntegerCode	      off
+0:7:-1:7		      SupportContinuousTime   on
+0:7:-1:7		      SupportNonInlinedSFcns  on
+0:7:-1:7		      EnableShiftOperators    on
+0:7:-1:7		      ParenthesesLevel	      "Nominal"
+0:7:-1:7		      PortableWordSizes	      off
+0:7:-1:7		      ModelStepFunctionPrototypeControlCompliant off
+0:7:-1:7		      AutosarCompliant	      off
+0:7:-1:7		      ExtMode		      off
+0:7:-1:7		      ExtModeStaticAlloc      off
+0:7:-1:7		      ExtModeTesting	      off
+0:7:-1:7		      ExtModeStaticAllocSize  1000000
+0:7:-1:7		      ExtModeTransport	      0
+0:7:-1:7		      ExtModeMexFile	      "ext_comm"
+0:7:-1:7		      ExtModeIntrfLevel	      "Level1"
+0:7:-1:7		      RTWCAPISignals	      off
+0:7:-1:7		      RTWCAPIParams	      off
+0:7:-1:7		      RTWCAPIStates	      off
+0:7:-1:7		      GenerateASAP2	      off
+0:6:-1:6		    }
+0:6:-1:6		    PropName		    "Components"
+0:5:-1:5		  }
+0:4:-1:4		}
+0:4:-1:4		PropName		"Components"
+0:3:-1:3	      }
+0:3:-1:3	      Name		      "Configuration"
+0:3:-1:3	      CurrentDlgPage	      "Solver"
+0:2:-1:2	    }
+0:2:-1:2	    PropName		    "ConfigurationSets"
+0:1:-1:1	  }
+0:2:-1:2	  Simulink.ConfigSet {
+0:2:-1:2	    $PropName		    "ActiveConfigurationSet"
+0:2:-1:2	    $ObjectID		    1
+0:1:-1:1	  }
+0:2:-1:2	  BlockDefaults {
+0:2:-1:2	    Orientation		    "right"
+0:2:-1:2	    ForegroundColor	    "black"
+0:2:-1:2	    BackgroundColor	    "white"
+0:2:-1:2	    DropShadow		    off
+0:2:-1:2	    NamePlacement	    "normal"
+0:2:-1:2	    FontName		    "Helvetica"
+0:2:-1:2	    FontSize		    10
+0:2:-1:2	    FontWeight		    "normal"
+0:2:-1:2	    FontAngle		    "normal"
+0:2:-1:2	    ShowName		    on
+0:1:-1:1	  }
+0:2:-1:2	  BlockParameterDefaults {
+0:3:-1:3	    Block {
+0:3:-1:3	      BlockType		      FromWorkspace
+0:3:-1:3	      VariableName	      "simulink_input"
+0:3:-1:3	      SampleTime	      "-1"
+0:3:-1:3	      Interpolate	      on
+0:3:-1:3	      ZeroCross		      off
+0:3:-1:3	      OutputAfterFinalValue   "Extrapolation"
+0:2:-1:2	    }
+0:3:-1:3	    Block {
+0:3:-1:3	      BlockType		      Gain
+0:3:-1:3	      Gain		      "1"
+0:3:-1:3	      Multiplication	      "Element-wise(K.*u)"
+0:3:-1:3	      ParamMin		      "[]"
+0:3:-1:3	      ParamMax		      "[]"
+0:3:-1:3	      ParameterDataTypeMode   "Same as input"
+0:3:-1:3	      ParameterDataType	      "fixdt(1,16,0)"
+0:3:-1:3	      ParameterScalingMode    "Best Precision: Matrix-wise"
+0:3:-1:3	      ParameterScaling	      "[]"
+0:3:-1:3	      ParamDataTypeStr	      "Inherit: Same as input"
+0:3:-1:3	      OutMin		      "[]"
+0:3:-1:3	      OutMax		      "[]"
+0:3:-1:3	      OutDataTypeMode	      "Same as input"
+0:3:-1:3	      OutDataType	      "fixdt(1,16,0)"
+0:3:-1:3	      OutScaling	      "[]"
+0:3:-1:3	      OutDataTypeStr	      "Inherit: Same as input"
+0:3:-1:3	      LockScale		      off
+0:3:-1:3	      RndMeth		      "Floor"
+0:3:-1:3	      SaturateOnIntegerOverflow	on
+0:3:-1:3	      SampleTime	      "-1"
+0:2:-1:2	    }
+0:3:-1:3	    Block {
+0:3:-1:3	      BlockType		      Inport
+0:3:-1:3	      Port		      "1"
+0:3:-1:3	      UseBusObject	      off
+0:3:-1:3	      BusObject		      "BusObject"
+0:3:-1:3	      BusOutputAsStruct	      off
+0:3:-1:3	      PortDimensions	      "-1"
+0:3:-1:3	      SampleTime	      "-1"
+0:3:-1:3	      OutMin		      "[]"
+0:3:-1:3	      OutMax		      "[]"
+0:3:-1:3	      DataType		      "auto"
+0:3:-1:3	      OutDataType	      "fixdt(1,16,0)"
+0:3:-1:3	      OutScaling	      "[]"
+0:3:-1:3	      OutDataTypeStr	      "Inherit: auto"
+0:3:-1:3	      SignalType	      "auto"
+0:3:-1:3	      SamplingMode	      "auto"
+0:3:-1:3	      LatchByDelayingOutsideSignal off
+0:3:-1:3	      LatchByCopyingInsideSignal off
+0:3:-1:3	      Interpolate	      on
+0:2:-1:2	    }
+0:3:-1:3	    Block {
+0:3:-1:3	      BlockType		      Outport
+0:3:-1:3	      Port		      "1"
+0:3:-1:3	      UseBusObject	      off
+0:3:-1:3	      BusObject		      "BusObject"
+0:3:-1:3	      BusOutputAsStruct	      off
+0:3:-1:3	      PortDimensions	      "-1"
+0:3:-1:3	      SampleTime	      "-1"
+0:3:-1:3	      OutMin		      "[]"
+0:3:-1:3	      OutMax		      "[]"
+0:3:-1:3	      DataType		      "auto"
+0:3:-1:3	      OutDataType	      "fixdt(1,16,0)"
+0:3:-1:3	      OutScaling	      "[]"
+0:3:-1:3	      OutDataTypeStr	      "Inherit: auto"
+0:3:-1:3	      SignalType	      "auto"
+0:3:-1:3	      SamplingMode	      "auto"
+0:3:-1:3	      OutputWhenDisabled      "held"
+0:3:-1:3	      InitialOutput	      "[]"
+0:2:-1:2	    }
+0:3:-1:3	    Block {
+0:3:-1:3	      BlockType		      Reference
+0:2:-1:2	    }
+0:3:-1:3	    Block {
+0:3:-1:3	      BlockType		      SubSystem
+0:3:-1:3	      ShowPortLabels	      "FromPortIcon"
+0:3:-1:3	      Permissions	      "ReadWrite"
+0:3:-1:3	      PermitHierarchicalResolution "All"
+0:3:-1:3	      TreatAsAtomicUnit	      off
+0:3:-1:3	      CheckFcnCallInpInsideContextMsg off
+0:3:-1:3	      SystemSampleTime	      "-1"
+0:3:-1:3	      RTWFcnNameOpts	      "Auto"
+0:3:-1:3	      RTWFileNameOpts	      "Auto"
+0:3:-1:3	      RTWMemSecFuncInitTerm   "Inherit from model"
+0:3:-1:3	      RTWMemSecFuncExecute    "Inherit from model"
+0:3:-1:3	      RTWMemSecDataConstants  "Inherit from model"
+0:3:-1:3	      RTWMemSecDataInternal   "Inherit from model"
+0:3:-1:3	      RTWMemSecDataParameters "Inherit from model"
+0:3:-1:3	      SimViewingDevice	      off
+0:3:-1:3	      DataTypeOverride	      "UseLocalSettings"
+0:3:-1:3	      MinMaxOverflowLogging   "UseLocalSettings"
+0:2:-1:2	    }
+0:3:-1:3	    Block {
+0:3:-1:3	      BlockType		      Sum
+0:3:-1:3	      IconShape		      "rectangular"
+0:3:-1:3	      Inputs		      "++"
+0:3:-1:3	      CollapseMode	      "All dimensions"
+0:3:-1:3	      CollapseDim	      "1"
+0:3:-1:3	      InputSameDT	      on
+0:3:-1:3	      AccumDataTypeStr	      "Inherit: Inherit via internal rule"
+0:3:-1:3	      OutMin		      "[]"
+0:3:-1:3	      OutMax		      "[]"
+0:3:-1:3	      OutDataTypeMode	      "Same as first input"
+0:3:-1:3	      OutDataType	      "fixdt(1,16,0)"
+0:3:-1:3	      OutScaling	      "[]"
+0:3:-1:3	      OutDataTypeStr	      "Inherit: Same as first input"
+0:3:-1:3	      LockScale		      off
+0:3:-1:3	      RndMeth		      "Floor"
+0:3:-1:3	      SaturateOnIntegerOverflow	on
+0:3:-1:3	      SampleTime	      "-1"
+0:2:-1:2	    }
+0:3:-1:3	    Block {
+0:3:-1:3	      BlockType		      Switch
+0:3:-1:3	      Criteria		      "u2 >= Threshold"
+0:3:-1:3	      Threshold		      "0"
+0:3:-1:3	      InputSameDT	      on
+0:3:-1:3	      OutMin		      "[]"
+0:3:-1:3	      OutMax		      "[]"
+0:3:-1:3	      OutDataTypeMode	      "Inherit via internal rule"
+0:3:-1:3	      OutDataType	      "fixdt(1,16,0)"
+0:3:-1:3	      OutScaling	      "[]"
+0:3:-1:3	      OutDataTypeStr	      "Inherit: Inherit via internal rule"
+0:3:-1:3	      LockScale		      off
+0:3:-1:3	      RndMeth		      "Floor"
+0:3:-1:3	      SaturateOnIntegerOverflow	on
+0:3:-1:3	      ZeroCross		      on
+0:3:-1:3	      SampleTime	      "-1"
+0:2:-1:2	    }
+0:3:-1:3	    Block {
+0:3:-1:3	      BlockType		      ToWorkspace
+0:3:-1:3	      VariableName	      "simulink_output"
+0:3:-1:3	      MaxDataPoints	      "1000"
+0:3:-1:3	      Decimation	      "1"
+0:3:-1:3	      SampleTime	      "0"
+0:3:-1:3	      FixptAsFi		      off
+0:2:-1:2	    }
+0:3:-1:3	    Block {
+0:3:-1:3	      BlockType		      UnitDelay
+0:3:-1:3	      X0		      "0"
+0:3:-1:3	      SampleTime	      "1"
+0:3:-1:3	      StateMustResolveToSignalObject off
+0:3:-1:3	      RTWStateStorageClass    "Auto"
+0:2:-1:2	    }
+0:3:-1:3	    Block {
+0:3:-1:3	      BlockType		      Constant
+0:3:-1:3	      Value		      "1"
+0:3:-1:3	      VectorParams1D	      on
+0:3:-1:3	      SamplingMode	      "Sample based"
+0:3:-1:3	      OutMin		      "[]"
+0:3:-1:3	      OutMax		      "[]"
+0:3:-1:3	      OutDataTypeMode	      "Inherit from 'Constant value'"
+0:3:-1:3	      OutDataType	      "fixdt(1,16,0)"
+0:3:-1:3	      ConRadixGroup	      "Use specified scaling"
+0:3:-1:3	      OutScaling	      "[]"
+0:3:-1:3	      OutDataTypeStr	      "Inherit: Inherit from 'Constant value'"
+0:3:-1:3	      SampleTime	      "inf"
+0:3:-1:3	      FramePeriod	      "inf"
+0:2:-1:2	    }
+0:3:-1:3	    Block {
+0:3:-1:3	      BlockType		      Saturate
+0:3:-1:3	      UpperLimit	      "0.5"
+0:3:-1:3	      LowerLimit	      "-0.5"
+0:3:-1:3	      LinearizeAsGain	      on
+0:3:-1:3	      ZeroCross		      on
+0:3:-1:3	      SampleTime	      "-1"
+0:3:-1:3	      OutMin		      "[]"
+0:3:-1:3	      OutMax		      "[]"
+0:3:-1:3	      OutDataTypeMode	      "Same as input"
+0:3:-1:3	      OutDataType	      "fixdt(1,16,0)"
+0:3:-1:3	      OutScaling	      "[]"
+0:3:-1:3	      OutDataTypeStr	      "Inherit: Same as input"
+0:3:-1:3	      LockScale		      off
+0:3:-1:3	      RndMeth		      "Floor"
+0:2:-1:2	    }
+0:1:-1:1	  }
+0:2:-1:2	  AnnotationDefaults {
+0:2:-1:2	    HorizontalAlignment	    "center"
+0:2:-1:2	    VerticalAlignment	    "middle"
+0:2:-1:2	    ForegroundColor	    "black"
+0:2:-1:2	    BackgroundColor	    "white"
+0:2:-1:2	    DropShadow		    off
+0:2:-1:2	    FontName		    "Helvetica"
+0:2:-1:2	    FontSize		    10
+0:2:-1:2	    FontWeight		    "normal"
+0:2:-1:2	    FontAngle		    "normal"
+0:2:-1:2	    UseDisplayTextAsClickCallback off
+0:1:-1:1	  }
+0:2:-1:2	  LineDefaults {
+0:2:-1:2	    FontName		    "Helvetica"
+0:2:-1:2	    FontSize		    9
+0:2:-1:2	    FontWeight		    "normal"
+0:2:-1:2	    FontAngle		    "normal"
+0:1:-1:1	  }
+0:2:-1:2	  System {
+1:2:-1:2	    Name		    "robot2"
+1:2:-1:2	    Location		    [93, 160, 782, 948]
+1:2:-1:2	    Open		    on
+1:2:-1:2	    ModelBrowserVisibility  off
+1:2:-1:2	    ModelBrowserWidth	    200
+1:2:-1:2	    ScreenColor		    "white"
+1:2:-1:2	    PaperOrientation	    "landscape"
+1:2:-1:2	    PaperPositionMode	    "auto"
+1:2:-1:2	    PaperType		    "usletter"
+1:2:-1:2	    PaperUnits		    "inches"
+1:2:-1:2	    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
+1:2:-1:2	    TiledPageScale	    1
+1:2:-1:2	    ShowPageBoundaries	    off
+1:2:-1:2	    ZoomFactor		    "100"
+1:2:-1:2	    ReportName		    "simulink-default.rpt"
+1:3:-1:3	    Block {
+2:3:-1:3	      BlockType		      Reference
+2:3:-1:3	      Name		      "Acceleration 0"
+2:3:-1:3	      Tag		      "TCACCEL"
+2:3:-1:3	      Ports		      [0, 1]
+2:3:-1:3	      Position		      [185, 33, 240, 57]
+2:3:-1:3	      BackgroundColor	      "lightBlue"
+2:3:-1:3	      SourceBlock	      "mwblocks/Command Acceleration"
+2:3:-1:3	      SourceType	      ""
+2:3:-1:3	      ShowPortLabels	      "FromPortIcon"
+2:3:-1:3	      SystemSampleTime	      "-1"
+2:3:-1:3	      FunctionWithSeparateData off
+2:3:-1:3	      RTWMemSecFuncInitTerm   "Inherit from model"
+2:3:-1:3	      RTWMemSecFuncExecute    "Inherit from model"
+2:3:-1:3	      RTWMemSecDataConstants  "Inherit from model"
+2:3:-1:3	      RTWMemSecDataInternal   "Inherit from model"
+2:3:-1:3	      RTWMemSecDataParameters "Inherit from model"
+2:3:-1:3	      meiAxis		      "0"
+2:3:-1:3	      SubSample		      "0"
+2:3:-1:3	      User0		      "0"
+2:3:-1:3	      User1		      "0"
+2:2:-1:2	    }
+2:3:-1:3	    Block {
+2:3:-1:3	      BlockType		      Reference
+2:3:-1:3	      Name		      "Acceleration 1"
+2:3:-1:3	      Tag		      "TCACCEL"
+2:3:-1:3	      Ports		      [0, 1]
+2:3:-1:3	      Position		      [185, 138, 240, 162]
+2:3:-1:3	      BackgroundColor	      "lightBlue"
+2:3:-1:3	      SourceBlock	      "mwblocks/Command Acceleration"
+2:3:-1:3	      SourceType	      ""
+2:3:-1:3	      ShowPortLabels	      "FromPortIcon"
+2:3:-1:3	      SystemSampleTime	      "-1"
+2:3:-1:3	      FunctionWithSeparateData off
+2:3:-1:3	      RTWMemSecFuncInitTerm   "Inherit from model"
+2:3:-1:3	      RTWMemSecFuncExecute    "Inherit from model"
+2:3:-1:3	      RTWMemSecDataConstants  "Inherit from model"
+2:3:-1:3	      RTWMemSecDataInternal   "Inherit from model"
+2:3:-1:3	      RTWMemSecDataParameters "Inherit from model"
+2:3:-1:3	      meiAxis		      "1"
+2:3:-1:3	      SubSample		      "0"
+2:3:-1:3	      User0		      "0"
+2:3:-1:3	      User1		      "0"
+2:2:-1:2	    }
+2:3:-1:3	    Block {
+2:3:-1:3	      BlockType		      Reference
+2:3:-1:3	      Name		      "Acceleration 2"
+2:3:-1:3	      Tag		      "TCACCEL"
+2:3:-1:3	      Ports		      [0, 1]
+2:3:-1:3	      Position		      [185, 243, 240, 267]
+2:3:-1:3	      BackgroundColor	      "lightBlue"
+2:3:-1:3	      SourceBlock	      "mwblocks/Command Acceleration"
+2:3:-1:3	      SourceType	      ""
+2:3:-1:3	      ShowPortLabels	      "FromPortIcon"
+2:3:-1:3	      SystemSampleTime	      "-1"
+2:3:-1:3	      FunctionWithSeparateData off
+2:3:-1:3	      RTWMemSecFuncInitTerm   "Inherit from model"
+2:3:-1:3	      RTWMemSecFuncExecute    "Inherit from model"
+2:3:-1:3	      RTWMemSecDataConstants  "Inherit from model"
+2:3:-1:3	      RTWMemSecDataInternal   "Inherit from model"
+2:3:-1:3	      RTWMemSecDataParameters "Inherit from model"
+2:3:-1:3	      meiAxis		      "2"
+2:3:-1:3	      SubSample		      "0"
+2:3:-1:3	      User0		      "0"
+2:3:-1:3	      User1		      "0"
+2:2:-1:2	    }
+2:3:-1:3	    Block {
+2:3:-1:3	      BlockType		      Reference
+2:3:-1:3	      Name		      "Acceleration 3"
+2:3:-1:3	      Tag		      "TCACCEL"
+2:3:-1:3	      Ports		      [0, 1]
+2:3:-1:3	      Position		      [185, 348, 240, 372]
+2:3:-1:3	      BackgroundColor	      "lightBlue"
+2:3:-1:3	      SourceBlock	      "mwblocks/Command Acceleration"
+2:3:-1:3	      SourceType	      ""
+2:3:-1:3	      ShowPortLabels	      "FromPortIcon"
+2:3:-1:3	      SystemSampleTime	      "-1"
+2:3:-1:3	      FunctionWithSeparateData off
+2:3:-1:3	      RTWMemSecFuncInitTerm   "Inherit from model"
+2:3:-1:3	      RTWMemSecFuncExecute    "Inherit from model"
+2:3:-1:3	      RTWMemSecDataConstants  "Inherit from model"
+2:3:-1:3	      RTWMemSecDataInternal   "Inherit from model"
+2:3:-1:3	      RTWMemSecDataParameters "Inherit from model"
+2:3:-1:3	      meiAxis		      "3"
+2:3:-1:3	      SubSample		      "0"
+2:3:-1:3	      User0		      "0"
+2:3:-1:3	      User1		      "0"
+2:2:-1:2	    }
+2:3:-1:3	    Block {
+2:3:-1:3	      BlockType		      Reference
+2:3:-1:3	      Name		      "Acceleration 4"
+2:3:-1:3	      Tag		      "TCACCEL"
+2:3:-1:3	      Ports		      [0, 1]
+2:3:-1:3	      Position		      [185, 453, 240, 477]
+2:3:-1:3	      BackgroundColor	      "lightBlue"
+2:3:-1:3	      SourceBlock	      "mwblocks/Command Acceleration"
+2:3:-1:3	      SourceType	      ""
+2:3:-1:3	      ShowPortLabels	      "FromPortIcon"
+2:3:-1:3	      SystemSampleTime	      "-1"
+2:3:-1:3	      FunctionWithSeparateData off
+2:3:-1:3	      RTWMemSecFuncInitTerm   "Inherit from model"
+2:3:-1:3	      RTWMemSecFuncExecute    "Inherit from model"
+2:3:-1:3	      RTWMemSecDataConstants  "Inherit from model"
+2:3:-1:3	      RTWMemSecDataInternal   "Inherit from model"
+2:3:-1:3	      RTWMemSecDataParameters "Inherit from model"
+2:3:-1:3	      meiAxis		      "4"
+2:3:-1:3	      SubSample		      "0"
+2:3:-1:3	      User0		      "0"
+2:3:-1:3	      User1		      "0"
+2:2:-1:2	    }
+2:3:-1:3	    Block {
+2:3:-1:3	      BlockType		      Reference
+2:3:-1:3	      Name		      "Acceleration 5"
+2:3:-1:3	      Tag		      "TCACCEL"
+2:3:-1:3	      Ports		      [0, 1]
+2:3:-1:3	      Position		      [185, 558, 240, 582]
+2:3:-1:3	      BackgroundColor	      "lightBlue"
+2:3:-1:3	      SourceBlock	      "mwblocks/Command Acceleration"
+2:3:-1:3	      SourceType	      ""
+2:3:-1:3	      ShowPortLabels	      "FromPortIcon"
+2:3:-1:3	      SystemSampleTime	      "-1"
+2:3:-1:3	      FunctionWithSeparateData off
+2:3:-1:3	      RTWMemSecFuncInitTerm   "Inherit from model"
+2:3:-1:3	      RTWMemSecFuncExecute    "Inherit from model"
+2:3:-1:3	      RTWMemSecDataConstants  "Inherit from model"
+2:3:-1:3	      RTWMemSecDataInternal   "Inherit from model"
+2:3:-1:3	      RTWMemSecDataParameters "Inherit from model"
+2:3:-1:3	      meiAxis		      "5"
+2:3:-1:3	      SubSample		      "0"
+2:3:-1:3	      User0		      "0"
+2:3:-1:3	      User1		      "0"
+2:2:-1:2	    }
+2:3:-1:3	    Block {
+2:3:-1:3	      BlockType		      Constant
+2:3:-1:3	      Name		      "Constant 0"
+2:3:-1:3	      Tag		      "CONSTANT"
+2:3:-1:3	      Position		      [100, 95, 130, 125]
+2:3:-1:3	      BackgroundColor	      "lightBlue"
+2:3:-1:3	      Value		      "0"
+2:3:-1:3	      OutDataType	      "sfix(16)"
+2:3:-1:3	      OutScaling	      "2^0"
+2:2:-1:2	    }
+2:3:-1:3	    Block {
+2:3:-1:3	      BlockType		      Constant
+2:3:-1:3	      Name		      "Constant 1"
+2:3:-1:3	      Tag		      "CONSTANT"
+2:3:-1:3	      Position		      [100, 200, 130, 230]
+2:3:-1:3	      BackgroundColor	      "lightBlue"
+2:3:-1:3	      Value		      "0"
+2:3:-1:3	      OutDataType	      "sfix(16)"
+2:3:-1:3	      OutScaling	      "2^0"
+2:2:-1:2	    }
+2:3:-1:3	    Block {
+2:3:-1:3	      BlockType		      Constant
+2:3:-1:3	      Name		      "Constant 2"
+2:3:-1:3	      Tag		      "CONSTANT"
+2:3:-1:3	      Position		      [100, 305, 130, 335]
+2:3:-1:3	      BackgroundColor	      "lightBlue"
+2:3:-1:3	      Value		      "0"
+2:3:-1:3	      OutDataType	      "sfix(16)"
+2:3:-1:3	      OutScaling	      "2^0"
+2:2:-1:2	    }
+2:3:-1:3	    Block {
+2:3:-1:3	      BlockType		      Constant
+2:3:-1:3	      Name		      "Constant 3"
+2:3:-1:3	      Tag		      "CONSTANT"
+2:3:-1:3	      Position		      [100, 410, 130, 440]
+2:3:-1:3	      BackgroundColor	      "lightBlue"
+2:3:-1:3	      Value		      "0"
+2:3:-1:3	      OutDataType	      "sfix(16)"
+2:3:-1:3	      OutScaling	      "2^0"
+2:2:-1:2	    }
+2:3:-1:3	    Block {
+2:3:-1:3	      BlockType		      Constant
+2:3:-1:3	      Name		      "Constant 4"
+2:3:-1:3	      Tag		      "CONSTANT"
+2:3:-1:3	      Position		      [100, 515, 130, 545]
+2:3:-1:3	      BackgroundColor	      "lightBlue"
+2:3:-1:3	      Value		      "0"
+2:3:-1:3	      OutDataType	      "sfix(16)"
+2:3:-1:3	      OutScaling	      "2^0"
+2:2:-1:2	    }
+2:3:-1:3	    Block {
+2:3:-1:3	      BlockType		      Constant
+2:3:-1:3	      Name		      "Constant 5"
+2:3:-1:3	      Tag		      "CONSTANT"
+2:3:-1:3	      Position		      [100, 620, 130, 650]
+2:3:-1:3	      BackgroundColor	      "lightBlue"
+2:3:-1:3	      Value		      "0"
+2:3:-1:3	      OutDataType	      "sfix(16)"
+2:3:-1:3	      OutScaling	      "2^0"
+2:2:-1:2	    }
+2:3:-1:3	    Block {
+2:3:-1:3	      BlockType		      Reference
+2:3:-1:3	      Name		      "Error 0"
+2:3:-1:3	      Tag		      "ERROR"
+2:3:-1:3	      Ports		      [0, 1]
+2:3:-1:3	      Position		      [35, 68, 90, 92]
+2:3:-1:3	      BackgroundColor	      "lightBlue"
+2:3:-1:3	      SourceBlock	      "mwblocks/Error"
+2:3:-1:3	      SourceType	      ""
+2:3:-1:3	      ShowPortLabels	      "FromPortIcon"
+2:3:-1:3	      SystemSampleTime	      "-1"
+2:3:-1:3	      FunctionWithSeparateData off
+2:3:-1:3	      RTWMemSecFuncInitTerm   "Inherit from model"
+2:3:-1:3	      RTWMemSecFuncExecute    "Inherit from model"
+2:3:-1:3	      RTWMemSecDataConstants  "Inherit from model"
+2:3:-1:3	      RTWMemSecDataInternal   "Inherit from model"
+2:3:-1:3	      RTWMemSecDataParameters "Inherit from model"
+2:3:-1:3	      meiAxis		      "0"
+2:3:-1:3	      SubSample		      "0"
+2:3:-1:3	      User0		      "0"
+2:3:-1:3	      User1		      "0"
+2:2:-1:2	    }
+2:3:-1:3	    Block {
+2:3:-1:3	      BlockType		      Reference
+2:3:-1:3	      Name		      "Error 1"
+2:3:-1:3	      Tag		      "ERROR"
+2:3:-1:3	      Ports		      [0, 1]
+2:3:-1:3	      Position		      [35, 173, 90, 197]
+2:3:-1:3	      BackgroundColor	      "lightBlue"
+2:3:-1:3	      SourceBlock	      "mwblocks/Error"
+2:3:-1:3	      SourceType	      ""
+2:3:-1:3	      ShowPortLabels	      "FromPortIcon"
+2:3:-1:3	      SystemSampleTime	      "-1"
+2:3:-1:3	      FunctionWithSeparateData off
+2:3:-1:3	      RTWMemSecFuncInitTerm   "Inherit from model"
+2:3:-1:3	      RTWMemSecFuncExecute    "Inherit from model"
+2:3:-1:3	      RTWMemSecDataConstants  "Inherit from model"
+2:3:-1:3	      RTWMemSecDataInternal   "Inherit from model"
+2:3:-1:3	      RTWMemSecDataParameters "Inherit from model"
+2:3:-1:3	      meiAxis		      "1"
+2:3:-1:3	      SubSample		      "0"
+2:3:-1:3	      User0		      "0"
+2:3:-1:3	      User1		      "0"
+2:2:-1:2	    }
+2:3:-1:3	    Block {
+2:3:-1:3	      BlockType		      Reference
+2:3:-1:3	      Name		      "Error 2"
+2:3:-1:3	      Tag		      "ERROR"
+2:3:-1:3	      Ports		      [0, 1]
+2:3:-1:3	      Position		      [35, 278, 90, 302]
+2:3:-1:3	      BackgroundColor	      "lightBlue"
+2:3:-1:3	      SourceBlock	      "mwblocks/Error"
+2:3:-1:3	      SourceType	      ""
+2:3:-1:3	      ShowPortLabels	      "FromPortIcon"
+2:3:-1:3	      SystemSampleTime	      "-1"
+2:3:-1:3	      FunctionWithSeparateData off
+2:3:-1:3	      RTWMemSecFuncInitTerm   "Inherit from model"
+2:3:-1:3	      RTWMemSecFuncExecute    "Inherit from model"
+2:3:-1:3	      RTWMemSecDataConstants  "Inherit from model"
+2:3:-1:3	      RTWMemSecDataInternal   "Inherit from model"
+2:3:-1:3	      RTWMemSecDataParameters "Inherit from model"
+2:3:-1:3	      meiAxis		      "2"
+2:3:-1:3	      SubSample		      "0"
+2:3:-1:3	      User0		      "0"
+2:3:-1:3	      User1		      "0"
+2:2:-1:2	    }
+2:3:-1:3	    Block {
+2:3:-1:3	      BlockType		      Reference
+2:3:-1:3	      Name		      "Error 3"
+2:3:-1:3	      Tag		      "ERROR"
+2:3:-1:3	      Ports		      [0, 1]
+2:3:-1:3	      Position		      [35, 383, 90, 407]
+2:3:-1:3	      BackgroundColor	      "lightBlue"
+2:3:-1:3	      SourceBlock	      "mwblocks/Error"
+2:3:-1:3	      SourceType	      ""
+2:3:-1:3	      ShowPortLabels	      "FromPortIcon"
+2:3:-1:3	      SystemSampleTime	      "-1"
+2:3:-1:3	      FunctionWithSeparateData off
+2:3:-1:3	      RTWMemSecFuncInitTerm   "Inherit from model"
+2:3:-1:3	      RTWMemSecFuncExecute    "Inherit from model"
+2:3:-1:3	      RTWMemSecDataConstants  "Inherit from model"
+2:3:-1:3	      RTWMemSecDataInternal   "Inherit from model"
+2:3:-1:3	      RTWMemSecDataParameters "Inherit from model"
+2:3:-1:3	      meiAxis		      "3"
+2:3:-1:3	      SubSample		      "0"
+2:3:-1:3	      User0		      "0"
+2:3:-1:3	      User1		      "0"
+2:2:-1:2	    }
+2:3:-1:3	    Block {
+2:3:-1:3	      BlockType		      Reference
+2:3:-1:3	      Name		      "Error 4"
+2:3:-1:3	      Tag		      "ERROR"
+2:3:-1:3	      Ports		      [0, 1]
+2:3:-1:3	      Position		      [35, 488, 90, 512]
+2:3:-1:3	      BackgroundColor	      "lightBlue"
+2:3:-1:3	      SourceBlock	      "mwblocks/Error"
+2:3:-1:3	      SourceType	      ""
+2:3:-1:3	      ShowPortLabels	      "FromPortIcon"
+2:3:-1:3	      SystemSampleTime	      "-1"
+2:3:-1:3	      FunctionWithSeparateData off
+2:3:-1:3	      RTWMemSecFuncInitTerm   "Inherit from model"
+2:3:-1:3	      RTWMemSecFuncExecute    "Inherit from model"
+2:3:-1:3	      RTWMemSecDataConstants  "Inherit from model"
+2:3:-1:3	      RTWMemSecDataInternal   "Inherit from model"
+2:3:-1:3	      RTWMemSecDataParameters "Inherit from model"
+2:3:-1:3	      meiAxis		      "4"
+2:3:-1:3	      SubSample		      "0"
+2:3:-1:3	      User0		      "0"
+2:3:-1:3	      User1		      "0"
+2:2:-1:2	    }
+2:3:-1:3	    Block {
+2:3:-1:3	      BlockType		      Reference
+2:3:-1:3	      Name		      "Error 5"
+2:3:-1:3	      Tag		      "ERROR"
+2:3:-1:3	      Ports		      [0, 1]
+2:3:-1:3	      Position		      [35, 593, 90, 617]
+2:3:-1:3	      BackgroundColor	      "lightBlue"
+2:3:-1:3	      SourceBlock	      "mwblocks/Error"
+2:3:-1:3	      SourceType	      ""
+2:3:-1:3	      ShowPortLabels	      "FromPortIcon"
+2:3:-1:3	      SystemSampleTime	      "-1"
+2:3:-1:3	      FunctionWithSeparateData off
+2:3:-1:3	      RTWMemSecFuncInitTerm   "Inherit from model"
+2:3:-1:3	      RTWMemSecFuncExecute    "Inherit from model"
+2:3:-1:3	      RTWMemSecDataConstants  "Inherit from model"
+2:3:-1:3	      RTWMemSecDataInternal   "Inherit from model"
+2:3:-1:3	      RTWMemSecDataParameters "Inherit from model"
+2:3:-1:3	      meiAxis		      "5"
+2:3:-1:3	      SubSample		      "0"
+2:3:-1:3	      User0		      "0"
+2:3:-1:3	      User1		      "0"
+2:2:-1:2	    }
+2:3:-1:3	    Block {
+2:3:-1:3	      BlockType		      Reference
+2:3:-1:3	      Name		      "Model List"
+2:3:-1:3	      Tag		      "MODEL_LIST"
+2:3:-1:3	      Description	      "List of model numbers to load this model"
+2:3:-1:3	      Ports		      []
+2:3:-1:3	      Position		      [44, 20, 114, 37]
+2:3:-1:3	      BackgroundColor	      "[0.501961, 0.501961, 1.000000]"
+2:3:-1:3	      SourceBlock	      "mwblocks/Model List"
+2:3:-1:3	      SourceType	      ""
+2:3:-1:3	      ShowPortLabels	      "FromPortIcon"
+2:3:-1:3	      SystemSampleTime	      "-1"
+2:3:-1:3	      FunctionWithSeparateData off
+2:3:-1:3	      RTWMemSecFuncInitTerm   "Inherit from model"
+2:3:-1:3	      RTWMemSecFuncExecute    "Inherit from model"
+2:3:-1:3	      RTWMemSecDataConstants  "Inherit from model"
+2:3:-1:3	      RTWMemSecDataInternal   "Inherit from model"
+2:3:-1:3	      RTWMemSecDataParameters "Inherit from model"
+2:3:-1:3	      meiModelList	      "0"
+2:2:-1:2	    }
+2:3:-1:3	    Block {
+2:3:-1:3	      BlockType		      Reference
+2:3:-1:3	      Name		      "Output 0"
+2:3:-1:3	      Tag		      "OUTPUT"
+2:3:-1:3	      Ports		      [1]
+2:3:-1:3	      Position		      [420, 46, 470, 84]
+2:3:-1:3	      BackgroundColor	      "lightBlue"
+2:3:-1:3	      SourceBlock	      "mwblocks/Output "
+2:3:-1:3	      SourceType	      ""
+2:3:-1:3	      ShowPortLabels	      "FromPortIcon"
+2:3:-1:3	      SystemSampleTime	      "-1"
+2:3:-1:3	      FunctionWithSeparateData off
+2:3:-1:3	      RTWMemSecFuncInitTerm   "Inherit from model"
+2:3:-1:3	      RTWMemSecFuncExecute    "Inherit from model"
+2:3:-1:3	      RTWMemSecDataConstants  "Inherit from model"
+2:3:-1:3	      RTWMemSecDataInternal   "Inherit from model"
+2:3:-1:3	      RTWMemSecDataParameters "Inherit from model"
+2:3:-1:3	      meiMotor		      "0"
+2:3:-1:3	      SubSample		      "0"
+2:3:-1:3	      User0		      "0"
+2:3:-1:3	      User1		      "0"
+2:2:-1:2	    }
+2:3:-1:3	    Block {
+2:3:-1:3	      BlockType		      Reference
+2:3:-1:3	      Name		      "Output 1"
+2:3:-1:3	      Tag		      "OUTPUT"
+2:3:-1:3	      Ports		      [1]
+2:3:-1:3	      Position		      [420, 151, 470, 189]
+2:3:-1:3	      BackgroundColor	      "lightBlue"
+2:3:-1:3	      SourceBlock	      "mwblocks/Output "
+2:3:-1:3	      SourceType	      ""
+2:3:-1:3	      ShowPortLabels	      "FromPortIcon"
+2:3:-1:3	      SystemSampleTime	      "-1"
+2:3:-1:3	      FunctionWithSeparateData off
+2:3:-1:3	      RTWMemSecFuncInitTerm   "Inherit from model"
+2:3:-1:3	      RTWMemSecFuncExecute    "Inherit from model"
+2:3:-1:3	      RTWMemSecDataConstants  "Inherit from model"
+2:3:-1:3	      RTWMemSecDataInternal   "Inherit from model"
+2:3:-1:3	      RTWMemSecDataParameters "Inherit from model"
+2:3:-1:3	      meiMotor		      "1"
+2:3:-1:3	      SubSample		      "0"
+2:3:-1:3	      User0		      "0"
+2:3:-1:3	      User1		      "0"
+2:2:-1:2	    }
+2:3:-1:3	    Block {
+2:3:-1:3	      BlockType		      Reference
+2:3:-1:3	      Name		      "Output 2"
+2:3:-1:3	      Tag		      "OUTPUT"
+2:3:-1:3	      Ports		      [1]
+2:3:-1:3	      Position		      [420, 256, 470, 294]
+2:3:-1:3	      BackgroundColor	      "lightBlue"
+2:3:-1:3	      SourceBlock	      "mwblocks/Output "
+2:3:-1:3	      SourceType	      ""
+2:3:-1:3	      ShowPortLabels	      "FromPortIcon"
+2:3:-1:3	      SystemSampleTime	      "-1"
+2:3:-1:3	      FunctionWithSeparateData off
+2:3:-1:3	      RTWMemSecFuncInitTerm   "Inherit from model"
+2:3:-1:3	      RTWMemSecFuncExecute    "Inherit from model"
+2:3:-1:3	      RTWMemSecDataConstants  "Inherit from model"
+2:3:-1:3	      RTWMemSecDataInternal   "Inherit from model"
+2:3:-1:3	      RTWMemSecDataParameters "Inherit from model"
+2:3:-1:3	      meiMotor		      "2"
+2:3:-1:3	      SubSample		      "0"
+2:3:-1:3	      User0		      "0"
+2:3:-1:3	      User1		      "0"
+2:2:-1:2	    }
+2:3:-1:3	    Block {
+2:3:-1:3	      BlockType		      Reference
+2:3:-1:3	      Name		      "Output 3"
+2:3:-1:3	      Tag		      "OUTPUT"
+2:3:-1:3	      Ports		      [1]
+2:3:-1:3	      Position		      [420, 361, 470, 399]
+2:3:-1:3	      BackgroundColor	      "lightBlue"
+2:3:-1:3	      SourceBlock	      "mwblocks/Output "
+2:3:-1:3	      SourceType	      ""
+2:3:-1:3	      ShowPortLabels	      "FromPortIcon"
+2:3:-1:3	      SystemSampleTime	      "-1"
+2:3:-1:3	      FunctionWithSeparateData off
+2:3:-1:3	      RTWMemSecFuncInitTerm   "Inherit from model"
+2:3:-1:3	      RTWMemSecFuncExecute    "Inherit from model"
+2:3:-1:3	      RTWMemSecDataConstants  "Inherit from model"
+2:3:-1:3	      RTWMemSecDataInternal   "Inherit from model"
+2:3:-1:3	      RTWMemSecDataParameters "Inherit from model"
+2:3:-1:3	      meiMotor		      "3"
+2:3:-1:3	      SubSample		      "0"
+2:3:-1:3	      User0		      "0"
+2:3:-1:3	      User1		      "0"
+2:2:-1:2	    }
+2:3:-1:3	    Block {
+2:3:-1:3	      BlockType		      Reference
+2:3:-1:3	      Name		      "Output 4"
+2:3:-1:3	      Tag		      "OUTPUT"
+2:3:-1:3	      Ports		      [1]
+2:3:-1:3	      Position		      [420, 466, 470, 504]
+2:3:-1:3	      BackgroundColor	      "lightBlue"
+2:3:-1:3	      SourceBlock	      "mwblocks/Output "
+2:3:-1:3	      SourceType	      ""
+2:3:-1:3	      ShowPortLabels	      "FromPortIcon"
+2:3:-1:3	      SystemSampleTime	      "-1"
+2:3:-1:3	      FunctionWithSeparateData off
+2:3:-1:3	      RTWMemSecFuncInitTerm   "Inherit from model"
+2:3:-1:3	      RTWMemSecFuncExecute    "Inherit from model"
+2:3:-1:3	      RTWMemSecDataConstants  "Inherit from model"
+2:3:-1:3	      RTWMemSecDataInternal   "Inherit from model"
+2:3:-1:3	      RTWMemSecDataParameters "Inherit from model"
+2:3:-1:3	      meiMotor		      "4"
+2:3:-1:3	      SubSample		      "0"
+2:3:-1:3	      User0		      "0"
+2:3:-1:3	      User1		      "0"
+2:2:-1:2	    }
+2:3:-1:3	    Block {
+2:3:-1:3	      BlockType		      Reference
+2:3:-1:3	      Name		      "Output 5"
+2:3:-1:3	      Tag		      "OUTPUT"
+2:3:-1:3	      Ports		      [1]
+2:3:-1:3	      Position		      [420, 571, 470, 609]
+2:3:-1:3	      BackgroundColor	      "lightBlue"
+2:3:-1:3	      SourceBlock	      "mwblocks/Output "
+2:3:-1:3	      SourceType	      ""
+2:3:-1:3	      ShowPortLabels	      "FromPortIcon"
+2:3:-1:3	      SystemSampleTime	      "-1"
+2:3:-1:3	      FunctionWithSeparateData off
+2:3:-1:3	      RTWMemSecFuncInitTerm   "Inherit from model"
+2:3:-1:3	      RTWMemSecFuncExecute    "Inherit from model"
+2:3:-1:3	      RTWMemSecDataConstants  "Inherit from model"
+2:3:-1:3	      RTWMemSecDataInternal   "Inherit from model"
+2:3:-1:3	      RTWMemSecDataParameters "Inherit from model"
+2:3:-1:3	      meiMotor		      "5"
+2:3:-1:3	      SubSample		      "0"
+2:3:-1:3	      User0		      "0"
+2:3:-1:3	      User1		      "0"
+2:2:-1:2	    }
+2:3:-1:3	    Block {
+2:3:-1:3	      BlockType		      Reference
+2:3:-1:3	      Name		      "PID 0"
+2:3:-1:3	      Tag		      "PID_R"
+2:3:-1:3	      Description	      "PID with integration limit and derivative smoothing."
+2:3:-1:3	      Ports		      [3, 1]
+2:3:-1:3	      Position		      [160, 70, 235, 120]
+2:3:-1:3	      BackgroundColor	      "green"
+2:3:-1:3	      SourceBlock	      "mwblocks/PID with Reset"
+2:3:-1:3	      SourceType	      ""
+2:3:-1:3	      ShowPortLabels	      "FromPortIcon"
+2:3:-1:3	      SystemSampleTime	      "-1"
+2:3:-1:3	      FunctionWithSeparateData off
+2:3:-1:3	      RTWMemSecFuncInitTerm   "Inherit from model"
+2:3:-1:3	      RTWMemSecFuncExecute    "Inherit from model"
+2:3:-1:3	      RTWMemSecDataConstants  "Inherit from model"
+2:3:-1:3	      RTWMemSecDataInternal   "Inherit from model"
+2:3:-1:3	      RTWMemSecDataParameters "Inherit from model"
+2:3:-1:3	      Kp		      "0.1"
+2:3:-1:3	      Ki		      "0"
+2:3:-1:3	      Kd		      "1.0"
+2:3:-1:3	      Ksm		      "0"
+2:3:-1:3	      Imax		      "0"
+2:3:-1:3	      Ts		      "Ts"
+2:3:-1:3	      SubSample		      "0"
+2:3:-1:3	      User0		      "0"
+2:3:-1:3	      User1		      "0"
+2:2:-1:2	    }
+2:3:-1:3	    Block {
+2:3:-1:3	      BlockType		      Reference
+2:3:-1:3	      Name		      "PID 1"
+2:3:-1:3	      Tag		      "PID_R"
+2:3:-1:3	      Description	      "PID with integration limit and derivative smoothing."
+2:3:-1:3	      Ports		      [3, 1]
+2:3:-1:3	      Position		      [160, 175, 235, 225]
+2:3:-1:3	      BackgroundColor	      "green"
+2:3:-1:3	      SourceBlock	      "mwblocks/PID with Reset"
+2:3:-1:3	      SourceType	      ""
+2:3:-1:3	      ShowPortLabels	      "FromPortIcon"
+2:3:-1:3	      SystemSampleTime	      "-1"
+2:3:-1:3	      FunctionWithSeparateData off
+2:3:-1:3	      RTWMemSecFuncInitTerm   "Inherit from model"
+2:3:-1:3	      RTWMemSecFuncExecute    "Inherit from model"
+2:3:-1:3	      RTWMemSecDataConstants  "Inherit from model"
+2:3:-1:3	      RTWMemSecDataInternal   "Inherit from model"
+2:3:-1:3	      RTWMemSecDataParameters "Inherit from model"
+2:3:-1:3	      Kp		      "0.1"
+2:3:-1:3	      Ki		      "0"
+2:3:-1:3	      Kd		      "1.0"
+2:3:-1:3	      Ksm		      "0"
+2:3:-1:3	      Imax		      "0"
+2:3:-1:3	      Ts		      "Ts"
+2:3:-1:3	      SubSample		      "0"
+2:3:-1:3	      User0		      "0"
+2:3:-1:3	      User1		      "0"
+2:2:-1:2	    }
+2:3:-1:3	    Block {
+2:3:-1:3	      BlockType		      Reference
+2:3:-1:3	      Name		      "PID 2"
+2:3:-1:3	      Tag		      "PID_R"
+2:3:-1:3	      Description	      "PID with integration limit and derivative smoothing."
+2:3:-1:3	      Ports		      [3, 1]
+2:3:-1:3	      Position		      [160, 280, 235, 330]
+2:3:-1:3	      BackgroundColor	      "green"
+2:3:-1:3	      SourceBlock	      "mwblocks/PID with Reset"
+2:3:-1:3	      SourceType	      ""
+2:3:-1:3	      ShowPortLabels	      "FromPortIcon"
+2:3:-1:3	      SystemSampleTime	      "-1"
+2:3:-1:3	      FunctionWithSeparateData off
+2:3:-1:3	      RTWMemSecFuncInitTerm   "Inherit from model"
+2:3:-1:3	      RTWMemSecFuncExecute    "Inherit from model"
+2:3:-1:3	      RTWMemSecDataConstants  "Inherit from model"
+2:3:-1:3	      RTWMemSecDataInternal   "Inherit from model"
+2:3:-1:3	      RTWMemSecDataParameters "Inherit from model"
+2:3:-1:3	      Kp		      "0.1"
+2:3:-1:3	      Ki		      "0"
+2:3:-1:3	      Kd		      "1.0"
+2:3:-1:3	      Ksm		      "0"
+2:3:-1:3	      Imax		      "0"
+2:3:-1:3	      Ts		      "Ts"
+2:3:-1:3	      SubSample		      "0"
+2:3:-1:3	      User0		      "0"
+2:3:-1:3	      User1		      "0"
+2:2:-1:2	    }
+2:3:-1:3	    Block {
+2:3:-1:3	      BlockType		      Reference
+2:3:-1:3	      Name		      "PID 3"
+2:3:-1:3	      Tag		      "PID_R"
+2:3:-1:3	      Description	      "PID with integration limit and derivative smoothing."
+2:3:-1:3	      Ports		      [3, 1]
+2:3:-1:3	      Position		      [160, 385, 235, 435]
+2:3:-1:3	      BackgroundColor	      "green"
+2:3:-1:3	      SourceBlock	      "mwblocks/PID with Reset"
+2:3:-1:3	      SourceType	      ""
+2:3:-1:3	      ShowPortLabels	      "FromPortIcon"
+2:3:-1:3	      SystemSampleTime	      "-1"
+2:3:-1:3	      FunctionWithSeparateData off
+2:3:-1:3	      RTWMemSecFuncInitTerm   "Inherit from model"
+2:3:-1:3	      RTWMemSecFuncExecute    "Inherit from model"
+2:3:-1:3	      RTWMemSecDataConstants  "Inherit from model"
+2:3:-1:3	      RTWMemSecDataInternal   "Inherit from model"
+2:3:-1:3	      RTWMemSecDataParameters "Inherit from model"
+2:3:-1:3	      Kp		      "0.1"
+2:3:-1:3	      Ki		      "0"
+2:3:-1:3	      Kd		      "1.0"
+2:3:-1:3	      Ksm		      "0"
+2:3:-1:3	      Imax		      "0"
+2:3:-1:3	      Ts		      "Ts"
+2:3:-1:3	      SubSample		      "0"
+2:3:-1:3	      User0		      "0"
+2:3:-1:3	      User1		      "0"
+2:2:-1:2	    }
+2:3:-1:3	    Block {
+2:3:-1:3	      BlockType		      Reference
+2:3:-1:3	      Name		      "PID 4"
+2:3:-1:3	      Tag		      "PID_R"
+2:3:-1:3	      Description	      "PID with integration limit and derivative smoothing."
+2:3:-1:3	      Ports		      [3, 1]
+2:3:-1:3	      Position		      [160, 490, 235, 540]
+2:3:-1:3	      BackgroundColor	      "green"
+2:3:-1:3	      SourceBlock	      "mwblocks/PID with Reset"
+2:3:-1:3	      SourceType	      ""
+2:3:-1:3	      ShowPortLabels	      "FromPortIcon"
+2:3:-1:3	      SystemSampleTime	      "-1"
+2:3:-1:3	      FunctionWithSeparateData off
+2:3:-1:3	      RTWMemSecFuncInitTerm   "Inherit from model"
+2:3:-1:3	      RTWMemSecFuncExecute    "Inherit from model"
+2:3:-1:3	      RTWMemSecDataConstants  "Inherit from model"
+2:3:-1:3	      RTWMemSecDataInternal   "Inherit from model"
+2:3:-1:3	      RTWMemSecDataParameters "Inherit from model"
+2:3:-1:3	      Kp		      "0.1"
+2:3:-1:3	      Ki		      "0"
+2:3:-1:3	      Kd		      "1.0"
+2:3:-1:3	      Ksm		      "0"
+2:3:-1:3	      Imax		      "0"
+2:3:-1:3	      Ts		      "Ts"
+2:3:-1:3	      SubSample		      "0"
+2:3:-1:3	      User0		      "0"
+2:3:-1:3	      User1		      "0"
+2:2:-1:2	    }
+2:3:-1:3	    Block {
+2:3:-1:3	      BlockType		      Reference
+2:3:-1:3	      Name		      "PID 5"
+2:3:-1:3	      Tag		      "PID_R"
+2:3:-1:3	      Description	      "PID with integration limit and derivative smoothing."
+2:3:-1:3	      Ports		      [3, 1]
+2:3:-1:3	      Position		      [160, 595, 235, 645]
+2:3:-1:3	      BackgroundColor	      "green"
+2:3:-1:3	      SourceBlock	      "mwblocks/PID with Reset"
+2:3:-1:3	      SourceType	      ""
+2:3:-1:3	      ShowPortLabels	      "FromPortIcon"
+2:3:-1:3	      SystemSampleTime	      "-1"
+2:3:-1:3	      FunctionWithSeparateData off
+2:3:-1:3	      RTWMemSecFuncInitTerm   "Inherit from model"
+2:3:-1:3	      RTWMemSecFuncExecute    "Inherit from model"
+2:3:-1:3	      RTWMemSecDataConstants  "Inherit from model"
+2:3:-1:3	      RTWMemSecDataInternal   "Inherit from model"
+2:3:-1:3	      RTWMemSecDataParameters "Inherit from model"
+2:3:-1:3	      Kp		      "0.1"
+2:3:-1:3	      Ki		      "0"
+2:3:-1:3	      Kd		      "1.0"
+2:3:-1:3	      Ksm		      "0"
+2:3:-1:3	      Imax		      "0"
+2:3:-1:3	      Ts		      "Ts"
+2:3:-1:3	      SubSample		      "0"
+2:3:-1:3	      User0		      "0"
+2:3:-1:3	      User1		      "0"
+2:2:-1:2	    }
+2:3:-1:3	    Block {
+2:3:-1:3	      BlockType		      Reference
+2:3:-1:3	      Name		      "Sum 0"
+2:3:-1:3	      Tag		      "SUM"
+2:3:-1:3	      Description	      "3 Input sum with gains on each input"
+2:3:-1:3	      Ports		      [3, 1]
+2:3:-1:3	      Position		      [330, 32, 400, 98]
+2:3:-1:3	      BackgroundColor	      "green"
+2:3:-1:3	      SourceBlock	      "mwblocks/Sum (3 Input)"
+2:3:-1:3	      SourceType	      ""
+2:3:-1:3	      ShowPortLabels	      "FromPortIcon"
+2:3:-1:3	      SystemSampleTime	      "-1"
+2:3:-1:3	      FunctionWithSeparateData off
+2:3:-1:3	      RTWMemSecFuncInitTerm   "Inherit from model"
+2:3:-1:3	      RTWMemSecFuncExecute    "Inherit from model"
+2:3:-1:3	      RTWMemSecDataConstants  "Inherit from model"
+2:3:-1:3	      RTWMemSecDataInternal   "Inherit from model"
+2:3:-1:3	      RTWMemSecDataParameters "Inherit from model"
+2:3:-1:3	      K1		      "125"
+2:3:-1:3	      K2		      ".15"
+2:3:-1:3	      K3		      "1"
+2:3:-1:3	      SubSample		      "0"
+2:3:-1:3	      User0		      "0"
+2:3:-1:3	      User1		      "0"
+2:2:-1:2	    }
+2:3:-1:3	    Block {
+2:3:-1:3	      BlockType		      Reference
+2:3:-1:3	      Name		      "Sum 1"
+2:3:-1:3	      Tag		      "SUM"
+2:3:-1:3	      Description	      "3 Input sum with gains on each input"
+2:3:-1:3	      Ports		      [3, 1]
+2:3:-1:3	      Position		      [330, 137, 400, 203]
+2:3:-1:3	      BackgroundColor	      "green"
+2:3:-1:3	      SourceBlock	      "mwblocks/Sum (3 Input)"
+2:3:-1:3	      SourceType	      ""
+2:3:-1:3	      ShowPortLabels	      "FromPortIcon"
+2:3:-1:3	      SystemSampleTime	      "-1"
+2:3:-1:3	      FunctionWithSeparateData off
+2:3:-1:3	      RTWMemSecFuncInitTerm   "Inherit from model"
+2:3:-1:3	      RTWMemSecFuncExecute    "Inherit from model"
+2:3:-1:3	      RTWMemSecDataConstants  "Inherit from model"
+2:3:-1:3	      RTWMemSecDataInternal   "Inherit from model"
+2:3:-1:3	      RTWMemSecDataParameters "Inherit from model"
+2:3:-1:3	      K1		      "125"
+2:3:-1:3	      K2		      ".15"
+2:3:-1:3	      K3		      "1"
+2:3:-1:3	      SubSample		      "0"
+2:3:-1:3	      User0		      "0"
+2:3:-1:3	      User1		      "0"
+2:2:-1:2	    }
+2:3:-1:3	    Block {
+2:3:-1:3	      BlockType		      Reference
+2:3:-1:3	      Name		      "Sum 2"
+2:3:-1:3	      Tag		      "SUM"
+2:3:-1:3	      Description	      "3 Input sum with gains on each input"
+2:3:-1:3	      Ports		      [3, 1]
+2:3:-1:3	      Position		      [330, 242, 400, 308]
+2:3:-1:3	      BackgroundColor	      "green"
+2:3:-1:3	      SourceBlock	      "mwblocks/Sum (3 Input)"
+2:3:-1:3	      SourceType	      ""
+2:3:-1:3	      ShowPortLabels	      "FromPortIcon"
+2:3:-1:3	      SystemSampleTime	      "-1"
+2:3:-1:3	      FunctionWithSeparateData off
+2:3:-1:3	      RTWMemSecFuncInitTerm   "Inherit from model"
+2:3:-1:3	      RTWMemSecFuncExecute    "Inherit from model"
+2:3:-1:3	      RTWMemSecDataConstants  "Inherit from model"
+2:3:-1:3	      RTWMemSecDataInternal   "Inherit from model"
+2:3:-1:3	      RTWMemSecDataParameters "Inherit from model"
+2:3:-1:3	      K1		      "50"
+2:3:-1:3	      K2		      ".05"
+2:3:-1:3	      K3		      "1"
+2:3:-1:3	      SubSample		      "0"
+2:3:-1:3	      User0		      "0"
+2:3:-1:3	      User1		      "0"
+2:2:-1:2	    }
+2:3:-1:3	    Block {
+2:3:-1:3	      BlockType		      Reference
+2:3:-1:3	      Name		      "Sum 3"
+2:3:-1:3	      Tag		      "SUM"
+2:3:-1:3	      Description	      "3 Input sum with gains on each input"
+2:3:-1:3	      Ports		      [3, 1]
+2:3:-1:3	      Position		      [330, 347, 400, 413]
+2:3:-1:3	      BackgroundColor	      "green"
+2:3:-1:3	      SourceBlock	      "mwblocks/Sum (3 Input)"
+2:3:-1:3	      SourceType	      ""
+2:3:-1:3	      ShowPortLabels	      "FromPortIcon"
+2:3:-1:3	      SystemSampleTime	      "-1"
+2:3:-1:3	      FunctionWithSeparateData off
+2:3:-1:3	      RTWMemSecFuncInitTerm   "Inherit from model"
+2:3:-1:3	      RTWMemSecFuncExecute    "Inherit from model"
+2:3:-1:3	      RTWMemSecDataConstants  "Inherit from model"
+2:3:-1:3	      RTWMemSecDataInternal   "Inherit from model"
+2:3:-1:3	      RTWMemSecDataParameters "Inherit from model"
+2:3:-1:3	      K1		      "0"
+2:3:-1:3	      K2		      ".05"
+2:3:-1:3	      K3		      "1"
+2:3:-1:3	      SubSample		      "0"
+2:3:-1:3	      User0		      "0"
+2:3:-1:3	      User1		      "0"
+2:2:-1:2	    }
+2:3:-1:3	    Block {
+2:3:-1:3	      BlockType		      Reference
+2:3:-1:3	      Name		      "Sum 4"
+2:3:-1:3	      Tag		      "SUM"
+2:3:-1:3	      Description	      "3 Input sum with gains on each input"
+2:3:-1:3	      Ports		      [3, 1]
+2:3:-1:3	      Position		      [330, 452, 400, 518]
+2:3:-1:3	      BackgroundColor	      "green"
+2:3:-1:3	      SourceBlock	      "mwblocks/Sum (3 Input)"
+2:3:-1:3	      SourceType	      ""
+2:3:-1:3	      ShowPortLabels	      "FromPortIcon"
+2:3:-1:3	      SystemSampleTime	      "-1"
+2:3:-1:3	      FunctionWithSeparateData off
+2:3:-1:3	      RTWMemSecFuncInitTerm   "Inherit from model"
+2:3:-1:3	      RTWMemSecFuncExecute    "Inherit from model"
+2:3:-1:3	      RTWMemSecDataConstants  "Inherit from model"
+2:3:-1:3	      RTWMemSecDataInternal   "Inherit from model"
+2:3:-1:3	      RTWMemSecDataParameters "Inherit from model"
+2:3:-1:3	      K1		      "30"
+2:3:-1:3	      K2		      "0.2"
+2:3:-1:3	      K3		      "1"
+2:3:-1:3	      SubSample		      "0"
+2:3:-1:3	      User0		      "0"
+2:3:-1:3	      User1		      "0"
+2:2:-1:2	    }
+2:3:-1:3	    Block {
+2:3:-1:3	      BlockType		      Reference
+2:3:-1:3	      Name		      "Sum 5"
+2:3:-1:3	      Tag		      "SUM"
+2:3:-1:3	      Description	      "3 Input sum with gains on each input"
+2:3:-1:3	      Ports		      [3, 1]
+2:3:-1:3	      Position		      [330, 557, 400, 623]
+2:3:-1:3	      BackgroundColor	      "green"
+2:3:-1:3	      SourceBlock	      "mwblocks/Sum (3 Input)"
+2:3:-1:3	      SourceType	      ""
+2:3:-1:3	      ShowPortLabels	      "FromPortIcon"
+2:3:-1:3	      SystemSampleTime	      "-1"
+2:3:-1:3	      FunctionWithSeparateData off
+2:3:-1:3	      RTWMemSecFuncInitTerm   "Inherit from model"
+2:3:-1:3	      RTWMemSecFuncExecute    "Inherit from model"
+2:3:-1:3	      RTWMemSecDataConstants  "Inherit from model"
+2:3:-1:3	      RTWMemSecDataInternal   "Inherit from model"
+2:3:-1:3	      RTWMemSecDataParameters "Inherit from model"
+2:3:-1:3	      K1		      "0"
+2:3:-1:3	      K2		      ".05"
+2:3:-1:3	      K3		      "1"
+2:3:-1:3	      SubSample		      "0"
+2:3:-1:3	      User0		      "0"
+2:3:-1:3	      User1		      "0"
+2:2:-1:2	    }
+2:3:-1:3	    Block {
+2:3:-1:3	      BlockType		      Reference
+2:3:-1:3	      Name		      "Velocity 0"
+2:3:-1:3	      Tag		      "TCVEL"
+2:3:-1:3	      Ports		      [0, 1]
+2:3:-1:3	      Position		      [250, 54, 305, 76]
+2:3:-1:3	      BackgroundColor	      "lightBlue"
+2:3:-1:3	      SourceBlock	      "mwblocks/Command Velocity"
+2:3:-1:3	      SourceType	      ""
+2:3:-1:3	      ShowPortLabels	      "FromPortIcon"
+2:3:-1:3	      SystemSampleTime	      "-1"
+2:3:-1:3	      FunctionWithSeparateData off
+2:3:-1:3	      RTWMemSecFuncInitTerm   "Inherit from model"
+2:3:-1:3	      RTWMemSecFuncExecute    "Inherit from model"
+2:3:-1:3	      RTWMemSecDataConstants  "Inherit from model"
+2:3:-1:3	      RTWMemSecDataInternal   "Inherit from model"
+2:3:-1:3	      RTWMemSecDataParameters "Inherit from model"
+2:3:-1:3	      meiAxis		      "0"
+2:3:-1:3	      SubSample		      "0"
+2:3:-1:3	      User0		      "0"
+2:3:-1:3	      User1		      "0"
+2:2:-1:2	    }
+2:3:-1:3	    Block {
+2:3:-1:3	      BlockType		      Reference
+2:3:-1:3	      Name		      "Velocity 1"
+2:3:-1:3	      Tag		      "TCVEL"
+2:3:-1:3	      Ports		      [0, 1]
+2:3:-1:3	      Position		      [250, 159, 305, 181]
+2:3:-1:3	      BackgroundColor	      "lightBlue"
+2:3:-1:3	      SourceBlock	      "mwblocks/Command Velocity"
+2:3:-1:3	      SourceType	      ""
+2:3:-1:3	      ShowPortLabels	      "FromPortIcon"
+2:3:-1:3	      SystemSampleTime	      "-1"
+2:3:-1:3	      FunctionWithSeparateData off
+2:3:-1:3	      RTWMemSecFuncInitTerm   "Inherit from model"
+2:3:-1:3	      RTWMemSecFuncExecute    "Inherit from model"
+2:3:-1:3	      RTWMemSecDataConstants  "Inherit from model"
+2:3:-1:3	      RTWMemSecDataInternal   "Inherit from model"
+2:3:-1:3	      RTWMemSecDataParameters "Inherit from model"
+2:3:-1:3	      meiAxis		      "1"
+2:3:-1:3	      SubSample		      "0"
+2:3:-1:3	      User0		      "0"
+2:3:-1:3	      User1		      "0"
+2:2:-1:2	    }
+2:3:-1:3	    Block {
+2:3:-1:3	      BlockType		      Reference
+2:3:-1:3	      Name		      "Velocity 2"
+2:3:-1:3	      Tag		      "TCVEL"
+2:3:-1:3	      Ports		      [0, 1]
+2:3:-1:3	      Position		      [250, 264, 305, 286]
+2:3:-1:3	      BackgroundColor	      "lightBlue"
+2:3:-1:3	      SourceBlock	      "mwblocks/Command Velocity"
+2:3:-1:3	      SourceType	      ""
+2:3:-1:3	      ShowPortLabels	      "FromPortIcon"
+2:3:-1:3	      SystemSampleTime	      "-1"
+2:3:-1:3	      FunctionWithSeparateData off
+2:3:-1:3	      RTWMemSecFuncInitTerm   "Inherit from model"
+2:3:-1:3	      RTWMemSecFuncExecute    "Inherit from model"
+2:3:-1:3	      RTWMemSecDataConstants  "Inherit from model"
+2:3:-1:3	      RTWMemSecDataInternal   "Inherit from model"
+2:3:-1:3	      RTWMemSecDataParameters "Inherit from model"
+2:3:-1:3	      meiAxis		      "2"
+2:3:-1:3	      SubSample		      "0"
+2:3:-1:3	      User0		      "0"
+2:3:-1:3	      User1		      "0"
+2:2:-1:2	    }
+2:3:-1:3	    Block {
+2:3:-1:3	      BlockType		      Reference
+2:3:-1:3	      Name		      "Velocity 3"
+2:3:-1:3	      Tag		      "TCVEL"
+2:3:-1:3	      Ports		      [0, 1]
+2:3:-1:3	      Position		      [250, 369, 305, 391]
+2:3:-1:3	      BackgroundColor	      "lightBlue"
+2:3:-1:3	      SourceBlock	      "mwblocks/Command Velocity"
+2:3:-1:3	      SourceType	      ""
+2:3:-1:3	      ShowPortLabels	      "FromPortIcon"
+2:3:-1:3	      SystemSampleTime	      "-1"
+2:3:-1:3	      FunctionWithSeparateData off
+2:3:-1:3	      RTWMemSecFuncInitTerm   "Inherit from model"
+2:3:-1:3	      RTWMemSecFuncExecute    "Inherit from model"
+2:3:-1:3	      RTWMemSecDataConstants  "Inherit from model"
+2:3:-1:3	      RTWMemSecDataInternal   "Inherit from model"
+2:3:-1:3	      RTWMemSecDataParameters "Inherit from model"
+2:3:-1:3	      meiAxis		      "3"
+2:3:-1:3	      SubSample		      "0"
+2:3:-1:3	      User0		      "0"
+2:3:-1:3	      User1		      "0"
+2:2:-1:2	    }
+2:3:-1:3	    Block {
+2:3:-1:3	      BlockType		      Reference
+2:3:-1:3	      Name		      "Velocity 4"
+2:3:-1:3	      Tag		      "TCVEL"
+2:3:-1:3	      Ports		      [0, 1]
+2:3:-1:3	      Position		      [250, 474, 305, 496]
+2:3:-1:3	      BackgroundColor	      "lightBlue"
+2:3:-1:3	      SourceBlock	      "mwblocks/Command Velocity"
+2:3:-1:3	      SourceType	      ""
+2:3:-1:3	      ShowPortLabels	      "FromPortIcon"
+2:3:-1:3	      SystemSampleTime	      "-1"
+2:3:-1:3	      FunctionWithSeparateData off
+2:3:-1:3	      RTWMemSecFuncInitTerm   "Inherit from model"
+2:3:-1:3	      RTWMemSecFuncExecute    "Inherit from model"
+2:3:-1:3	      RTWMemSecDataConstants  "Inherit from model"
+2:3:-1:3	      RTWMemSecDataInternal   "Inherit from model"
+2:3:-1:3	      RTWMemSecDataParameters "Inherit from model"
+2:3:-1:3	      meiAxis		      "4"
+2:3:-1:3	      SubSample		      "0"
+2:3:-1:3	      User0		      "0"
+2:3:-1:3	      User1		      "0"
+2:2:-1:2	    }
+2:3:-1:3	    Block {
+2:3:-1:3	      BlockType		      Reference
+2:3:-1:3	      Name		      "Velocity 5"
+2:3:-1:3	      Tag		      "TCVEL"
+2:3:-1:3	      Ports		      [0, 1]
+2:3:-1:3	      Position		      [250, 579, 305, 601]
+2:3:-1:3	      BackgroundColor	      "lightBlue"
+2:3:-1:3	      SourceBlock	      "mwblocks/Command Velocity"
+2:3:-1:3	      SourceType	      ""
+2:3:-1:3	      ShowPortLabels	      "FromPortIcon"
+2:3:-1:3	      SystemSampleTime	      "-1"
+2:3:-1:3	      FunctionWithSeparateData off
+2:3:-1:3	      RTWMemSecFuncInitTerm   "Inherit from model"
+2:3:-1:3	      RTWMemSecFuncExecute    "Inherit from model"
+2:3:-1:3	      RTWMemSecDataConstants  "Inherit from model"
+2:3:-1:3	      RTWMemSecDataInternal   "Inherit from model"
+2:3:-1:3	      RTWMemSecDataParameters "Inherit from model"
+2:3:-1:3	      meiAxis		      "5"
+2:3:-1:3	      SubSample		      "0"
+2:3:-1:3	      User0		      "0"
+2:3:-1:3	      User1		      "0"
+2:2:-1:2	    }
+2:3:-1:3	    Line {
+3:3:-1:3	      SrcBlock		      "Error 0"
+3:3:-1:3	      SrcPort		      1
+3:3:-1:3	      DstBlock		      "PID 0"
+3:3:-1:3	      DstPort		      1
+3:2:-1:2	    }
+3:3:-1:3	    Line {
+3:3:-1:3	      SrcBlock		      "Sum 0"
+3:3:-1:3	      SrcPort		      1
+3:3:-1:3	      DstBlock		      "Output 0"
+3:3:-1:3	      DstPort		      1
+3:2:-1:2	    }
+3:3:-1:3	    Line {
+3:3:-1:3	      SrcBlock		      "PID 0"
+3:3:-1:3	      SrcPort		      1
+3:3:-1:3	      Points		      [75, 0]
+3:3:-1:3	      DstBlock		      "Sum 0"
+3:3:-1:3	      DstPort		      3
+3:2:-1:2	    }
+3:3:-1:3	    Line {
+3:3:-1:3	      SrcBlock		      "Acceleration 0"
+3:3:-1:3	      SrcPort		      1
+3:3:-1:3	      DstBlock		      "Sum 0"
+3:3:-1:3	      DstPort		      1
+3:2:-1:2	    }
+3:3:-1:3	    Line {
+3:3:-1:3	      SrcBlock		      "Velocity 0"
+3:3:-1:3	      SrcPort		      1
+3:3:-1:3	      DstBlock		      "Sum 0"
+3:3:-1:3	      DstPort		      2
+3:2:-1:2	    }
+3:3:-1:3	    Line {
+3:3:-1:3	      SrcBlock		      "Constant 0"
+3:3:-1:3	      SrcPort		      1
+3:3:-1:3	      Points		      [10, 0]
+3:4:-1:4	      Branch {
+3:4:-1:4		DstBlock		"PID 0"
+3:4:-1:4		DstPort			3
+3:3:-1:3	      }
+3:4:-1:4	      Branch {
+3:4:-1:4		DstBlock		"PID 0"
+3:4:-1:4		DstPort			2
+3:3:-1:3	      }
+3:2:-1:2	    }
+3:3:-1:3	    Line {
+3:3:-1:3	      SrcBlock		      "Error 1"
+3:3:-1:3	      SrcPort		      1
+3:3:-1:3	      DstBlock		      "PID 1"
+3:3:-1:3	      DstPort		      1
+3:2:-1:2	    }
+3:3:-1:3	    Line {
+3:3:-1:3	      SrcBlock		      "Sum 1"
+3:3:-1:3	      SrcPort		      1
+3:3:-1:3	      DstBlock		      "Output 1"
+3:3:-1:3	      DstPort		      1
+3:2:-1:2	    }
+3:3:-1:3	    Line {
+3:3:-1:3	      SrcBlock		      "PID 1"
+3:3:-1:3	      SrcPort		      1
+3:3:-1:3	      Points		      [75, 0]
+3:3:-1:3	      DstBlock		      "Sum 1"
+3:3:-1:3	      DstPort		      3
+3:2:-1:2	    }
+3:3:-1:3	    Line {
+3:3:-1:3	      SrcBlock		      "Acceleration 1"
+3:3:-1:3	      SrcPort		      1
+3:3:-1:3	      DstBlock		      "Sum 1"
+3:3:-1:3	      DstPort		      1
+3:2:-1:2	    }
+3:3:-1:3	    Line {
+3:3:-1:3	      SrcBlock		      "Velocity 1"
+3:3:-1:3	      SrcPort		      1
+3:3:-1:3	      DstBlock		      "Sum 1"
+3:3:-1:3	      DstPort		      2
+3:2:-1:2	    }
+3:3:-1:3	    Line {
+3:3:-1:3	      SrcBlock		      "Constant 1"
+3:3:-1:3	      SrcPort		      1
+3:3:-1:3	      Points		      [10, 0]
+3:4:-1:4	      Branch {
+3:4:-1:4		DstBlock		"PID 1"
+3:4:-1:4		DstPort			3
+3:3:-1:3	      }
+3:4:-1:4	      Branch {
+3:4:-1:4		DstBlock		"PID 1"
+3:4:-1:4		DstPort			2
+3:3:-1:3	      }
+3:2:-1:2	    }
+3:3:-1:3	    Line {
+3:3:-1:3	      SrcBlock		      "Error 2"
+3:3:-1:3	      SrcPort		      1
+3:3:-1:3	      DstBlock		      "PID 2"
+3:3:-1:3	      DstPort		      1
+3:2:-1:2	    }
+3:3:-1:3	    Line {
+3:3:-1:3	      SrcBlock		      "Sum 2"
+3:3:-1:3	      SrcPort		      1
+3:3:-1:3	      DstBlock		      "Output 2"
+3:3:-1:3	      DstPort		      1
+3:2:-1:2	    }
+3:3:-1:3	    Line {
+3:3:-1:3	      SrcBlock		      "PID 2"
+3:3:-1:3	      SrcPort		      1
+3:3:-1:3	      Points		      [75, 0]
+3:3:-1:3	      DstBlock		      "Sum 2"
+3:3:-1:3	      DstPort		      3
+3:2:-1:2	    }
+3:3:-1:3	    Line {
+3:3:-1:3	      SrcBlock		      "Acceleration 2"
+3:3:-1:3	      SrcPort		      1
+3:3:-1:3	      DstBlock		      "Sum 2"
+3:3:-1:3	      DstPort		      1
+3:2:-1:2	    }
+3:3:-1:3	    Line {
+3:3:-1:3	      SrcBlock		      "Velocity 2"
+3:3:-1:3	      SrcPort		      1
+3:3:-1:3	      DstBlock		      "Sum 2"
+3:3:-1:3	      DstPort		      2
+3:2:-1:2	    }
+3:3:-1:3	    Line {
+3:3:-1:3	      SrcBlock		      "Constant 2"
+3:3:-1:3	      SrcPort		      1
+3:3:-1:3	      Points		      [10, 0]
+3:4:-1:4	      Branch {
+3:4:-1:4		DstBlock		"PID 2"
+3:4:-1:4		DstPort			3
+3:3:-1:3	      }
+3:4:-1:4	      Branch {
+3:4:-1:4		DstBlock		"PID 2"
+3:4:-1:4		DstPort			2
+3:3:-1:3	      }
+3:2:-1:2	    }
+3:3:-1:3	    Line {
+3:3:-1:3	      SrcBlock		      "Error 3"
+3:3:-1:3	      SrcPort		      1
+3:3:-1:3	      DstBlock		      "PID 3"
+3:3:-1:3	      DstPort		      1
+3:2:-1:2	    }
+3:3:-1:3	    Line {
+3:3:-1:3	      SrcBlock		      "Sum 3"
+3:3:-1:3	      SrcPort		      1
+3:3:-1:3	      DstBlock		      "Output 3"
+3:3:-1:3	      DstPort		      1
+3:2:-1:2	    }
+3:3:-1:3	    Line {
+3:3:-1:3	      SrcBlock		      "PID 3"
+3:3:-1:3	      SrcPort		      1
+3:3:-1:3	      Points		      [75, 0]
+3:3:-1:3	      DstBlock		      "Sum 3"
+3:3:-1:3	      DstPort		      3
+3:2:-1:2	    }
+3:3:-1:3	    Line {
+3:3:-1:3	      SrcBlock		      "Acceleration 3"
+3:3:-1:3	      SrcPort		      1
+3:3:-1:3	      DstBlock		      "Sum 3"
+3:3:-1:3	      DstPort		      1
+3:2:-1:2	    }
+3:3:-1:3	    Line {
+3:3:-1:3	      SrcBlock		      "Velocity 3"
+3:3:-1:3	      SrcPort		      1
+3:3:-1:3	      DstBlock		      "Sum 3"
+3:3:-1:3	      DstPort		      2
+3:2:-1:2	    }
+3:3:-1:3	    Line {
+3:3:-1:3	      SrcBlock		      "Constant 3"
+3:3:-1:3	      SrcPort		      1
+3:3:-1:3	      Points		      [10, 0]
+3:4:-1:4	      Branch {
+3:4:-1:4		DstBlock		"PID 3"
+3:4:-1:4		DstPort			3
+3:3:-1:3	      }
+3:4:-1:4	      Branch {
+3:4:-1:4		DstBlock		"PID 3"
+3:4:-1:4		DstPort			2
+3:3:-1:3	      }
+3:2:-1:2	    }
+3:3:-1:3	    Line {
+3:3:-1:3	      SrcBlock		      "Error 4"
+3:3:-1:3	      SrcPort		      1
+3:3:-1:3	      DstBlock		      "PID 4"
+3:3:-1:3	      DstPort		      1
+3:2:-1:2	    }
+3:3:-1:3	    Line {
+3:3:-1:3	      SrcBlock		      "Sum 4"
+3:3:-1:3	      SrcPort		      1
+3:3:-1:3	      DstBlock		      "Output 4"
+3:3:-1:3	      DstPort		      1
+3:2:-1:2	    }
+3:3:-1:3	    Line {
+3:3:-1:3	      SrcBlock		      "PID 4"
+3:3:-1:3	      SrcPort		      1
+3:3:-1:3	      Points		      [75, 0]
+3:3:-1:3	      DstBlock		      "Sum 4"
+3:3:-1:3	      DstPort		      3
+3:2:-1:2	    }
+3:3:-1:3	    Line {
+3:3:-1:3	      SrcBlock		      "Acceleration 4"
+3:3:-1:3	      SrcPort		      1
+3:3:-1:3	      DstBlock		      "Sum 4"
+3:3:-1:3	      DstPort		      1
+3:2:-1:2	    }
+3:3:-1:3	    Line {
+3:3:-1:3	      SrcBlock		      "Velocity 4"
+3:3:-1:3	      SrcPort		      1
+3:3:-1:3	      DstBlock		      "Sum 4"
+3:3:-1:3	      DstPort		      2
+3:2:-1:2	    }
+3:3:-1:3	    Line {
+3:3:-1:3	      SrcBlock		      "Constant 4"
+3:3:-1:3	      SrcPort		      1
+3:3:-1:3	      Points		      [10, 0]
+3:4:-1:4	      Branch {
+3:4:-1:4		DstBlock		"PID 4"
+3:4:-1:4		DstPort			3
+3:3:-1:3	      }
+3:4:-1:4	      Branch {
+3:4:-1:4		DstBlock		"PID 4"
+3:4:-1:4		DstPort			2
+3:3:-1:3	      }
+3:2:-1:2	    }
+3:3:-1:3	    Line {
+3:3:-1:3	      SrcBlock		      "Error 5"
+3:3:-1:3	      SrcPort		      1
+3:3:-1:3	      DstBlock		      "PID 5"
+3:3:-1:3	      DstPort		      1
+3:2:-1:2	    }
+3:3:-1:3	    Line {
+3:3:-1:3	      SrcBlock		      "Sum 5"
+3:3:-1:3	      SrcPort		      1
+3:3:-1:3	      DstBlock		      "Output 5"
+3:3:-1:3	      DstPort		      1
+3:2:-1:2	    }
+3:3:-1:3	    Line {
+3:3:-1:3	      SrcBlock		      "PID 5"
+3:3:-1:3	      SrcPort		      1
+3:3:-1:3	      Points		      [75, 0]
+3:3:-1:3	      DstBlock		      "Sum 5"
+3:3:-1:3	      DstPort		      3
+3:2:-1:2	    }
+3:3:-1:3	    Line {
+3:3:-1:3	      SrcBlock		      "Acceleration 5"
+3:3:-1:3	      SrcPort		      1
+3:3:-1:3	      DstBlock		      "Sum 5"
+3:3:-1:3	      DstPort		      1
+3:2:-1:2	    }
+3:3:-1:3	    Line {
+3:3:-1:3	      SrcBlock		      "Velocity 5"
+3:3:-1:3	      SrcPort		      1
+3:3:-1:3	      DstBlock		      "Sum 5"
+3:3:-1:3	      DstPort		      2
+3:2:-1:2	    }
+3:3:-1:3	    Line {
+3:3:-1:3	      SrcBlock		      "Constant 5"
+3:3:-1:3	      SrcPort		      1
+3:3:-1:3	      Points		      [10, 0]
+3:4:-1:4	      Branch {
+3:4:-1:4		DstBlock		"PID 5"
+3:4:-1:4		DstPort			3
+3:3:-1:3	      }
+3:4:-1:4	      Branch {
+3:4:-1:4		DstBlock		"PID 5"
+3:4:-1:4		DstPort			2
+3:3:-1:3	      }
+3:2:-1:2	    }
+3:1:-1:1	  }
+3:0:-1:0	}
