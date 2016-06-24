@@ -3,7 +3,7 @@ Building a new and better front end for the Robot Arms.
 
 <h2>As-is Conditions</h2>
 SupportLib includes references to missing C++ headers:</br>
-(kollmorgen_s200: robot arm driver)
+(kollmorgen_s200: robot arm servo drives)
 <ul><li>stdmpi.h</li>
 <li>firmware.h</li>
 <li>kollmorgen_s200.h</li></ul>
