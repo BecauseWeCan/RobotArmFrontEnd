@@ -49,16 +49,15 @@ namespace RobotLauncher
 
         private void button1_Click(object sender, EventArgs e)
         {
-            stage1.Reset();
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
             stage1.Initialize();
             robot0.Initialize();
             robot1.Initialize();
             Robot0Form.EnableTimer(true);
             Robot1Form.EnableTimer(true);
+        }
+        private void button2_Click(object sender, EventArgs e)
+        {
+            stage1.Reset();
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
@@ -75,7 +74,7 @@ namespace RobotLauncher
                     DanceBeat = 0.935292;
                     DanceDelay = 1.0;
                     break;
-                case 1:
+                /*case 1:
                     DanceMovie = "SSLJ.mp3";
                     DanceFile = "SSLJDance.txt";
                     DanceBeat = 1.0;
@@ -86,7 +85,7 @@ namespace RobotLauncher
                     DanceFile = "FFYSDance.txt";
                     DanceBeat = 1.553289474;  // 152 beats starting at 17.5sec. (duration = 4min 13.6sec.)
                     DanceDelay = 0.413815789; // 17.5 sec - 11 beats.
-                    break;
+                    break;*/
                 default:
                     DanceMovie = "Robot3.wmv";
                     DanceFile = "SusieQDance.txt";
@@ -108,13 +107,29 @@ namespace RobotLauncher
 
         private void button3_Click(object sender, EventArgs e)
         {
-            Robot0Form.LoadDance();
-            Robot1Form.LoadDance();
-            Thread.Sleep(1000);
-            PlayerForm.Player1.Ctlcontrols.play();
+            if (textBox1.Text.Length > 4 && textBox1.Text.Substring(textBox1.Text.Length - 4).Equals(".txt"))
+            {
+                Robot0Form.DanceFile = ConfigPath + textBox1.Text;
+                Robot0Form.DanceDelay = 1.0;
+                Robot0Form.DanceBeat = 1.0;
+                Robot1Form.DanceFile = ConfigPath + textBox1.Text;
+                Robot1Form.DanceDelay = 1.0;
+                Robot1Form.DanceBeat = 1.0;
+                Robot0Form.LoadDance();
+                Robot1Form.LoadDance();
+                Thread.Sleep(1000);
+                PlayerForm.Player1.close();
+            }
+            else
+            {
+                Robot0Form.LoadDance();
+                Robot1Form.LoadDance();
+                Thread.Sleep(1000);
+                PlayerForm.Player1.Ctlcontrols.play();
+            }
         }
 
-        private void button9_Click(object sender, EventArgs e)
+        private void button4_Click(object sender, EventArgs e)
         {
             Robot0Form.StopDance();
             Robot1Form.StopDance();
