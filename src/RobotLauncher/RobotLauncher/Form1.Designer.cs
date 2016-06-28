@@ -30,7 +30,7 @@
         {
 
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            //this.stage1 = new RobotControl.Stage();
+            this.stage1 = new RobotControl.Stage();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
@@ -53,8 +53,7 @@
             this.stage1.Name = "stage1";
             this.stage1.Size = new System.Drawing.Size(231, 141);
             this.stage1.TabIndex = 38;*/
-            //this.stage1.Load += 
-            new System.EventHandler(this.stage1_Load);
+            this.stage1.Load += new System.EventHandler(this.stage1_Load);
             //
             // button2
             // 
