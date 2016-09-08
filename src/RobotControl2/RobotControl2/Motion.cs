@@ -21,6 +21,7 @@ namespace SynqNetBot
         private bool status_enabled;
         private bool jogging_enabled;
         private bool homing_enabled;
+        private bool homing46_enabled;
         private bool shutdown;
         private ShutdownState shutdown_state = ShutdownState.StartShutdown;
         private string ConfigPath;
@@ -100,16 +101,18 @@ namespace SynqNetBot
             xbox_controller = new XBoxController(RobotNumber);
             uint error_code = controller.Initialize(robot, false);
             Debug.Print("Initialize returns " + error_code);
-            if(error_code == 0)
+            if (error_code == 0)
             {
                 timer1.Enabled = true;
                 timer1.Interval = (int)(1000 * TIMER_UPDATE); // Milliseconds 
             }
         }
 
-        // Config should be called every time a robot is created.
-        // Init should only be called after a controller reset.
-
+        /// <summary>
+        /// Config should be called every time a robot is created.
+        /// Init should only be called after a controller reset.
+        /// </summary>
+        /// <param name="Path">Configuration Path</param>
         public void Config(String Path)
         {
             // Robot Geometry Parameters
@@ -118,16 +121,16 @@ namespace SynqNetBot
             Debug.Print("Robot " + robot + " Configuration: (from file " + RobotConfigFile + ")");
 
             config = new Config();
-            config.GetConfig(RobotConfigFile, "Link 1", out L1);
-            config.GetConfig(RobotConfigFile, "Link 2", out L2);
-            config.GetConfig(RobotConfigFile, "Link 3", out L3);
-            config.GetConfig(RobotConfigFile, "Link 4", out L4);
-            config.GetConfig(RobotConfigFile, "Link 5", out L5);
-            config.GetConfig(RobotConfigFile, "Link 6", out L6);
-            config.GetConfig(RobotConfigFile, "Min UW Sum", out min_uw);
-            config.GetConfig(RobotConfigFile, "Max UW Sum", out max_uw);
-            L5A = Math.Sqrt(L5 * L5 + L4 * L4);
-            AT5 = Math.Atan2(L4, L5);
+            config.GetConfig(RobotConfigFile, "Link 1", out L1); // 1000mm dz(axisT,axisW)
+            config.GetConfig(RobotConfigFile, "Link 2", out L2); //  300mm dx(axisT,axisW)
+            config.GetConfig(RobotConfigFile, "Link 3", out L3); //  900mm dz(axisW,axisU)
+            config.GetConfig(RobotConfigFile, "Link 4", out L4); //  180mm dz(axisU,axisB)
+            config.GetConfig(RobotConfigFile, "Link 5", out L5); // 1600mm dx(axisU,axisB)
+            config.GetConfig(RobotConfigFile, "Link 6", out L6); //  180mm dx(axisB,axisA)
+            config.GetConfig(RobotConfigFile, "Min UW Sum", out min_uw); //-60deg
+            config.GetConfig(RobotConfigFile, "Max UW Sum", out max_uw); //+55deg
+            L5A = Math.Sqrt(L5 * L5 + L4 * L4); // d(axisU,axisB)
+            AT5 = Math.Atan2(L4, L5); // angle between axisU,axisB
             Debug.Print("\n");
             int axis;
             for (axis = 0; axis < Robot.ROBOT_AXES; axis++)
@@ -166,7 +169,7 @@ namespace SynqNetBot
             int axis;
             for (axis = 0; axis < Robot.ROBOT_AXES; axis++)
             {
-                error_code = controller.InitializeAxis(axis, 
+                error_code = controller.InitializeAxis(axis,
                     Math.Abs(Axis[axis].error_limit * Axis[axis].COUNTS_PER_DEGREE),
                     Math.Abs(Axis[axis].position_tolerance * Axis[axis].COUNTS_PER_DEGREE),
                     Axis[axis].stop_time,
@@ -190,7 +193,6 @@ namespace SynqNetBot
 
             motion_config = MotionConfig.SingleAxis;
         }
-
         public Robot.MotionState MotionState(int axis)
         {
             SupportLib.MotionState motion_state = controller.GetMotionState(axis);
@@ -239,13 +241,13 @@ namespace SynqNetBot
 
                         motion_config = MotionConfig.MultiAxis;
                         error_code = controller.SCurve(axis, tg, sp, ac, ac);
-                Debug.Print("SCurve returns " + error_code);
+                        Debug.Print("SCurve returns " + error_code);
                         break;
                     case Robot.MotionState.Error:
                         break;
                     case Robot.MotionState.Moving:
                         error_code = controller.SCurve(axis, tg, sp, ac, ac);
-                Debug.Print("SCurve returns " + error_code);
+                        Debug.Print("SCurve returns " + error_code);
                         break;
                 }
             }
@@ -256,7 +258,6 @@ namespace SynqNetBot
             WorldToLocal(world, x);
             MoveAll(x, speed, accel);
         }
-
         public void MovePVT(int axis, double[] position, double[] velocity, double[] time)
         {
             if (MotionState(axis) == Robot.MotionState.Done)
@@ -276,7 +277,6 @@ namespace SynqNetBot
                 Debug.Print("BSpline returns " + error_code);
             }
         }
-
         public void MoveBSpline(int axis, double[] position, double[] time)
         {
             if (MotionState(axis) == Robot.MotionState.Done)
@@ -294,7 +294,6 @@ namespace SynqNetBot
                 Debug.Print("BSpline returns " + error_code);
             }
         }
-
         public void MoveAxis(int axis, double target, double speed, double accel)
         {
             if (MotionState(axis) == Robot.MotionState.Done)
@@ -409,7 +408,6 @@ namespace SynqNetBot
         }
         private void ShutdownExecute()
         {
-            int axis;
             switch (shutdown_state)
             {
                 case ShutdownState.Idle:
@@ -429,7 +427,7 @@ namespace SynqNetBot
                     shutdown_state = ShutdownState.DisableDrive;
                     break;
                 case ShutdownState.DisableDrive:
-                    for (axis = 0; axis < Robot.ROBOT_AXES; axis++)
+                    for (int axis = 0; axis < Robot.ROBOT_AXES; axis++)
                     {
                         controller.Enable(axis, false);
                     }
@@ -442,7 +440,6 @@ namespace SynqNetBot
                     break;
             }
         }
-
         private void HomeAxis(int axis)
         {
             uint error_code = 0;
@@ -450,8 +447,7 @@ namespace SynqNetBot
             {
                 case 0:
                     // home is here
-                    Axis[axis].Origin = controller.ActualPosition(axis) -
-                        Axis[axis].home_offset * Axis[axis].COUNTS_PER_DEGREE;
+                    Axis[axis].Origin = controller.ActualPosition(axis) - Axis[axis].home_offset * Axis[axis].COUNTS_PER_DEGREE;
                     home_axis_state[axis] = Robot.AxisHomeState.Homed;
                     break;
                 case 1:
@@ -472,19 +468,13 @@ namespace SynqNetBot
                                 break;
                             case Robot.AxisHomeState.Start: //Wait for any moves in progress to complete
                                 axis_state = MotionState(axis);
-                                if (axis_state == Robot.MotionState.Done)
-                                {
-                                    state = Robot.AxisHomeState.MoveToStop;
-                                }
-                                if (axis_state == Robot.MotionState.Error)
-                                {
-                                    state = Robot.AxisHomeState.Error;
-                                }
+                                if (axis_state == Robot.MotionState.Done) state = Robot.AxisHomeState.MoveToStop;
+                                if (axis_state == Robot.MotionState.Error) state = Robot.AxisHomeState.Error;
                                 break;
                             case Robot.AxisHomeState.MoveToStop:
                                 error_code = controller.ConfigureUserLimit(axis, hs, hl);
                                 Debug.Print("ConfigureUserLimit returns " + error_code);
-                                controller.Velocity(axis, hs, ha);                           
+                                controller.Velocity(axis, hs, ha);
                                 state = Robot.AxisHomeState.WaitForStop;
                                 break;
                             case Robot.AxisHomeState.WaitForStop:
@@ -495,14 +485,11 @@ namespace SynqNetBot
                                     error_code = controller.EnableUserLimit(axis, false);
                                     Debug.Print("EnableUserLimit returns " + error_code);
                                 }
-                                if (axis_state == Robot.MotionState.Error)
-                                {
-                                    state = Robot.AxisHomeState.Error;
-                                }
+                                if (axis_state == Robot.MotionState.Error) state = Robot.AxisHomeState.Error;
                                 break;
                             case Robot.AxisHomeState.MoveToIndex:
                                 controller.CaptureArm(axis, true);
-                                controller.Velocity(axis, -hs, ha);                           
+                                controller.Velocity(axis, -hs, ha);
                                 state = Robot.AxisHomeState.WaitForIndex;
                                 break;
                             case Robot.AxisHomeState.WaitForIndex:
@@ -512,33 +499,18 @@ namespace SynqNetBot
                                 {
                                     Stop(axis);
                                     double capturePosition = controller.CapturePosition(axis);
-//                                    capture.ConfigurationReset();
+                                    //                                    capture.ConfigurationReset();
                                     Debug.Print("Captured Position for axis " + axis + " = " + capturePosition);
                                     Axis[axis].Origin = capturePosition - Axis[axis].home_offset * Axis[axis].COUNTS_PER_DEGREE;
                                     state = Robot.AxisHomeState.StopMotion;
                                 }
-                                if (axis_state == Robot.MotionState.Done)
-                                {
-                                    if (capture_state != CaptureState.Captured)
-                                    {
-                                        state = Robot.AxisHomeState.Error;
-                                    }
-                                }
-                                if (axis_state == Robot.MotionState.Error)
-                                {
-                                    state = Robot.AxisHomeState.Error;
-                                }
+                                if (axis_state == Robot.MotionState.Done) if (capture_state != CaptureState.Captured) state = Robot.AxisHomeState.Error;
+                                if (axis_state == Robot.MotionState.Error) state = Robot.AxisHomeState.Error;
                                 break;
                             case Robot.AxisHomeState.StopMotion:
                                 axis_state = MotionState(axis);
-                                if (axis_state == Robot.MotionState.Done)
-                                {
-                                    state = Robot.AxisHomeState.MoveHome;
-                                }
-                                if (axis_state == Robot.MotionState.Error)
-                                {
-                                    state = Robot.AxisHomeState.Error;
-                                }
+                                if (axis_state == Robot.MotionState.Done) state = Robot.AxisHomeState.MoveHome;
+                                if (axis_state == Robot.MotionState.Error) state = Robot.AxisHomeState.Error;
                                 break;
                             case Robot.AxisHomeState.MoveHome:
                                 MoveAxis(axis, Axis[axis].home_position);
@@ -546,14 +518,8 @@ namespace SynqNetBot
                                 break;
                             case Robot.AxisHomeState.WaitForHome:
                                 axis_state = MotionState(axis);
-                                if (axis_state == Robot.MotionState.Done)
-                                {
-                                    state = Robot.AxisHomeState.Homed;
-                                }
-                                if (axis_state == Robot.MotionState.Error)
-                                {
-                                    state = Robot.AxisHomeState.Error;
-                                }
+                                if (axis_state == Robot.MotionState.Done) state = Robot.AxisHomeState.Homed;
+                                if (axis_state == Robot.MotionState.Error) state = Robot.AxisHomeState.Error;
                                 break;
                             default:
                                 break;
@@ -563,6 +529,56 @@ namespace SynqNetBot
                     break;
                 default:
                     break;
+            }
+        }
+        private void HomeAxis35(int axis)
+        {
+            uint error_code = 0;
+            if (Axis[axis].home_type == 0)
+            {
+                double hs = Axis[axis].home_speed * Axis[axis].COUNTS_PER_DEGREE;
+                double ha = Axis[axis].home_accel * Axis[axis].COUNTS_PER_DEGREE;
+                if (ha < 0) ha = -ha;
+                double hl = Axis[axis].home_error_limit * Axis[axis].COUNTS_PER_DEGREE;
+                if (hl < 0) hl = -hl;
+                Robot.AxisHomeState state = home_axis_state[axis];
+                Robot.MotionState axis_state;
+                switch (state)
+                {
+                    case Robot.AxisHomeState.Idle:
+                    case Robot.AxisHomeState.Error:
+                    case Robot.AxisHomeState.Homed:
+                        break;
+                    case Robot.AxisHomeState.Start:
+                        //Wait for any moves in progress to complete
+                        axis_state = MotionState(axis);
+                        if (axis_state == Robot.MotionState.Done) state = Robot.AxisHomeState.MoveToStop;
+                        if (axis_state == Robot.MotionState.Error) state = Robot.AxisHomeState.Error;
+                        break;
+                    case Robot.AxisHomeState.MoveToStop:
+                        error_code = controller.ConfigureUserLimit(axis, hs, hl);
+                        Debug.Print("ConfigureUserLimit returns " + error_code);
+                        controller.Velocity(axis, hs, ha);
+                        state = Robot.AxisHomeState.MoveHome;
+                        break;
+                    case Robot.AxisHomeState.MoveHome:
+                        axis_state = MotionState(axis);
+                        if (axis_state == Robot.MotionState.Done)
+                        {
+                            Axis[axis].Origin = controller.ActualPosition(axis);
+                            MoveAxis(axis, Axis[axis].local_max_position - Axis[axis].local_min_position); //Move all the way ++
+                            Axis[axis].Origin = controller.ActualPosition(axis);
+                            MoveAxis(axis, Axis[axis].local_min_position); // move to center
+                            Axis[axis].Origin = controller.ActualPosition(axis) - Axis[axis].home_offset * Axis[axis].COUNTS_PER_DEGREE;
+                        }
+                        axis_state = MotionState(axis);
+                        if (axis_state == Robot.MotionState.Done) state = Robot.AxisHomeState.Homed;
+                        if (axis_state == Robot.MotionState.Error) state = Robot.AxisHomeState.Error;
+                        break;
+                    default:
+                        break;
+                }
+                home_axis_state[axis] = state;
             }
         }
         private void Home()
@@ -622,6 +638,54 @@ namespace SynqNetBot
                     break;
             }
         }
+        private void Home35()
+        {
+            int axis;
+            switch (home_state)
+            {
+                case Robot.HomeState.Begin:
+                    home_axis_state[5] = Robot.AxisHomeState.Idle;
+                    jogging_enabled = false;
+                    homing_axis = 3;
+                    home_axis_state[homing_axis] = Robot.AxisHomeState.Start;
+                    home_state = Robot.HomeState.Homing;
+                    break;
+                case Robot.HomeState.Homing:
+                    HomeAxis35(homing_axis);
+                    switch (home_axis_state[homing_axis])
+                    {
+                        case Robot.AxisHomeState.Error:
+                            home_state = Robot.HomeState.Error;
+                            homing_enabled = false;
+                            break;
+                        case Robot.AxisHomeState.Homed:
+                            homing_axis = homing_axis+2;
+                            if (homing_axis >= Robot.ROBOT_AXES)
+                            {
+                                homing_enabled = false;
+                                for (axis = 0; axis < Robot.ROBOT_AXES; axis++)
+                                {
+                                    Axis[axis].LocalToRaw(Axis[axis].local_min_position, out Axis[axis].raw_min_position);
+                                    Axis[axis].LocalToRaw(Axis[axis].local_max_position, out Axis[axis].raw_max_position);
+                                }
+                                String OriginFile = ConfigPath + "Origins.cfg";
+                                StreamWriter sw = new StreamWriter(OriginFile);
+                                for (axis = 0; axis < Robot.ROBOT_AXES; axis++) sw.WriteLine("Origin " + axis + " = " + Axis[axis].Origin);
+                                sw.Close();
+                                home_state = Robot.HomeState.Homed;
+                            }
+                            else home_axis_state[homing_axis] = Robot.AxisHomeState.Start;
+                            break;
+                        default:
+                            break;
+                    }
+                    break;
+                case Robot.HomeState.Homed:
+                    break;
+                default:
+                    break;
+            }
+        }
         public void EnableJogging(bool enable)
         {
             if (enable)
@@ -647,6 +711,16 @@ namespace SynqNetBot
             }
             home_state = Robot.HomeState.Begin;
             homing_enabled = true;
+        }
+        public void StartHoming35()
+        {
+            if (motion_config != MotionConfig.SingleAxis)
+            {
+                controller.ConfigSingleAxis();
+                motion_config = MotionConfig.SingleAxis;
+            }
+            home_state = Robot.HomeState.Begin;
+            homing46_enabled = true;
         }
         private void Jog(int axis, double jog_v)
         {
@@ -707,7 +781,7 @@ namespace SynqNetBot
                     }
                 }
             }
-            
+
             if (controller.GetMotionState(axis) != SupportLib.MotionState.Error)
             {
                 controller.Velocity(axis, js, ja);
@@ -715,7 +789,7 @@ namespace SynqNetBot
         }
         private void JogRobot()
         {
-            if(xbox_controller.IsConnected())
+            if (xbox_controller.IsConnected())
             {
                 double jv = xbox_controller.Thumbstick(Thumbstick.RIGHT_X) * Axis[0].jog_speed;
                 Jog(0, jv);
@@ -827,6 +901,7 @@ namespace SynqNetBot
             }
         }
 
+        // controls
         private void timer1_Tick(object sender, EventArgs e)
         {
             if (shutdown)
@@ -844,6 +919,10 @@ namespace SynqNetBot
             if (homing_enabled)
             {
                 Home();
+            }
+            if (homing46_enabled)
+            {
+                Home35();
             }
             if (home_state == Robot.HomeState.Homed)
             {

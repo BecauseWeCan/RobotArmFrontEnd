@@ -148,7 +148,7 @@
             this.groupBox2.Size = new System.Drawing.Size(200, 318);
             this.groupBox2.TabIndex = 86;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Dance";
+            this.groupBox2.Text = "Read File";
             // 
             // label4
             // 

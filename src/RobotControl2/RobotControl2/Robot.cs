@@ -4,6 +4,7 @@ using System.Diagnostics;
 namespace SynqNetBot
 {
     // Robot Driver for Dual Fanuc S-500 arms. Written by Bob Steele (started) 1/7/2009.
+    // Robot Driver for Dual Fanuc S-500 arms. Edited by Be Han (started) 7/7/2016.
 
     public class Robot : IRobot
     {
@@ -82,6 +83,10 @@ namespace SynqNetBot
         public void Home()
         {
             motion.StartHoming();
+        }
+        public void Home35()
+        {
+            motion.StartHoming35();
         }
         public void Move(Robot.WorldCoords world, double speed, double accel)
         {

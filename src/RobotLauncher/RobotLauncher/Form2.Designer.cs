@@ -119,6 +119,8 @@
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.textBox31 = new System.Windows.Forms.TextBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.button9 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.trackBar2)).BeginInit();
@@ -205,10 +207,10 @@
             this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button7.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button7.ForeColor = System.Drawing.Color.White;
-            this.button7.Location = new System.Drawing.Point(31, 277);
+            this.button7.Location = new System.Drawing.Point(31, 416);
             this.button7.Margin = new System.Windows.Forms.Padding(4);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(139, 64);
+            this.button7.Size = new System.Drawing.Size(140, 64);
             this.button7.TabIndex = 64;
             this.button7.Text = "Shutdown";
             this.button7.UseVisualStyleBackColor = false;
@@ -224,7 +226,7 @@
             this.button6.Location = new System.Drawing.Point(31, 61);
             this.button6.Margin = new System.Windows.Forms.Padding(4);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(139, 64);
+            this.button6.Size = new System.Drawing.Size(140, 64);
             this.button6.TabIndex = 63;
             this.button6.Text = "Enable";
             this.button6.UseVisualStyleBackColor = false;
@@ -237,10 +239,10 @@
             this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button5.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button5.ForeColor = System.Drawing.Color.White;
-            this.button5.Location = new System.Drawing.Point(31, 206);
+            this.button5.Location = new System.Drawing.Point(31, 345);
             this.button5.Margin = new System.Windows.Forms.Padding(4);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(139, 64);
+            this.button5.Size = new System.Drawing.Size(140, 64);
             this.button5.TabIndex = 62;
             this.button5.Text = "Clear Fault";
             this.button5.UseVisualStyleBackColor = false;
@@ -509,7 +511,7 @@
             this.button1.Location = new System.Drawing.Point(31, 132);
             this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(139, 67);
+            this.button1.Size = new System.Drawing.Size(140, 64);
             this.button1.TabIndex = 38;
             this.button1.Text = "Home";
             this.button1.UseVisualStyleBackColor = false;
@@ -1132,6 +1134,8 @@
             // 
             // groupBox3
             // 
+            this.groupBox3.Controls.Add(this.button9);
+            this.groupBox3.Controls.Add(this.button2);
             this.groupBox3.Controls.Add(this.button6);
             this.groupBox3.Controls.Add(this.button1);
             this.groupBox3.Controls.Add(this.button5);
@@ -1145,6 +1149,38 @@
             this.groupBox3.TabIndex = 85;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Power";
+            // 
+            // button9
+            // 
+            this.button9.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.button9.FlatAppearance.BorderSize = 0;
+            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button9.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button9.ForeColor = System.Drawing.Color.White;
+            this.button9.Location = new System.Drawing.Point(31, 274);
+            this.button9.Margin = new System.Windows.Forms.Padding(4);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(140, 64);
+            this.button9.TabIndex = 66;
+            this.button9.Text = "Zero 3|5";
+            this.button9.UseVisualStyleBackColor = false;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Arial", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.Location = new System.Drawing.Point(31, 203);
+            this.button2.Margin = new System.Windows.Forms.Padding(4);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(140, 64);
+            this.button2.TabIndex = 65;
+            this.button2.Text = "Home 3|5";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // Form2
             // 
@@ -1262,5 +1298,7 @@
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.TextBox textBox31;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button9;
     }
 }

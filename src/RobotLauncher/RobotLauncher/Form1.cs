@@ -62,17 +62,17 @@ namespace RobotLauncher
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            Double DanceBeat;
-            Double DanceDelay;
-            String DanceMovie;
-            String DanceFile;
+            Double MoveBeat;
+            Double MoveDelay;
+            String MoveMovie;
+            String MoveFile;
             switch (comboBox1.SelectedIndex)
             {
                 case 0:
-                    DanceMovie = "Robot3.wmv";
-                    DanceFile = "SusieQDance.txt";
-                    DanceBeat = 0.935292;
-                    DanceDelay = 1.0;
+                    MoveMovie = "Robot3.wmv";
+                    MoveFile = "SusieQDance.txt";
+                    MoveBeat = 0.935292;
+                    MoveDelay = 1.0;
                     break;
                 /*case 1:
                     DanceMovie = "SSLJ.mp3";
@@ -83,25 +83,25 @@ namespace RobotLauncher
                 case 2:
                     DanceMovie = "FFYS_0001.wmv";
                     DanceFile = "FFYSDance.txt";
-                    DanceBeat = 1.553289474;  // 152 beats starting at 17.5sec. (duration = 4min 13.6sec.)
+                    DanceBeat = 1.553289474;  // 152 beats starting at 17.5sec. (duration = 4min 13.6sec.) beat = (duration-delay)/number of beats aka sec/beat
                     DanceDelay = 0.413815789; // 17.5 sec - 11 beats.
                     break;*/
                 default:
-                    DanceMovie = "Robot3.wmv";
-                    DanceFile = "SusieQDance.txt";
-                    DanceBeat = 0.935292;
-                    DanceDelay = 1.0;
+                    MoveMovie = "Robot3.wmv";
+                    MoveFile = "SusieQDance.txt";
+                    MoveBeat = 0.935292;
+                    MoveDelay = 1.0;
                     break;
             }
 
-            Debug.Print("New Dance Movie = " + DanceMovie);
-            PlayerForm.Player1.URL = VideoPath + DanceMovie;
-            Robot0Form.DanceFile = ConfigPath + DanceFile;
-            Robot0Form.DanceDelay = DanceDelay;
-            Robot0Form.DanceBeat = DanceBeat;
-            Robot1Form.DanceFile = ConfigPath + DanceFile;
-            Robot1Form.DanceDelay = DanceDelay;
-            Robot1Form.DanceBeat = DanceBeat;
+            Debug.Print("Movement Movie = " + MoveMovie);
+            PlayerForm.Player1.URL = VideoPath + MoveMovie;
+            Robot0Form.MoveFile = ConfigPath + MoveFile;
+            Robot0Form.MoveDelay = MoveDelay;
+            Robot0Form.MoveBeat = MoveBeat;
+            Robot1Form.MoveFile = ConfigPath + MoveFile;
+            Robot1Form.MoveDelay = MoveDelay;
+            Robot1Form.MoveBeat = MoveBeat;
             PlayerForm.Player1.settings.autoStart = false;
         }
 
@@ -109,21 +109,21 @@ namespace RobotLauncher
         {
             if (textBox1.Text.Length > 4 && textBox1.Text.Substring(textBox1.Text.Length - 4).Equals(".txt"))
             {
-                Robot0Form.DanceFile = ConfigPath + textBox1.Text;
-                Robot0Form.DanceDelay = 1.0;
-                Robot0Form.DanceBeat = 1.0;
-                Robot1Form.DanceFile = ConfigPath + textBox1.Text;
-                Robot1Form.DanceDelay = 1.0;
-                Robot1Form.DanceBeat = 1.0;
-                Robot0Form.LoadDance();
-                Robot1Form.LoadDance();
+                Robot0Form.MoveFile = ConfigPath + textBox1.Text;
+                Robot0Form.MoveDelay = 1.0;
+                Robot0Form.MoveBeat = 1.0;
+                Robot1Form.MoveFile = ConfigPath + textBox1.Text;
+                Robot1Form.MoveDelay = 1.0;
+                Robot1Form.MoveBeat = 1.0;
+                Robot0Form.LoadMovement();
+                Robot1Form.LoadMovement();
                 Thread.Sleep(1000);
                 PlayerForm.Player1.close();
             }
             else
             {
-                Robot0Form.LoadDance();
-                Robot1Form.LoadDance();
+                Robot0Form.LoadMovement();
+                Robot1Form.LoadMovement();
                 Thread.Sleep(1000);
                 PlayerForm.Player1.Ctlcontrols.play();
             }

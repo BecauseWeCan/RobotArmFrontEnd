@@ -57,9 +57,9 @@
     <CodeAnalysisRuleSet>ManagedMinimumRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="RobotControl2, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="RobotControl2, Version=1.0.0.0, Culture=neutral, processorArchitecture=x86">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\RobotControl2\RobotControl2\bin\x86\Debug\RobotControl2.dll</HintPath>
+      <HintPath>..\..\RobotControl2\RobotControl2\bin\x86\Release\RobotControl2.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core">

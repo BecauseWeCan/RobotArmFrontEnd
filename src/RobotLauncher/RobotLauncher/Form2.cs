@@ -15,9 +15,9 @@ namespace RobotLauncher
     public partial class Form2 : Form
     {
         public Robot robot;
-        public double DanceDelay = 1.0;//seconds
-        public string DanceFile = "C:\\Projects\\Robot\\Config\\SusieQDance.txt";
-        public double DanceBeat = 0.935292;
+        public double MoveDelay = 1.0;//seconds
+        public string MoveFile = "C:\\Projects\\Robot\\Config\\SusieQDance.txt";
+        public double MoveBeat = 0.935292;
         private double[] local = new double[Robot.ROBOT_AXES];
         private double[] old_local = new double[Robot.ROBOT_AXES];
         private double[] max_speed = new double[Robot.ROBOT_AXES];
@@ -76,6 +76,7 @@ namespace RobotLauncher
             old_theta = 0.0;
         }
 
+        //Home
         private void button1_Click(object sender, EventArgs e)
         {
             int axis;
@@ -286,14 +287,14 @@ namespace RobotLauncher
                 double cp = player.Ctlcontrols.currentPosition;
                 textBox26.Text = cp.ToString();
                 double max_err = 0.0;
-                if (cp > DanceDelay)
+                if (cp > MoveDelay)
                 {
                     if (!player.fullScreen) player.fullScreen = true;
                     int axis;
                     for (axis = 0; axis < Robot.ROBOT_AXES; axis++)
                     {
                         double mt = robot.MoveTime(axis);
-                        double err = (cp - DanceDelay) - mt;
+                        double err = (cp - MoveDelay) - mt;
                         if (Math.Abs(err) > max_err) max_err = Math.Abs(err);
                         if (err > 0.01)
                         {
@@ -337,20 +338,29 @@ namespace RobotLauncher
             timer1.Enabled = enable;
         }
 
-        public void LoadDance()
+        // Load .txt file
+        public void LoadMovement()
         {
             robot.LocalCommandPosition(old_local);
-            StreamReader sr = new StreamReader(DanceFile);
+            StreamReader sr = new StreamReader(MoveFile);
+            // speed based on trackBar value (50:0-100) | 0-max_speed[0]
             double speed = trackBar1.Value * max_speed[0] / 100.0;
+            // range based on trackBar value (100:0-100) | 0-0.5
             double range = trackBar2.Value / 200.0;
-            double beat = DanceBeat;
+            // MoveBeat: 0.935292 (s/beat)
+            double beat = MoveBeat;
+            // Duration
             double total_time = player.currentMedia.duration;
+            // total_beats = 
             int total_beats = (int)(total_time / beat + 0.5);
+            // ticks_per_beat = 0.935292(s/beat) / 0.05(s/tick) + 0.5 = 19(.20584)
             int ticks_per_beat = (int)(beat / PVT_TIME_DELTA + 0.5);
+            // total_ticks 
             int total_ticks = total_beats * ticks_per_beat;
+            // pvt_time_delta = 0.935292/19 = 0.04922589473684210526315789473684
             double pvt_time_delta = beat / ticks_per_beat;
             Debug.Print("total_ticks = " + total_ticks);
-            textBox27.Text = DanceBeat.ToString();
+            textBox27.Text = MoveBeat.ToString();
             int axis;
             for (axis = 0; axis < Robot.ROBOT_AXES; axis++)
             {
@@ -367,6 +377,7 @@ namespace RobotLauncher
             bool move_ok = true;
             while (sr.Peek() >= 0)
             {
+                // parse .txt file
                 String line = sr.ReadLine();
                 Debug.Print(line);
                 int start = 0;
@@ -406,7 +417,9 @@ namespace RobotLauncher
                         case 0:
                             {
                                 double sum = 0.0;
+                                // change in position by axis
                                 double[] dx = new double[Robot.ROBOT_AXES];
+                                // mirror for robot 1
                                 if (robot.Number == 1)
                                 {
                                     local[0] = -local[0];
@@ -418,9 +431,12 @@ namespace RobotLauncher
                                     sum += d * d;
                                     dx[axis] = d;
                                 }
+                                //dist = sqrt(a0*a0 + a1*a1 + a2*a2 + a3*a3 + a4*a4 + a5*a5)
                                 double dist = Math.Sqrt(sum);
                                 if (beats == 0) beats = 4;
+                                
                                 double T = dist * beats / (4 *speed);
+                                // number of beats = dist * (time signature) / (s/beat * speed) + 1
                                 int n_beats = (int)(T / beat) + 1;
                                 T = beat * n_beats;
                                 int n_points = n_beats * ticks_per_beat;
@@ -430,11 +446,12 @@ namespace RobotLauncher
                                     {
                                         for (axis = 0; axis < Robot.ROBOT_AXES; axis++)
                                         {
-
-                                            int n;
-                                            for (n = 0; n <= n_points; n++)
+                                            // calculate points for robot
+                                            for (int n = 0; n <= n_points; n++)
                                             {
+                                                // tm = angle: (0-pi)
                                                 double tm1 = (3.14159265 * n) / n_points;
+                                                // x1 = pos_last + pos_next * factor: (0-1:sine wave)
                                                 double x1 = old_local[axis] + dx[axis] * (1.0 - Math.Cos(tm1)) / 2.0;
                                                 path_points[axis].position[n + index] = x1;
                                             }
@@ -453,6 +470,7 @@ namespace RobotLauncher
                                 {
                                     dx[axis] = local[axis];
                                 }
+                                // number of points = number of beats * ticks per beat * divisor
                                 int n_points = beats * ticks_per_beat * divisor;
                                 if (n_points > 3)
                                 {
@@ -460,9 +478,7 @@ namespace RobotLauncher
                                     {
                                         for (axis = 0; axis < Robot.ROBOT_AXES; axis++)
                                         {
-
-                                            int n;
-                                            for (n = 0; n < n_points; n++)
+                                            for (int n = 0; n < n_points; n++)
                                             {
                                                 double tm2 = (3.14159265 * 2.0 * n) / ticks_per_beat;
                                                 double x2;
@@ -498,8 +514,7 @@ namespace RobotLauncher
                                         for (axis = 0; axis < Robot.ROBOT_AXES; axis++)
                                         {
 
-                                            int n;
-                                            for (n = 0; n < n_points; n++)
+                                            for (int n = 0; n < n_points; n++)
                                             {
                                                 double tm2 = (3.14159265 * 2.0 * n) / ticks_per_beat;
                                                 double x2;
@@ -560,6 +575,10 @@ namespace RobotLauncher
                                 }
                             }
                             break;
+                       case 4:
+                            {
+                                break;
+                            }
                       default:
                             break;
                     }
@@ -599,6 +618,20 @@ namespace RobotLauncher
         private void button10_Click(object sender, EventArgs e)
         {
             robot.UseCurrentOrigins();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            robot.Home35();
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            double[] pos = {0,0,0,0,0,0};
+            robot.LocalPosition(pos);
+            pos[3] = 0;
+            pos[5] = 0;
+            robot.Move(pos, 1, 1);
         }
     }
 }
